@@ -15,15 +15,14 @@ public class Resource : MonoBehaviour
             Destroy(this);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] public string name;
+    [SerializeField] public int stat;
+
+    public void setStat(int change)
     {
-        
+
+        stat += change;
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
