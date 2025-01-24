@@ -43,6 +43,9 @@ public class GameWorldEventManager : MonoBehaviour
         foreach(var worldEvent in WorldEventReferences){
             if(worldEvent.IsActive){
                 worldEvent.WorldEvent.ContinuousEffect();
+            } else {
+                if(worldEvent.WorldEvent.CheckAutoActivate())
+                    StartEventPending(worldEvent.WorldEvent.EventType);
             }
         }
     }

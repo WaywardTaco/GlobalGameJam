@@ -10,7 +10,7 @@ public class UpgradeScriptable : ScriptableObject
     [SerializeField] public UpgradeType UpgradeType = UpgradeType.None;
     [SerializeField] public int Cost = 0;
     [SerializeField] public bool IsOneshotUpgrade = true;
-    [SerializeField][TextArea(15, 30)] public string UpgradeText = "Insert Upgrade Text";
+    [SerializeField] public List<string> UpgradeBulletedText = new();
 
     public virtual void OnActivate(int count){}
     public virtual void OnDeactivate(int count){}

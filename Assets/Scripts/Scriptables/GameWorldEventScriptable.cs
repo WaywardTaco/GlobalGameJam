@@ -12,6 +12,10 @@ public class GameWorldEventScriptable : ScriptableObject
     [SerializeField] public bool IsOneshotEvent = true;
     [SerializeField][TextArea(15, 30)] public string EventText = "Insert Game Event Text";
 
+    public virtual bool CheckAutoActivate(){
+        return false;
+    }
+
     public virtual void OnActivate(){}
     public virtual void OnDeactivate(){}
     public virtual void ContinuousEffect(){}
