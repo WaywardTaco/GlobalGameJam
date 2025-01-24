@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class DayCycleManager : MonoBehaviour
 {
     public static DayCycleManager Instance;
 
+    [PropertySpace, Title("Properties", TitleAlignment = TitleAlignments.Centered)]
     [SerializeField] private int currentDay; //Current Day For Visuals
     [SerializeField] private int currentActions; //Current Actions taken
     [SerializeField] private int maxActions; //Max actions per day
