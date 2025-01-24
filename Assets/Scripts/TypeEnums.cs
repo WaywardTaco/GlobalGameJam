@@ -13,8 +13,7 @@ namespace Enums {
     }
 
     public enum StockCodes {
-        NUL,
-        
+        NONE,
     }
 
 }
