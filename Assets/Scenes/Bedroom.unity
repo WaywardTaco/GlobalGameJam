@@ -1643,7 +1643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102160, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 102162, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
       propertyPath: m_IsActive
@@ -1656,6 +1656,10 @@ PrefabInstance:
     - target: {fileID: 102166, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102168, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 105462, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
       propertyPath: m_IsActive
@@ -1747,6 +1751,26 @@ PrefabInstance:
     - {fileID: 102138, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
     - {fileID: 102136, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
     - {fileID: 102150, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100512, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100890, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100696, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100746, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100750, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100752, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100776, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100778, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100798, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100820, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100804, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100822, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100834, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100838, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100854, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 102160, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 102168, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100638, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100642, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
+    - {fileID: 100498, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c925872ce3bfa384589bf34b953d5a65, type: 3}
