@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-
     public static ResourceManager Instance;
 
     void Awake()
