@@ -16,6 +16,10 @@ public class SlideIn : MonoBehaviour
     public TextMeshProUGUI dayAlt;
     private int tempDayValue;
     private int tempMonthValue;
+    private bool hasPlayedDay;
+    private bool hasPlayedMonth;
+    private bool changeMonth;
+    private bool changeDay;
 
     void Awake() {
         black = GameObject.Find("NightBG").GetComponent<Transform>();
@@ -25,28 +29,43 @@ public class SlideIn : MonoBehaviour
         Main.GetComponent<CanvasGroup>().alpha = 0f;
         Day.GetComponent<CanvasGroup>().alpha = 0f;
         Month.GetComponent<CanvasGroup>().alpha = 0f;
-        tempDayValue = 0;
-        tempMonthValue = 0;
+        month.text = "1";
+        day.text = " 26";
+        tempDayValue = 26;
+        tempMonthValue = 1;
     }
 
     void OnEnable() {
-        StartCoroutine(StartMonthAnimation(2));
+        tempMonthValue++;
+        StartCoroutine(StartMonthAnimation(tempMonthValue));
     }
 
     [PropertySpace, Button("Change Day", ButtonSizes.Large)]
     public void TriggerDayChange() {
         ResetDayValues();
-        StartCoroutine(StartDayAnimation(tempDayValue++));
+        tempDayValue++;
+        StartCoroutine(StartDayAnimation(tempDayValue));
+        hasPlayedDay = true;
     }
 
     [Button("Change Month", ButtonSizes.Large)]
     public void TriggerMonthChange() {
         ResetMonthValues();
-        StartCoroutine(StartDayAnimation(tempMonthValue++));
+        tempMonthValue++;
+        StartCoroutine(StartMonthAnimation(tempMonthValue));
+        hasPlayedMonth = true;
     }
 
     IEnumerator StartDayAnimation(int value) {
-        if(value >= 31) tempDayValue = 1;
+        if(value >= 31) {
+            tempDayValue = 1;
+            tempMonthValue++;
+            changeMonth = true;
+            if(tempMonthValue >= 13) {
+                tempMonthValue = 1;
+                tempDayValue = 1;
+            }
+        }
         else tempDayValue = value;
 
         dayAlt.text = $" {tempDayValue}";
@@ -70,11 +89,17 @@ public class SlideIn : MonoBehaviour
         LeanTween.scale(dayAlt.rectTransform, Vector3.one, 0.5f);
         dayAlt.transform.LeanMoveLocalY(dayAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteDay);
 
+        hasPlayedDay = true;
+
         yield return 0;
     }
 
     IEnumerator StartMonthAnimation(int value) {
-        if(value >= 13) tempMonthValue = 1;
+        if(value >= 13) {
+            tempMonthValue = 1;
+            tempDayValue = 1;
+            changeDay = true;
+        }
         else tempMonthValue = value;
 
         monthAlt.text = $"{tempMonthValue}";
@@ -98,6 +123,8 @@ public class SlideIn : MonoBehaviour
         LeanTween.scale(monthAlt.rectTransform, Vector3.one, 0.5f);
         monthAlt.transform.LeanMoveLocalY(monthAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteMonth);
 
+        hasPlayedMonth = true;
+
         yield return 0;
     }
 
@@ -105,28 +132,35 @@ public class SlideIn : MonoBehaviour
         Main.GetComponent<CanvasGroup>().alpha = 0f;
         Month.GetComponent<CanvasGroup>().alpha = 0f;
         Day.GetComponent<CanvasGroup>().alpha = 0f;
-        dayAlt.transform.localPosition = new Vector2(dayAlt.transform.localPosition.x, dayAlt.transform.localPosition.y - 125f);
+
+        if(hasPlayedDay) 
+            dayAlt.transform.localPosition = new Vector2(dayAlt.transform.localPosition.x, dayAlt.transform.localPosition.y - 125f);
     }
 
     void ResetMonthValues() {
         Main.GetComponent<CanvasGroup>().alpha = 0f;
         Month.GetComponent<CanvasGroup>().alpha = 0f;
         Day.GetComponent<CanvasGroup>().alpha = 0f;
-        monthAlt.transform.localPosition = new Vector2(monthAlt.transform.localPosition.x, monthAlt.transform.localPosition.y - 125f);
+
+        if(hasPlayedMonth)
+            monthAlt.transform.localPosition = new Vector2(monthAlt.transform.localPosition.x, monthAlt.transform.localPosition.y - 125f);
     }
 
     void OnCompleteDay() {
         dayAlt.color = Color.white;
         day.text = $" {tempDayValue}";
+        if(changeMonth) {
+            month.text = $"{tempMonthValue}";
+            changeMonth = false;
+        }
     }
 
     void OnCompleteMonth() {
         monthAlt.color = Color.white;
-        month.text = $" {tempMonthValue}";
+        month.text = $"{tempMonthValue}";
+        if(changeDay) {
+            day.text = $" {tempDayValue}";
+            changeDay = false;
+        }
     }
-
-    public void Close() {
-
-    }
-
 }
