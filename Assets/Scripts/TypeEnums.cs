@@ -1,10 +1,10 @@
 
 namespace Enums {
-    public enum WorldEventTypes {
+    public enum WorldEventType {
         None, 
     }
     
-    public enum UpgradeTypes {
+    public enum UpgradeType {
         None, 
     }
     

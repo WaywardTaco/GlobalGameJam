@@ -17,9 +17,9 @@ public class GameWorldEventManager : MonoBehaviour
 
     public static GameWorldEventManager Instance { get; private set;}
     
-    [SerializeField] private List<WorldEventTypes> PendingToActivateEvents = new();
+    [SerializeField] private List<WorldEventType> PendingToActivateEvents = new();
     [SerializeField] private List<WorldEventTracker> WorldEventReferences = new();
-    private Dictionary<WorldEventTypes, WorldEventTracker> EventTypeKeys = new();
+    private Dictionary<WorldEventType, WorldEventTracker> EventTypeKeys = new();
 
     private void Awake() {
         if(Instance == null){
@@ -34,6 +34,7 @@ public class GameWorldEventManager : MonoBehaviour
         EventTypeKeys.Clear();
 
         foreach(var worldEvent in WorldEventReferences){
+            if(worldEvent.WorldEvent.EventType == WorldEventType.None) continue;
             EventTypeKeys.Add(worldEvent.WorldEvent.EventType, worldEvent);
         }
     }
@@ -46,11 +47,11 @@ public class GameWorldEventManager : MonoBehaviour
         }
     }
 
-    public void StartEventPending(WorldEventTypes worldEventType){
+    public void StartEventPending(WorldEventType worldEventType){
         if(PendingToActivateEvents.Contains(worldEventType)) return;
         PendingToActivateEvents.Add(worldEventType);
     }
-    public void CancelEventPending(WorldEventTypes worldEventType){
+    public void CancelEventPending(WorldEventType worldEventType){
         if(!PendingToActivateEvents.Contains(worldEventType)) return;
         PendingToActivateEvents.Remove(worldEventType);
     }
@@ -61,7 +62,7 @@ public class GameWorldEventManager : MonoBehaviour
         PendingToActivateEvents.Clear();
     }
 
-    public void ActivateEvent(WorldEventTypes worldEventType){
+    public void ActivateEvent(WorldEventType worldEventType){
         if(!EventTypeKeys.ContainsKey(worldEventType))
             return;
 
@@ -70,7 +71,7 @@ public class GameWorldEventManager : MonoBehaviour
         worldEvent.WorldEvent.OnActivate();
     }
 
-    public void DeactivateEvent(WorldEventTypes worldEventType){
+    public void DeactivateEvent(WorldEventType worldEventType){
         if(!EventTypeKeys.ContainsKey(worldEventType))
             return;
 

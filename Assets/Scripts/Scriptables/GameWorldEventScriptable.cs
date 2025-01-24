@@ -8,7 +8,7 @@ public class GameWorldEventScriptable : ScriptableObject
 {
 
     [SerializeField] public string EventName = "Default Game Event";
-    [SerializeField] public WorldEventTypes EventType = WorldEventTypes.None;
+    [SerializeField] public WorldEventType EventType = WorldEventType.None;
     [SerializeField] public bool IsOneshotEvent = true;
     [SerializeField][TextArea(15, 30)] public string EventText = "Insert Game Event Text";
 
