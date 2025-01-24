@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Enums;
 
-[CreateAssetMenu(fileName = "WorldEvent", menuName = "Scriptables/WorldEvent", order = 1)]
+[CreateAssetMenu(fileName = "New WorldEvent", menuName = "Scriptables/WorldEvents/BasicEvent", order = 1)]
 public class GameWorldEventScriptable : ScriptableObject
 {
-    public enum WorldEventTypes {
-        None, 
-    }
 
     [SerializeField] public string EventName = "Default Game Event";
     [SerializeField] public WorldEventTypes EventType = WorldEventTypes.None;
