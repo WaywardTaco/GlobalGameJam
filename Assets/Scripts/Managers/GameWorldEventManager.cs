@@ -3,19 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Enums;
+using Sirenix.OdinInspector;
 
 public class GameWorldEventManager : MonoBehaviour
 {
     [Serializable] public class WorldEventTracker {
-        [SerializeReference] public GameWorldEventScriptable WorldEvent;
-        [SerializeField] public bool IsActive;
+        [HorizontalGroup("Row")]
+            [VerticalGroup("Row/Left")]
+                [SerializeReference] public GameWorldEventScriptable WorldEvent;
+            [VerticalGroup("Row/Right"), HorizontalGroup("Row", Width = 0.2f)]
+                [SerializeField] public bool IsActive;
     }
 
     public static GameWorldEventManager Instance { get; private set;}
     
+    [SerializeField] private List<WorldEventTypes> PendingToActivateEvents = new();
     [SerializeField] private List<WorldEventTracker> WorldEventReferences = new();
     private Dictionary<WorldEventTypes, WorldEventTracker> EventTypeKeys = new();
-    [SerializeField] private List<WorldEventTypes> PendingToActivateEvents = new();
 
     private void Awake() {
         if(Instance == null){
