@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SlideIn : MonoBehaviour
+public class CycleTime : MonoBehaviour
 {
     public Transform black;
     public Transform Main;
@@ -35,10 +35,10 @@ public class SlideIn : MonoBehaviour
         tempMonthValue = 1;
     }
 
-    void OnEnable() {
-        tempMonthValue++;
-        StartCoroutine(StartMonthAnimation(tempMonthValue));
-    }
+    // void OnEnable() {
+    //     tempMonthValue++;
+    //     StartCoroutine(StartMonthAnimation(tempMonthValue));
+    // }
 
     [PropertySpace, Button("Change Day", ButtonSizes.Large)]
     public void TriggerDayChange() {
@@ -74,7 +74,7 @@ public class SlideIn : MonoBehaviour
         black.localPosition = new Vector2(0, Screen.height);
         black.LeanMoveLocalY(0, 1f).setEaseOutExpo().delay = 0.1f;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
 
         //Show text
         Main.GetComponent<CanvasGroup>().alpha = 0;
@@ -82,14 +82,26 @@ public class SlideIn : MonoBehaviour
         Main.localPosition = new Vector2(-150, 0);
         Main.LeanMoveLocalX(0, 0.5f).setEaseOutExpo();
 
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1);
 
         //Show Count
         Day.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
         LeanTween.scale(dayAlt.rectTransform, Vector3.one, 0.5f);
         dayAlt.transform.LeanMoveLocalY(dayAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteDay);
 
+        yield return new WaitForSeconds(1);
+
+        //Transition Back
+        Main.LeanMoveLocalX(-150, 0.5f).setEaseInExpo();
+        Main.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
+
+        yield return new WaitForSeconds(1);
+
+        black.LeanMoveLocalY(Screen.height, 1f).setEaseInExpo().delay = 0.1f;
+
         hasPlayedDay = true;
+
+        DayCycleManager.Instance.EnableButtons();
 
         yield return 0;
     }
@@ -108,7 +120,7 @@ public class SlideIn : MonoBehaviour
         black.localPosition = new Vector2(0, Screen.height);
         black.LeanMoveLocalY(0, 1f).setEaseOutExpo().delay = 0.1f;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1);
 
         //Show text
         Main.GetComponent<CanvasGroup>().alpha = 0;
@@ -116,14 +128,26 @@ public class SlideIn : MonoBehaviour
         Main.localPosition = new Vector2(-150, 0);
         Main.LeanMoveLocalX(0, 0.5f).setEaseOutExpo();
 
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1);
 
         //Show Count
         Month.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
         LeanTween.scale(monthAlt.rectTransform, Vector3.one, 0.5f);
         monthAlt.transform.LeanMoveLocalY(monthAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteMonth);
 
+        yield return new WaitForSeconds(1);
+
+        //Transition Back
+        Main.LeanMoveLocalX(-150, 0.5f).setEaseInExpo();
+        Main.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
+
+        yield return new WaitForSeconds(1);
+
+        black.LeanMoveLocalY(Screen.height, 1f).setEaseInExpo().delay = 0.1f;
+
         hasPlayedMonth = true;
+
+        DayCycleManager.Instance.EnableButtons();
 
         yield return 0;
     }
@@ -147,7 +171,7 @@ public class SlideIn : MonoBehaviour
     }
 
     void OnCompleteDay() {
-        dayAlt.color = Color.white;
+        dayAlt.text = "";
         day.text = $" {tempDayValue}";
         if(changeMonth) {
             month.text = $"{tempMonthValue}";
@@ -156,7 +180,7 @@ public class SlideIn : MonoBehaviour
     }
 
     void OnCompleteMonth() {
-        monthAlt.color = Color.white;
+        monthAlt.text = "";
         month.text = $"{tempMonthValue}";
         if(changeDay) {
             day.text = $" {tempDayValue}";
