@@ -16,4 +16,4 @@ MonoBehaviour:
   UpgradeType: 0
   Cost: 0
   IsOneshotUpgrade: 1
-  UpgradeText: Insert Upgrade Text
+  UpgradeBulletedText: []
