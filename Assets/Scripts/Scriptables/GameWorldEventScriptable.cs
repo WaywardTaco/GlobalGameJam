@@ -9,6 +9,7 @@ public class GameWorldEventScriptable : ScriptableObject
 
     [SerializeField] public string EventName = "Default Game Event";
     [SerializeField] public WorldEventType EventType = WorldEventType.None;
+    [SerializeField] public float StartRandomProbability = 0.0f;
     [SerializeField] public bool IsOneshotEvent = true;
     [SerializeField][TextArea(15, 30)] public string EventText = "Insert Game Event Text";
 
