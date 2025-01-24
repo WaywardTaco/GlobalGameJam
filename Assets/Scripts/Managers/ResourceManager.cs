@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Enums;
 
 public class ResourceManager : MonoBehaviour
 {
-    public enum ResourceType {
-        None,
-    }
 
     public class Resource {
         [SerializeField] public ResourceType Type = ResourceType.None;
