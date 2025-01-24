@@ -14,6 +14,7 @@ public class GameWorldEventManager : MonoBehaviour
     
     [SerializeField] private List<WorldEventTracker> WorldEventReferences = new();
     private Dictionary<GameWorldEventScriptable.WorldEventTypes, WorldEventTracker> EventTypeKeys = new();
+    [SerializeField] private List<GameWorldEventScriptable.WorldEventTypes> PendingToActivateEvents = new();
 
     private void Awake() {
         if(Instance == null){
@@ -24,6 +25,7 @@ public class GameWorldEventManager : MonoBehaviour
     }
     
     private void OnEnable() {
+        PendingToActivateEvents.Clear();
         EventTypeKeys.Clear();
 
         foreach(var worldEvent in WorldEventReferences){
@@ -37,6 +39,21 @@ public class GameWorldEventManager : MonoBehaviour
                 worldEvent.WorldEvent.ContinuousEffect();
             }
         }
+    }
+
+    public void StartEventPending(GameWorldEventScriptable.WorldEventTypes worldEventType){
+        if(PendingToActivateEvents.Contains(worldEventType)) return;
+        PendingToActivateEvents.Add(worldEventType);
+    }
+    public void CancelEventPending(GameWorldEventScriptable.WorldEventTypes worldEventType){
+        if(!PendingToActivateEvents.Contains(worldEventType)) return;
+        PendingToActivateEvents.Remove(worldEventType);
+    }
+    public void ProcessPendingEvents(){
+        foreach(var pendingEvent in PendingToActivateEvents){
+            ActivateEvent(pendingEvent);
+        }
+        PendingToActivateEvents.Clear();
     }
 
     public void ActivateEvent(GameWorldEventScriptable.WorldEventTypes worldEventType){
@@ -56,6 +73,4 @@ public class GameWorldEventManager : MonoBehaviour
         worldEvent.IsActive = false;
         worldEvent.WorldEvent.OnDeactivate();
     }
-
-
 }
