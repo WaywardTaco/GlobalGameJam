@@ -13,7 +13,7 @@ public class GameWorldEventManager : MonoBehaviour
     public static GameWorldEventManager Instance { get; private set;}
     
     [SerializeField] private List<WorldEventTracker> WorldEventReferences = new();
-    private Dictionary<GameWorldEventScriptable.WorldEventTypes, GameWorldEventScriptable> EventTypeKeys = new();
+    private Dictionary<GameWorldEventScriptable.WorldEventTypes, WorldEventTracker> EventTypeKeys = new();
 
     private void Awake() {
         if(Instance == null){
@@ -24,15 +24,37 @@ public class GameWorldEventManager : MonoBehaviour
     }
     
     private void OnEnable() {
-        
+        EventTypeKeys.Clear();
+
+        foreach(var worldEvent in WorldEventReferences){
+            EventTypeKeys.Add(worldEvent.WorldEvent.EventType, worldEvent);
+        }
     }
 
     private void Update() {
         foreach(var worldEvent in WorldEventReferences){
             if(worldEvent.IsActive){
-
+                worldEvent.WorldEvent.ContinuousEffect();
             }
         }
+    }
+
+    public void ActivateEvent(GameWorldEventScriptable.WorldEventTypes worldEventType){
+        if(!EventTypeKeys.ContainsKey(worldEventType))
+            return;
+
+        WorldEventTracker worldEvent = EventTypeKeys[worldEventType];
+        worldEvent.IsActive = true;
+        worldEvent.WorldEvent.OnActivate();
+    }
+
+    public void DeactivateEvent(GameWorldEventScriptable.WorldEventTypes worldEventType){
+        if(!EventTypeKeys.ContainsKey(worldEventType))
+            return;
+
+        WorldEventTracker worldEvent = EventTypeKeys[worldEventType];
+        worldEvent.IsActive = false;
+        worldEvent.WorldEvent.OnDeactivate();
     }
 
 
