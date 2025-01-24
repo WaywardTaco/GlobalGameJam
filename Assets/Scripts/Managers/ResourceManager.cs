@@ -4,16 +4,24 @@ using UnityEngine;
 using Enums;
 using System;
 using System.Linq;
+using Sirenix.OdinInspector;
 
 public class ResourceManager : MonoBehaviour
 {
-    public class Resource {
-        [SerializeField] public ResourceType Type = ResourceType.None;
-        [SerializeField] public int CurrentValue = 0;
-    }
     public static ResourceManager Instance;
+
+    [HorizontalGroup("Row")]
+    [VerticalGroup("Row/Left"), LabelWidth(120)]
     public int PlayerMoney = 0;
+    [VerticalGroup("Row/Right"), LabelWidth(120)]
     public int CurrentReputation = 100;
+
+    public void AdjustPlayerMoney(int amount){
+        PlayerMoney += amount;
+    }
+    public void AdjustPlayerReputation(int amount){
+        CurrentReputation += amount;
+    }
 
     void Awake()
     {
@@ -31,6 +39,4 @@ public class ResourceManager : MonoBehaviour
         PlayerMoney = 0;
         CurrentReputation = 100;
     }
-
-
 }
