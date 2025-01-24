@@ -12,8 +12,8 @@ namespace Enums {
         None,
     }
 
-    public enum StockCodes {
-        NONE,
+    public enum StockType {
+        None,
     }
 
 }
