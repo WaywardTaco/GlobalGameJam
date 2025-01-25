@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hackers
   m_EditorClassIdentifier: 
   UpgradeName: Hacker Group
-  UpgradeType: 2
+  UpgradeType: 15
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1

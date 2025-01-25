@@ -102,7 +102,7 @@ public class CycleTime : MonoBehaviour
 
         hasPlayedDay = true;
 
-        DayCycleManager.Instance.EnableButtons();
+        //DayCycleManager.Instance.EnableButtons();
         DayCycleManager.Instance.SetDay(day);
 
         yield return 0;
@@ -147,7 +147,7 @@ public class CycleTime : MonoBehaviour
 
         hasPlayedDay = true;
 
-        DayCycleManager.Instance.EnableButtons();
+        //DayCycleManager.Instance.EnableButtons();
         DayCycleManager.Instance.SetDay(day);
         DayCycleManager.Instance.SetMonth(month);
 
