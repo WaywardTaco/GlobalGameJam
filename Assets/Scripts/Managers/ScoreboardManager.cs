@@ -30,6 +30,13 @@ public class ScoreboardManager : MonoBehaviour
     Dictionary<UserScore, int> Ranks = new Dictionary<UserScore, int>();
     IEnumerable<UserScore> UserRankings = ScoreBoard.OrderBy(UserScore => UserScore.Days);
 
+    public void AddScore()
+    {
+        //string placeholder;
+        //UserScore NewUser = new UserScore(placeholder, ResourceManager.Instance.PlayerMoney, DayCycleManager.Instance.currentDay);
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
