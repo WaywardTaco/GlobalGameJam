@@ -1,12 +1,13 @@
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.SceneManagement;
 
 public class DayCycleManager : MonoBehaviour
 {
     public static DayCycleManager Instance;
 
     [PropertySpace, Title("Properties", TitleAlignment = TitleAlignments.Centered)]
-    [ReadOnly, SerializeField] private int daysLeft; //Current Day For Visuals
+    [ReadOnly, SerializeField] public int daysLeft; //Current Day For Visuals
     [ReadOnly, SerializeField] private int actionsLeft; //Current Actions taken
     [ReadOnly, SerializeField] public int currentDay;
     [ReadOnly, SerializeField] public int currentMonth;
@@ -41,6 +42,7 @@ public class DayCycleManager : MonoBehaviour
     public void EndDay() {
         if(daysLeft >= maxDays) {
             //EndGame Here
+            SceneManager.LoadScene("Game Over");
             Debug.Log("Game Over.");
         }
         else {
@@ -53,7 +55,6 @@ public class DayCycleManager : MonoBehaviour
             daysLeft++;
             //Refresh Actions for next day
             actionsLeft = maxActions;
-
         }
     }
 
