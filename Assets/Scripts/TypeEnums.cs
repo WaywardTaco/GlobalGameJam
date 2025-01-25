@@ -11,6 +11,7 @@ namespace Enums {
         LMEGovAllow, PPHGovAllow, BIDGovAllow, OBGGovAllow, SFIGovAllow, LDDGovAllow,
         LMEGovBan, PPHGovBan, BIDGovBan, OBGGovBan, SFIGovBan, LDDGovBan,
         LMEVirus, PPHVirus, BIDVirus, OBGVirus, SFIVirus, LDDVirus,
+        PolInv0, PolInv1, PolInv2, PolInv3, PolInv4, PolInv5
     }
     
     public enum UpgradeType {
