@@ -46,6 +46,7 @@ public class DayCycleManager : MonoBehaviour
         else {
             GameWorldEventManager.Instance.PendAutomaticEvents();
             newsFeed.RefreshDayInfo();
+            StockManager.Instance.UpdateAllStockValues();
             GameWorldEventManager.Instance.ProcessPendingEvents();
             DayAnimator.GetComponent<CycleTime>().TriggerDayChange();
             //Next Day
