@@ -51,6 +51,7 @@ public class DayCycleManager : MonoBehaviour
             DayAnimator.GetComponent<CycleTime>().TriggerDayChange();
             StartupManager.Instance.ResetDay();
             MonitorController.Instance.ResetDay();
+            NotificationManager.Instance.PopNotifs();
             //Next Day
             daysLeft++;
             //Refresh Actions for next day
