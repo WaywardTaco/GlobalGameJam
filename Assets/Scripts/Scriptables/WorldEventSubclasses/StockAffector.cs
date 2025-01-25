@@ -24,6 +24,8 @@ public class StockAffector : GameWorldEventScriptable
             if(stockTracker != null){
                 stockTracker.CurrentTrendBase += stockEffect.TrendEFfect;
                 stockTracker.CurrentTrendVariance += stockEffect.TrendVarianceEffect;
+                if(stockTracker.CurrentTrendVariance < 0.0f) 
+                    stockTracker.CurrentTrendVariance = 0.0f;
             }
         }
     }    
