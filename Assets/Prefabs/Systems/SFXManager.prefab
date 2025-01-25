@@ -53,7 +53,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MouseClick
     clip: {fileID: 8300000, guid: aed8b501e54e3c34fba854078a8c9bfd, type: 3}
-    volume: 0.2
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -63,5 +63,17 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  fadeThreshold: 0.1
+  - name: Cricket
+    clip: {fileID: 8300000, guid: 38707b2d088d3bc4cafd3fd3597cec7a, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Clock
+    clip: {fileID: 8300000, guid: 5a97b19d62df78a4f81dab64b0a12312, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  fadeThreshold: 1.25
   volumeTemp: 0

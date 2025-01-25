@@ -25,9 +25,12 @@ public class InputManager : MonoBehaviour
     }
 
     void CheckLeftClick() {
-        if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, layerMask)) {
-            SFXManager.Instance.Play("MouseClick");
+        if(IsMouseOverGameWindow) {
+            if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, layerMask)) {
+                SFXManager.Instance.Play("MouseClick");
+            }
         }
+        
     }
 
     void CheckScroll() {
@@ -44,5 +47,14 @@ public class InputManager : MonoBehaviour
 
     public void SetNews(GameObject gameObject) {
         news = gameObject;
+    }
+
+    bool IsMouseOverGameWindow
+    {
+        get
+        {
+            Vector3 mp = Input.mousePosition;
+            return !( 0>mp.x || 0>mp.y || Screen.width<mp.x || Screen.height<mp.y );
+        }
     }
 }

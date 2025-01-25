@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 3517809845309587875}
   - component: {fileID: 1026857903459424740}
   - component: {fileID: 5950584416782141670}
-  - component: {fileID: 3903093620385294014}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -202,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   news: {fileID: 0}
   newsToggle: 1
 --- !u!114 &3517809845309587875
@@ -273,30 +272,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeType: 0
---- !u!114 &3903093620385294014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2305349085178835861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8b2aac45f822f641ac2b9ff83467838, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Ambience
-    clip: {fileID: 8300000, guid: 6f1af63cfa1d3d84cab294cc2ec5b1bc, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: MouseClick
-    clip: {fileID: 8300000, guid: aed8b501e54e3c34fba854078a8c9bfd, type: 3}
-    volume: 0.2
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  fadeThreshold: 0.1
-  volumeTemp: 0

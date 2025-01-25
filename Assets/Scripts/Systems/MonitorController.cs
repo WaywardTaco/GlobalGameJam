@@ -54,7 +54,7 @@ public class MonitorController : MonoBehaviour
     }
 
     void Update() {
-        if(!onScreen) {
+        if(!onScreen && IsMouseOverGameWindow) {
             if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2, 0)), Mathf.Infinity, layerMask)) {
                 Debug.Log("Screen Detected!");
                 Cursor.lockState = CursorLockMode.None;
@@ -140,5 +140,22 @@ public class MonitorController : MonoBehaviour
             elapsedTimeRot = 0;
         }
         yield return null;
+    }
+
+    public void lockCursor() {
+        player.GetComponent<FirstPersonController>().enabled = false;
+    }
+
+    public void UnlockCursor() {
+        player.GetComponent<FirstPersonController>().enabled = true;
+    }
+
+    bool IsMouseOverGameWindow
+    {
+        get
+        {
+            Vector3 mp = Input.mousePosition;
+            return !( 0>mp.x || 0>mp.y || Screen.width<mp.x || Screen.height<mp.y );
+        }
     }
 }

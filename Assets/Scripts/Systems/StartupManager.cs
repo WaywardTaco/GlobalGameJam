@@ -56,7 +56,7 @@ public class StartupManager : MonoBehaviour
         moneyUI.SetActive(false);
         stocksUI.SetActive(false);
         loadingUI.SetActive(false);
-        notifsUI.SetActive(false);
+        //notifsUI.SetActive(false);
         purchaseUI.SetActive(false);
         sellUI.SetActive(false);
         upgradeUI.SetActive(false);
@@ -90,7 +90,7 @@ public class StartupManager : MonoBehaviour
         newsGUI.SetActive(false);
         upgradeGUI.SetActive(false);
         stocksUI.SetActive(false);
-        notifsUI.SetActive(false);
+        //notifsUI.SetActive(false);
         purchaseUI.SetActive(false);
         sellUI.SetActive(false);
         upgradeUI.SetActive(false);

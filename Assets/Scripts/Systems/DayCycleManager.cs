@@ -58,7 +58,7 @@ public class DayCycleManager : MonoBehaviour
             actionsLeft = maxActions;
         }
     }
-
+    
     public void UseAction() {
         actionsLeft--;
         if(actionsLeft <= 0) {

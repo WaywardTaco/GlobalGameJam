@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -42,11 +43,6 @@ public class CycleTime : MonoBehaviour
         DayCycleManager.Instance.SetMonth(tempMonthValue);
     }
 
-    // void OnEnable() {
-    //     tempMonthValue++;
-    //     StartCoroutine(StartMonthAnimation(tempMonthValue));
-    // }
-
     [PropertySpace, Button("Change Day", ButtonSizes.Large)]
     public void TriggerDayChange() {
         ResetDayValues();
@@ -69,88 +65,94 @@ public class CycleTime : MonoBehaviour
     }
 
     IEnumerator StartDayAnimation(int day) {
+        MonitorController.Instance.lockCursor();
         dayAlt.text = $" {day}";
 
         //Transition to night
         black.localPosition = new Vector2(0, Screen.height);
-        black.LeanMoveLocalY(0, 2f).setEaseOutExpo().delay = 0.1f;
+        black.LeanMoveLocalY(0, 1.5f).setEaseOutQuart().delay = 0.1f;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
+        SFXManager.Instance.Play("Cricket");
 
         //Show text
         Main.GetComponent<CanvasGroup>().alpha = 0;
         Main.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
         Main.localPosition = new Vector2(-150, 0);
-        Main.LeanMoveLocalX(0, 0.5f).setEaseOutExpo();
+        Main.LeanMoveLocalX(0, 1f).setEaseOutExpo();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.5f);
 
         //Show Count
-        Day.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+        Day.GetComponent<CanvasGroup>().LeanAlpha(1, 0.75f);
         LeanTween.scale(dayAlt.rectTransform, Vector3.one, 0.5f);
         dayAlt.transform.LeanMoveLocalY(dayAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteDay);
+        SFXManager.Instance.fadeThreshold = 1;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2f);
+
+        SFXManager.Instance.FadeOut("Cricket");
+        SFXManager.Instance.FadeIn("Clock");
 
         //Transition Back
-        Main.LeanMoveLocalX(-150, 0.5f).setEaseInExpo();
+        Main.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
         Main.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
-
-        yield return new WaitForSeconds(1);
-
-        black.LeanMoveLocalY(Screen.height, 1f).setEaseInExpo().delay = 0.1f;
-
+        
+        black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
+        MonitorController.Instance.UnlockCursor();
         hasPlayedDay = true;
-
-        //DayCycleManager.Instance.EnableButtons();
         DayCycleManager.Instance.SetDay(day);
-
         yield return 0;
     }
 
+    void FadeOutClock() {
+        SFXManager.Instance.FadeOut("Clock");
+    }
+
     IEnumerator StartCycleAnimation(int day, int month) {
+        MonitorController.Instance.lockCursor();
         dayAlt.text = $" {day}";
         monthAlt.text = $"{month}";
 
         //Transition to night
         black.localPosition = new Vector2(0, Screen.height);
-        black.LeanMoveLocalY(0, 2f).setEaseOutExpo().delay = 0.1f;
+        black.LeanMoveLocalY(0, 1.5f).setEaseOutExpo().delay = 0.1f;
 
         yield return new WaitForSeconds(1);
+        SFXManager.Instance.Play("Cricket");
 
         //Show text
         Main.GetComponent<CanvasGroup>().alpha = 0;
         Main.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
         Main.localPosition = new Vector2(-150, 0);
-        Main.LeanMoveLocalX(0, 0.5f).setEaseOutExpo();
+        Main.LeanMoveLocalX(0, 1f).setEaseOutExpo();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.5f);
 
         //Show Count
-        Day.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+        Day.GetComponent<CanvasGroup>().LeanAlpha(1, 0.75f);
         LeanTween.scale(dayAlt.rectTransform, Vector3.one, 0.5f);
         dayAlt.transform.LeanMoveLocalY(dayAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteDay);
 
         Month.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
         LeanTween.scale(monthAlt.rectTransform, Vector3.one, 0.5f);
         monthAlt.transform.LeanMoveLocalY(monthAlt.transform.localPosition.y + 125, 1f).setEaseInQuart().setOnComplete(OnCompleteMonth);
+        SFXManager.Instance.fadeThreshold = 1;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
+
+        SFXManager.Instance.FadeOut("Cricket");
+        SFXManager.Instance.FadeIn("Clock");
 
         //Transition Back
-        Main.LeanMoveLocalX(-150, 0.5f).setEaseInExpo();
+        Main.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
         Main.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
 
-        yield return new WaitForSeconds(1);
-
-        black.LeanMoveLocalY(Screen.height, 1f).setEaseInExpo().delay = 0.1f;
-
+        black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
+        MonitorController.Instance.UnlockCursor();
         hasPlayedDay = true;
-
-        //DayCycleManager.Instance.EnableButtons();
         DayCycleManager.Instance.SetDay(day);
         DayCycleManager.Instance.SetMonth(month);
-
         yield return 0;
     }
 

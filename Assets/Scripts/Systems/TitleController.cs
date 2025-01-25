@@ -25,6 +25,7 @@ public class TitleController : MonoBehaviour
     void Update() {
         if(Input.GetMouseButtonDown(0) && IsMouseOverGameWindow == true) {
             Debug.Log("Started!");
+            SFXManager.Instance.fadeThreshold = 1.25f;
             SFXManager.Instance.FadeOut("Ambience");
             SFXManager.Instance.Play("Start");
             start.hasStarted = true;
