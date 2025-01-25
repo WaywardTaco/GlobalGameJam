@@ -16,7 +16,8 @@ public class StockGraphing : MonoBehaviour
 {
     [SerializeField] GameObject point;
     [SerializeField] GameObject stockName;
-    [SerializeField] GameObject stockInfo;
+    [SerializeField] GameObject Base;
+    [SerializeField] GameObject Variance;
     [SerializeField] Vector2 pointSize = new Vector2(22, 22);
     [SerializeField] float blueValueParam = 10;
     [SerializeField] float leftMostPoint = -200;
@@ -102,12 +103,14 @@ public class StockGraphing : MonoBehaviour
     {
         string info = null;
 
-        info += "Trend Base: ";
+        info = "Trend Base: ";
         info += curBase;
-        info += " Variance: ";
+        Base.GetComponent<TMP_Text>().text = info;
+
+        info = "Variance: ";
         info += curVar;
 
-        stockInfo.GetComponent<TMP_Text>().text = info;
+        Variance.GetComponent<TMP_Text>().text = info;
     }
 
     private void ShowGraph()
