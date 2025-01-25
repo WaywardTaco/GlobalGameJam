@@ -17,10 +17,17 @@ public class GameWorldEventManager : MonoBehaviour
                 [SerializeField] public bool IsActive;
     }
 
+    [Serializable] public class EventProbabilityMap {
+        public float lowerBound;
+        public WorldEventType worldEvent;
+    }
+
     public static GameWorldEventManager Instance { get; private set;}
     
     [SerializeField] private int TotalDayEvents = 0;
     [SerializeField] private List<WorldEventTracker> WorldEventReferences = new();
+    [SerializeField, ReadOnly] private float totalProbability = 0.0f;
+    [SerializeField] private List<EventProbabilityMap> WorldEventProbabilities = new();
     [SerializeField] private List<WorldEventType> PendingToActivateEvents = new();
     private Dictionary<WorldEventType, WorldEventTracker> EventTypeKeys = new();
 
@@ -33,6 +40,8 @@ public class GameWorldEventManager : MonoBehaviour
     }
     
     private void OnEnable() {
+        totalProbability = 0.0f;
+        WorldEventProbabilities.Clear();
         PendingToActivateEvents.Clear();
         EventTypeKeys.Clear();
 
@@ -114,15 +123,35 @@ public class GameWorldEventManager : MonoBehaviour
     }
 
     private WorldEventType chooseRandomEvent(){
-        // int runningTotal = (int)(NoDayEventProbability * 100);
-        // foreach(var worldEvent in WorldEventReferences)
-        //     runningTotal += (int)(worldEvent.CurrentProbability * 100);
+        RefreshEventProbabilities();
 
-        // int randomValue = UnityEngine.Random.Range(0, runningTotal);
+        WorldEventType chosenEvent = WorldEventType.None;
+        float thresholdValue = (UnityEngine.Random.Range(0, 101) / 100) * totalProbability;
         
-        // TODO : stuff
+        foreach(var eventProbabilityMaps in WorldEventProbabilities){
+            if(thresholdValue < eventProbabilityMaps.lowerBound) break;
+            chosenEvent = eventProbabilityMaps.worldEvent;
+        }
 
-        return WorldEventType.None;
+        return chosenEvent;
+    }
+
+    private void RefreshEventProbabilities(){
+        WorldEventProbabilities.Clear();
+        totalProbability = 0.0f;
+        foreach(var worldEvent in WorldEventReferences){
+            if(worldEvent.IsActive) continue;
+            if(worldEvent.CurrentProbability <= 0) continue;
+            if(PendingToActivateEvents.Contains(worldEvent.WorldEvent.EventType)) continue;
+
+            EventProbabilityMap eventMap = new EventProbabilityMap();
+            float newProbabilityTotal = totalProbability + worldEvent.CurrentProbability;
+            eventMap.lowerBound = totalProbability;
+            eventMap.worldEvent = worldEvent.WorldEvent.EventType;
+
+            WorldEventProbabilities.Add(eventMap);
+            totalProbability = newProbabilityTotal;
+        }
     }
 
     public List<WorldEventTracker> GetToActivateEvents(){
