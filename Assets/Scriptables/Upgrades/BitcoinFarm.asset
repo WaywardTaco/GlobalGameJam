@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb0569f74605564881dc0788d32e1c5, type: 3}
   m_Name: BitcoinFarm
   m_EditorClassIdentifier: 
-  UpgradeName: Default Upgrade
-  UpgradeType: 0
+  UpgradeName: Bitcoin Farm
+  UpgradeType: 1
+  InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
