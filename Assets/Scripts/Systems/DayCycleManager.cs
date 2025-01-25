@@ -6,8 +6,10 @@ public class DayCycleManager : MonoBehaviour
     public static DayCycleManager Instance;
 
     [PropertySpace, Title("Properties", TitleAlignment = TitleAlignments.Centered)]
-    [ReadOnly, SerializeField] private int currentDay; //Current Day For Visuals
-    [ReadOnly, SerializeField] private int currentActions; //Current Actions taken
+    [ReadOnly, SerializeField] private int daysLeft; //Current Day For Visuals
+    [ReadOnly, SerializeField] private int actionsLeft; //Current Actions taken
+    [ReadOnly, SerializeField] public int currentDay;
+    [ReadOnly, SerializeField] public int currentMonth;
     [SerializeField] private int maxActions; //Max actions per day
     [SerializeField] private int maxDays; //Max days (Upgradeable)
     [SerializeField] private GameObject DayAnimator;
@@ -19,8 +21,8 @@ public class DayCycleManager : MonoBehaviour
             Instance = this;
         }
         else Destroy(this);
-        currentDay = 1;
-        currentActions = maxActions;
+        daysLeft = 1;
+        actionsLeft = maxActions;
 
         DayAnimator = GameObject.Find("DayCycle/Animator").gameObject;
         testActionButton = GameObject.Find("DayCycle/TestAction").gameObject;
@@ -32,39 +34,39 @@ public class DayCycleManager : MonoBehaviour
     }
 
     public void EndDay() {
-        if(currentDay > maxDays) {
+        if(daysLeft > maxDays) {
             //EndGame Here
             Debug.Log("Game Over.");
         }
         else {
             DayAnimator.GetComponent<CycleTime>().TriggerDayChange();
             //Next Day
-            currentDay++;
+            daysLeft++;
             //Refresh Actions for next day
-            currentActions = maxActions;
+            actionsLeft = maxActions;
 
         }
     }
 
     public void UseAction() {
-        if(currentActions <= 0) {
+        if(actionsLeft <= 0) {
             Debug.Log("No more actions left.");
             EndDay();
         }
         else {
-            currentActions--;
+            actionsLeft--;
         }
     }
 
     void Update() {
-        if(currentActions <= 0) {
+        if(actionsLeft <= 0) {
             testActionButton.SetActive(false);
             endDayButton.SetActive(true);
         }
     }
 
     public int getCurrentDay() {
-        return currentDay;
+        return daysLeft;
     }
 
     public int getActions() {
@@ -73,6 +75,14 @@ public class DayCycleManager : MonoBehaviour
 
     public int getDays() {
         return maxDays;
+    }
+
+    public void SetDay(int value) {
+        currentDay = value;
+    }
+
+    public void SetMonth(int value) {
+        currentMonth = value;
     }
 
     public void EnableButtons() {
