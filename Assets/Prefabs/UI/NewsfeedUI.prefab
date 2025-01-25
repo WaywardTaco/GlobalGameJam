@@ -800,7 +800,7 @@ MonoBehaviour:
   m_text: 9999 BT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   m_text: 9999 BT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2390,7 +2390,7 @@ MonoBehaviour:
   m_text: 12/31
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2818,7 +2818,7 @@ MonoBehaviour:
   m_text: 9999 BT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3422,7 +3422,7 @@ MonoBehaviour:
   m_text: 9999 BT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4333,7 +4333,7 @@ MonoBehaviour:
   m_text: TODAY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4992,7 +4992,7 @@ MonoBehaviour:
   m_text: 9999 BT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5404,7 +5404,7 @@ MonoBehaviour:
   m_text: ECONOMY TODAY NEWSLETTER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5751,7 +5751,7 @@ MonoBehaviour:
   m_text: 9999 BT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
-  m_sharedMaterial: {fileID: -3543973688339723116, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
