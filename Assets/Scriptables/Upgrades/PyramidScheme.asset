@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: PyramidScheme
   m_EditorClassIdentifier: 
   UpgradeName: Pyramid Scheme
-  UpgradeType: 2
+  UpgradeType: 11
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

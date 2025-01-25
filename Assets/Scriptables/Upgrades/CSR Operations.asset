@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: CSR Operations
   m_EditorClassIdentifier: 
   UpgradeName: CSR Operations
-  UpgradeType: 1
+  UpgradeType: 5
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

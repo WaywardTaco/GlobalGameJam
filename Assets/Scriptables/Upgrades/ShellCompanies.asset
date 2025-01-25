@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ShellCompanies
   m_EditorClassIdentifier: 
   UpgradeName: Shell Companies
-  UpgradeType: 2
+  UpgradeType: 13
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

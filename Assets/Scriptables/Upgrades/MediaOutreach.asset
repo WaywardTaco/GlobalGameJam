@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: MediaOutreach
   m_EditorClassIdentifier: 
   UpgradeName: Media Outreach
-  UpgradeType: 0
+  UpgradeType: 9
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

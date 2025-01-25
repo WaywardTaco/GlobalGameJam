@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: DebtDownpayment
   m_EditorClassIdentifier: 
   UpgradeName: Debt Downpayment
-  UpgradeType: 2
+  UpgradeType: 14
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

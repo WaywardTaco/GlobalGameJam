@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 439914440733590289}
   - component: {fileID: 4685088499886300619}
   - component: {fileID: 5848111296700145154}
-  - component: {fileID: 4150198374532359763}
+  - component: {fileID: 8460087430220772069}
   m_Layer: 5
   m_Name: CorporateBlackmail
   m_TagString: Untagged
@@ -180,42 +180,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &4150198374532359763
-CircleCollider2D:
+--- !u!114 &8460087430220772069
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14997297188594627}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 12
 --- !u!1 &164858568256611048
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +207,7 @@ GameObject:
   - component: {fileID: 6105836049798189355}
   - component: {fileID: 4443213415781966534}
   - component: {fileID: 5380074031765273380}
+  - component: {fileID: 7317234933498368079}
   m_Layer: 5
   m_Name: Charity Fund
   m_TagString: Untagged
@@ -395,6 +373,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
+--- !u!114 &7317234933498368079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164858568256611048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 7
 --- !u!1 &185508963658039827
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +554,7 @@ GameObject:
   - component: {fileID: 6309040482442687931}
   - component: {fileID: 4981464708252611975}
   - component: {fileID: 8797097859168747760}
+  - component: {fileID: 5163496284501205393}
   m_Layer: 5
   m_Name: Media Outreach
   m_TagString: Untagged
@@ -728,6 +720,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
+--- !u!114 &5163496284501205393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631170570663096617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 9
 --- !u!1 &801282445431317055
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +747,7 @@ GameObject:
   - component: {fileID: 1671240360782611294}
   - component: {fileID: 4705651221784649594}
   - component: {fileID: 6626066782270818354}
-  - component: {fileID: 6953696384553668065}
+  - component: {fileID: 2045468142611669534}
   m_Layer: 5
   m_Name: HackerGroup
   m_TagString: Untagged
@@ -908,42 +913,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &6953696384553668065
-CircleCollider2D:
+--- !u!114 &2045468142611669534
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801282445431317055}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 15
 --- !u!1 &1601774470744692407
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +940,7 @@ GameObject:
   - component: {fileID: 415782492550581836}
   - component: {fileID: 7925249803115639344}
   - component: {fileID: 7649152830123193182}
-  - component: {fileID: 6124883860771585398}
+  - component: {fileID: 6384700419562174555}
   m_Layer: 5
   m_Name: Lobbying
   m_TagString: Untagged
@@ -1124,42 +1106,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &6124883860771585398
-CircleCollider2D:
+--- !u!114 &6384700419562174555
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601774470744692407}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 2
 --- !u!1 &1843332990377448748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1133,7 @@ GameObject:
   - component: {fileID: 648817840520496278}
   - component: {fileID: 6518872715670389684}
   - component: {fileID: 5226006185566478557}
-  - component: {fileID: 846372553554907450}
+  - component: {fileID: 1028276918255917904}
   m_Layer: 5
   m_Name: PRCampaign
   m_TagString: Untagged
@@ -1340,42 +1299,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &846372553554907450
-CircleCollider2D:
+--- !u!114 &1028276918255917904
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843332990377448748}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 1
 --- !u!1 &2219538315418458757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +1477,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &9116014372576500449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1573,7 +1509,7 @@ GameObject:
   - component: {fileID: 7444369414218671422}
   - component: {fileID: 2601182680759832628}
   - component: {fileID: 5221808365588675503}
-  - component: {fileID: 2516065617801117440}
+  - component: {fileID: 7180716758201793645}
   m_Layer: 5
   m_Name: InsiderTrading
   m_TagString: Untagged
@@ -1739,42 +1675,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &2516065617801117440
-CircleCollider2D:
+--- !u!114 &7180716758201793645
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2453857466107717370}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 10
 --- !u!1 &3468052494007481590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1702,7 @@ GameObject:
   - component: {fileID: 8226921629960456361}
   - component: {fileID: 2677586629744148534}
   - component: {fileID: 6635980684615300717}
-  - component: {fileID: 8252820540392815384}
+  - component: {fileID: 3532882814614245227}
   m_Layer: 5
   m_Name: PyramidScheme
   m_TagString: Untagged
@@ -1955,42 +1868,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &8252820540392815384
-CircleCollider2D:
+--- !u!114 &3532882814614245227
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3468052494007481590}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 11
 --- !u!1 &3566324154803226043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,10 +2128,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Sample Text
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2265,8 +2157,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.8
-  m_fontSizeBase: 53.8
+  m_fontSize: 150.3
+  m_fontSizeBase: 150.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2323,7 +2215,7 @@ GameObject:
   - component: {fileID: 3588193971797317758}
   - component: {fileID: 300263002006909904}
   - component: {fileID: 7705571624311454490}
-  - component: {fileID: 6011868534003914202}
+  - component: {fileID: 3788435471583684947}
   m_Layer: 5
   m_Name: ShellCompanies
   m_TagString: Untagged
@@ -2489,42 +2381,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &6011868534003914202
-CircleCollider2D:
+--- !u!114 &3788435471583684947
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4722736143243703165}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 12
 --- !u!1 &4817317538006703789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,7 +2408,7 @@ GameObject:
   - component: {fileID: 7870081456037587862}
   - component: {fileID: 8617597177878097619}
   - component: {fileID: 65888335614378055}
-  - component: {fileID: 6785306470252302056}
+  - component: {fileID: 9027079978425216382}
   m_Layer: 5
   m_Name: DebtDownpayment
   m_TagString: Untagged
@@ -2705,42 +2574,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &6785306470252302056
-CircleCollider2D:
+--- !u!114 &9027079978425216382
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4817317538006703789}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 14
 --- !u!1 &5249799736799982349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,7 +2601,7 @@ GameObject:
   - component: {fileID: 4499212408808090000}
   - component: {fileID: 9047655678722343536}
   - component: {fileID: 128663209414616705}
-  - component: {fileID: 6667904148450076573}
+  - component: {fileID: 2218926022899697636}
   m_Layer: 5
   m_Name: BitcoinFarm
   m_TagString: Untagged
@@ -2921,42 +2767,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &6667904148450076573
-CircleCollider2D:
+--- !u!114 &2218926022899697636
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5249799736799982349}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 3
 --- !u!1 &5641658145516802092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +2794,7 @@ GameObject:
   - component: {fileID: 2431425695388873940}
   - component: {fileID: 1313277378846988475}
   - component: {fileID: 4112786078383132999}
+  - component: {fileID: 8124464194548570520}
   m_Layer: 5
   m_Name: Diversified Investments
   m_TagString: Untagged
@@ -3136,6 +2960,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
+--- !u!114 &8124464194548570520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641658145516802092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 8
 --- !u!1 &5893503993035975223
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,7 +3063,7 @@ GameObject:
   - component: {fileID: 4512783113827639313}
   - component: {fileID: 8348068751028243501}
   - component: {fileID: 3029361526807337594}
-  - component: {fileID: 292604955161975968}
+  - component: {fileID: 903361082749171148}
   m_Layer: 5
   m_Name: CSR Operations
   m_TagString: Untagged
@@ -3392,42 +3229,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &292604955161975968
-CircleCollider2D:
+--- !u!114 &903361082749171148
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6397234680293346035}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 5
 --- !u!1 &7494411600798244175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,7 +3293,7 @@ GameObject:
   - component: {fileID: 6469359287290302130}
   - component: {fileID: 6897529020719364708}
   - component: {fileID: 7274199398546248290}
-  - component: {fileID: 2235334315604866793}
+  - component: {fileID: 2105171490496447905}
   m_Layer: 5
   m_Name: Tax Loophole Exploitation
   m_TagString: Untagged
@@ -3645,42 +3459,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &2235334315604866793
-CircleCollider2D:
+--- !u!114 &2105171490496447905
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8260465900112805916}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 6
 --- !u!1 &8264934566495119068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,10 +3537,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Sample Text
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3773,8 +3566,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 144.7
-  m_fontSizeBase: 144.7
+  m_fontSize: 150.3
+  m_fontSizeBase: 150.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4035,10 +3828,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Sample Text
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
+  m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4062,8 +3857,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 101.5
-  m_fontSizeBase: 101.5
+  m_fontSize: 150.3
+  m_fontSizeBase: 150.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4120,7 +3915,7 @@ GameObject:
   - component: {fileID: 5987132937867525406}
   - component: {fileID: 8871512468278565518}
   - component: {fileID: 5426042940298687412}
-  - component: {fileID: 6629626804074376791}
+  - component: {fileID: 2435499940620705416}
   m_Layer: 5
   m_Name: BondSecurity
   m_TagString: Untagged
@@ -4286,42 +4081,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 129.46
---- !u!58 &6629626804074376791
-CircleCollider2D:
+--- !u!114 &2435499940620705416
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9037737748606909019}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 129.46
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4512fa0f70d194ca6fa54fa4c3472a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeType: 4
 --- !u!1 &9217581021155428086
 GameObject:
   m_ObjectHideFlags: 0

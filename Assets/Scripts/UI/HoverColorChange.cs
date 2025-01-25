@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using Sirenix.OdinInspector;
 
 public class HoverColorChange : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -13,7 +14,7 @@ public class HoverColorChange : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public TextMeshProUGUI targetDesc;
     public TextMeshProUGUI targetType;
     public string nameText;
-    public string descText;
+    [TextArea(4, 10)] public string descText;
     public string typeText;
 
     private Image targetImage;

@@ -6,8 +6,21 @@ namespace Enums {
     
     public enum UpgradeType {
         None,
-        Legal,
-        Illegal
+        PR,
+        Lobby,
+        Bitcoin,
+        Bond,
+        CSR,
+        Tax,
+        Charity,
+        Diversity,
+        Media,
+        Insider,
+        Pyramid,
+        Blackmail,
+        Shell,
+        Downpayment,
+        Hacker
     }
     
     public enum ResourceType {

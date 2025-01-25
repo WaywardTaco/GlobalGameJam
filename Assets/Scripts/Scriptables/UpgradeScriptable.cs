@@ -13,10 +13,12 @@ public class UpgradeScriptable : ScriptableObject
     [SerializeField] public int Cost = 0;
     [SerializeField] public bool IsOneshotUpgrade = true;
     [SerializeField] public List<string> UpgradeBulletedText = new();
+    [SerializeField] public int MaxPurchases = 1; 
 
-    public virtual void OnActivate(int count){
+    public virtual void OnActivate(int count)
+    {
         GameWorldEventManager.Instance.StartEventPending(InvokedEvent);
     }
-    public virtual void OnDeactivate(int count){}
-    public virtual void ContinuousEffect(int count){}
+    public virtual void OnDeactivate(int count) { }
+    public virtual void ContinuousEffect(int count) { }
 }

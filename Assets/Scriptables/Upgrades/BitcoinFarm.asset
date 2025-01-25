@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: BitcoinFarm
   m_EditorClassIdentifier: 
   UpgradeName: Bitcoin Farm
-  UpgradeType: 1
+  UpgradeType: 3
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

@@ -18,3 +18,4 @@ MonoBehaviour:
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

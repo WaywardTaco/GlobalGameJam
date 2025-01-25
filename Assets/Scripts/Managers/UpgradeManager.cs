@@ -26,7 +26,7 @@ public class UpgradeManager : MonoBehaviour
     public static UpgradeManager Instance { get; private set;}
 
     [SerializeField] private List<UpgradeTracker> UpgradeReferences = new();
-    private Dictionary<UpgradeType, UpgradeTracker> UpgradeTypeKeys = new();
+    public Dictionary<UpgradeType, UpgradeTracker> UpgradeTypeKeys = new();
 
 
     public bool TryBuyUpgrade(UpgradeType upgradeType, int count = 1){

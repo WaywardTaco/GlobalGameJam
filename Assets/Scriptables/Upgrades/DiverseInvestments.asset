@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: DiverseInvestments
   m_EditorClassIdentifier: 
   UpgradeName: Diverse Investments
-  UpgradeType: 1
+  UpgradeType: 8
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1
