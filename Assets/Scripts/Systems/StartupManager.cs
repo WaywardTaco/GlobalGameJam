@@ -8,6 +8,7 @@ public class StartupManager : MonoBehaviour
     [ReadOnly, SerializeField] private GameObject LoginGUI;
     private GameObject PFP;
     private GameObject loadingUI;
+    private GameObject notifsUI;
     [ReadOnly, SerializeField] private GameObject windowGUI;
     [ReadOnly, SerializeField] private GameObject newsGUI;
     [ReadOnly, SerializeField] private GameObject stocksGUI;
@@ -35,6 +36,7 @@ public class StartupManager : MonoBehaviour
         upgradeGUI = GameObject.Find("Upgrade Menu").gameObject;
         moneyUI = GameObject.Find("MoneyCounterUI").gameObject;
         stocksUI = GameObject.Find("StockPage").gameObject;
+        notifsUI = GameObject.Find("NotifUI").gameObject;
 
         currentTime = time;
     }
@@ -47,6 +49,7 @@ public class StartupManager : MonoBehaviour
         moneyUI.SetActive(false);
         stocksUI.SetActive(false);
         loadingUI.SetActive(false);
+        notifsUI.SetActive(false);
     }
 
     void Update() {
@@ -75,6 +78,7 @@ public class StartupManager : MonoBehaviour
         newsGUI.SetActive(false);
         upgradeGUI.SetActive(false);
         stocksUI.SetActive(false);
+        notifsUI.SetActive(false);
         hasLoaded = false;
         currentTime = time;
     }
