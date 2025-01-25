@@ -20,7 +20,7 @@ public class ScoreboardManager : MonoBehaviour
 
     private UserScore[] ScoreBoard;
     Dictionary<UserScore, int> Ranks = new Dictionary<UserScore, int>();
-    IEnumerable<UserScore> UserRankings = UserScore.OrderBy(UserScore => UserScore.Days);
+    //IEnumerable<UserScore> UserRankings = UserScore.OrderBy(UserScore => UserScore.Days);
 
     // Start is called before the first frame update
     void Start()
