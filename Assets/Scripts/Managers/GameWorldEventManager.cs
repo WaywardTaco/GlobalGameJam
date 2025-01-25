@@ -104,11 +104,11 @@ public class GameWorldEventManager : MonoBehaviour
     }
 
     private WorldEventType chooseRandomEvent(){
-        int runningTotal = (int)(NoDayEventProbability * 100);
-        foreach(var worldEvent in WorldEventReferences)
-            runningTotal += (int)(worldEvent.CurrentProbability * 100);
+        // int runningTotal = (int)(NoDayEventProbability * 100);
+        // foreach(var worldEvent in WorldEventReferences)
+        //     runningTotal += (int)(worldEvent.CurrentProbability * 100);
 
-        int randomValue = UnityEngine.Random.Range(0, runningTotal);
+        // int randomValue = UnityEngine.Random.Range(0, runningTotal);
         
         // TODO : stuff
 

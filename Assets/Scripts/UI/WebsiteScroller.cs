@@ -19,6 +19,7 @@ public class WebsiteScroller : MonoBehaviour
     [SerializeField] private float scrollSpeed;
     [SerializeField] private GameObject scrollBarBacking;
     [SerializeField] private GameObject scrollRect;
+    [SerializeField] private float UIOffset = 0.0f;
     [SerializeField] private float scrollOffset = 0.0f;
     [SerializeField, ReadOnly] private float maxScroll = 0.0f;
     [SerializeField, ReadOnly] private float scrollBarHeight = 0.0f;
@@ -58,7 +59,7 @@ public class WebsiteScroller : MonoBehaviour
     {
         foreach(var scrollable in scrollObjects){
             
-            float actualOffset = (scrollOffset - 0.2f) * maxScroll * 2;
+            float actualOffset = scrollOffset * maxScroll;
             if(actualOffset >= scrollable.maxVertOffset)
                 actualOffset = scrollable.maxVertOffset;
 
@@ -66,7 +67,7 @@ public class WebsiteScroller : MonoBehaviour
             if(rect != null){
                 //Debug.Log(scrollable.Scrollable.name + actualOffset);
                 Vector2 newPosition = rect.anchoredPosition;
-                newPosition.y = actualOffset / 2;
+                newPosition.y = actualOffset + UIOffset;
                 rect.anchoredPosition = newPosition;
             }
         }
