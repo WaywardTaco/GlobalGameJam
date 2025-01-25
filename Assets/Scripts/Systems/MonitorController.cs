@@ -102,6 +102,10 @@ public class MonitorController : MonoBehaviour
         }
     }
 
+    public void ResetDay() {
+        hasExitedScreen = true;
+    }
+
     IEnumerator EnterScreen() {
         if(percentagePos >= 1 && percentageRot >= 1) {
             Cursor.lockState = CursorLockMode.None;

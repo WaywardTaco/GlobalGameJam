@@ -27,12 +27,10 @@ public class DayCycleManager : MonoBehaviour
         actionsLeft = maxActions;
 
         DayAnimator = GameObject.Find("DayCycle/Animator").gameObject;
-        testActionButton = GameObject.Find("DayCycle/TestAction").gameObject;
-        endDayButton = GameObject.Find("DayCycle/EndDay").gameObject;
     }
 
     void Start() {
-        EnableButtons();
+
     }
 
     public void SetNewsFeed(NewsFeedUpdater newsFeedUpdater){
@@ -51,6 +49,8 @@ public class DayCycleManager : MonoBehaviour
             StockManager.Instance.UpdateAllStockValues();
             GameWorldEventManager.Instance.ProcessPendingEvents();
             DayAnimator.GetComponent<CycleTime>().TriggerDayChange();
+            StartupManager.Instance.ResetDay();
+            MonitorController.Instance.ResetDay();
             //Next Day
             daysLeft++;
             //Refresh Actions for next day
@@ -59,19 +59,15 @@ public class DayCycleManager : MonoBehaviour
     }
 
     public void UseAction() {
+        actionsLeft--;
         if(actionsLeft <= 0) {
             Debug.Log("No more actions left.");
             EndDay();
-        }
-        else {
-            actionsLeft--;
         }
     }
 
     void Update() {
         if(actionsLeft <= 0) {
-            testActionButton.SetActive(false);
-            endDayButton.SetActive(true);
         }
     }
 
@@ -95,8 +91,8 @@ public class DayCycleManager : MonoBehaviour
         currentMonth = value;
     }
 
-    public void EnableButtons() {
-        testActionButton.SetActive(true);
-        endDayButton.SetActive(false);
-    }
+    // public void EnableButtons() {
+    //     testActionButton.SetActive(true);
+    //     endDayButton.SetActive(false);
+    // }
 }

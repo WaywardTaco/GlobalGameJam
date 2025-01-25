@@ -76,6 +76,10 @@ public class GameWorldEventManager : MonoBehaviour
         foreach(var pendingEvent in PendingToActivateEvents){
             if(pendingEvent == WorldEventType.None) continue;
             ActivateEvent(pendingEvent);
+
+            WorldEventTracker tracker = EventTypeKeys[pendingEvent];
+            if(tracker.WorldEvent.IsOneshotEvent)
+                tracker.IsActive = false;
         }
         PendingToActivateEvents.Clear();
     }

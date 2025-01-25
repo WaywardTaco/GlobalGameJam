@@ -1,26 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class StartupManager : MonoBehaviour
 {
-    private GameObject LoginGUI;
-    private GameObject windowGUI;
-    private GameObject newsGUI;
-    private GameObject stocksGUI;
-    private GameObject upgradeGUI;
+    public static StartupManager Instance;
+    [ReadOnly, SerializeField] private GameObject LoginGUI;
+    private GameObject PFP;
+    private GameObject loadingUI;
+    private GameObject notifsUI;
+    [ReadOnly, SerializeField] private GameObject windowGUI;
+    [ReadOnly, SerializeField] private GameObject newsGUI;
+    [ReadOnly, SerializeField] private GameObject stocksGUI;
+    [ReadOnly, SerializeField] private GameObject upgradeGUI;
+    [ReadOnly, SerializeField] private GameObject moneyUI;
+    [ReadOnly, SerializeField] private GameObject stocksUI;
     private float time = 1.5f;
     private float currentTime;
     public bool loadScreen;
-    public bool hasLoaded;
+    public bool hasLoaded = false;
     void Awake() {
+        if(Instance == null) {
+            Instance = this;
+        }
+        else Destroy(this);
+
         //Login Screen
         LoginGUI = GameObject.Find("LoginGUI").gameObject;
+        PFP = GameObject.Find("LoginGUI/PFP").gameObject;
+        loadingUI = GameObject.Find("LoginGUI/Loading").gameObject;
 
         //Window Tabs
         windowGUI = GameObject.Find("WindowGUI").gameObject;
         newsGUI = GameObject.Find("NewsfeedUI").gameObject;
         upgradeGUI = GameObject.Find("Upgrade Menu").gameObject;
+        moneyUI = GameObject.Find("MoneyCounterUI").gameObject;
+        stocksUI = GameObject.Find("StockPage").gameObject;
+        notifsUI = GameObject.Find("NotifUI").gameObject;
 
         currentTime = time;
     }
@@ -30,6 +46,10 @@ public class StartupManager : MonoBehaviour
         windowGUI.SetActive(false);
         newsGUI.SetActive(false);
         upgradeGUI.SetActive(false);
+        moneyUI.SetActive(false);
+        stocksUI.SetActive(false);
+        loadingUI.SetActive(false);
+        notifsUI.SetActive(false);
     }
 
     void Update() {
@@ -43,7 +63,24 @@ public class StartupManager : MonoBehaviour
         if(hasLoaded) {
             LoginGUI.SetActive(false);
             windowGUI.SetActive(true);
+            moneyUI.SetActive(true);
         }
+        else {
+            LoginGUI.SetActive(true);
+            windowGUI.SetActive(false);
+            moneyUI.SetActive(false);
+        }
+    }
+
+    public void ResetDay() {
+        PFP.SetActive(true);
+        loadingUI.SetActive(false);
+        newsGUI.SetActive(false);
+        upgradeGUI.SetActive(false);
+        stocksUI.SetActive(false);
+        notifsUI.SetActive(false);
+        hasLoaded = false;
+        currentTime = time;
     }
 
     public void SetLoadScreen(bool value) {
