@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Enums;
+using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 
@@ -15,6 +16,10 @@ public class NewsFeedUpdater : MonoBehaviour
 
     [SerializeField] private TMP_Text dateText;
     [SerializeField] private List<StockDisplay> displayStocks = new();
+
+    void Start() {
+        InputManager.Instance.SetNews(gameObject);
+    }
 
     private void OnEnable() {
     }
@@ -47,6 +52,10 @@ public class NewsFeedUpdater : MonoBehaviour
             else
                 stock.stockValue.text = "0 BT"; 
         }
+    }
+
+    public void SetToggle(bool value) {
+        InputManager.Instance.SetNewsToggle(value);
     }
 
     // TODO : All event updating code

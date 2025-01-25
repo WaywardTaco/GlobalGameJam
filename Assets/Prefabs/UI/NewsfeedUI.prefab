@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3ed5ebd00d2a24680e39a799d34709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0
+  scrollSpeed: 0.1
   scrollBarBacking: {fileID: 8230647631977641934}
   scrollRect: {fileID: 5739858350768815343}
   scrollOffset: 0
