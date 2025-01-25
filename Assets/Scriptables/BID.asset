@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6eb4621228cd7e419b6e4a3281401fc, type: 3}
-  m_Name: Sample3
+  m_Name: BID
   m_EditorClassIdentifier: 
-  StockName: Sample3
-  StockCode: NULL
+  StockName: Block Interactive Dealings
+  StockCode: BID
   StockType: 3
   StartingStockValue: 0
   StockText: Insert Stock Text

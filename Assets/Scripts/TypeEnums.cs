@@ -29,9 +29,12 @@ namespace Enums {
 
     public enum StockType {
         None, 
-        Sample1 = 1, 
-        Sample2 = 2, 
-        Sample3 = 3
+        LME, 
+        PPH, 
+        BID,
+        OBK,
+        SFI,
+        LDD
     }
 
 }
