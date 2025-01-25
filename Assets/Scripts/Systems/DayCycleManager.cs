@@ -27,12 +27,12 @@ public class DayCycleManager : MonoBehaviour
         actionsLeft = maxActions;
 
         DayAnimator = GameObject.Find("DayCycle/Animator").gameObject;
-        testActionButton = GameObject.Find("DayCycle/TestAction").gameObject;
-        endDayButton = GameObject.Find("DayCycle/EndDay").gameObject;
+        // testActionButton = GameObject.Find("DayCycle/TestAction").gameObject;
+        // endDayButton = GameObject.Find("DayCycle/EndDay").gameObject;
     }
 
     void Start() {
-        EnableButtons();
+
     }
 
     public void SetNewsFeed(NewsFeedUpdater newsFeedUpdater){
@@ -70,8 +70,6 @@ public class DayCycleManager : MonoBehaviour
 
     void Update() {
         if(actionsLeft <= 0) {
-            testActionButton.SetActive(false);
-            endDayButton.SetActive(true);
         }
     }
 
@@ -95,8 +93,8 @@ public class DayCycleManager : MonoBehaviour
         currentMonth = value;
     }
 
-    public void EnableButtons() {
-        testActionButton.SetActive(true);
-        endDayButton.SetActive(false);
-    }
+    // public void EnableButtons() {
+    //     testActionButton.SetActive(true);
+    //     endDayButton.SetActive(false);
+    // }
 }

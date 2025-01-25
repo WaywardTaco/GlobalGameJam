@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 328694245482984953}
   - component: {fileID: 3517809845309587875}
   - component: {fileID: 1026857903459424740}
+  - component: {fileID: 5950584416782141670}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -93,7 +94,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpgradeReferences:
-  - Upgrade: {fileID: 11400000, guid: 4e84c3ec80db50c429631b422464be94, type: 2}
+  - Upgrade: {fileID: 11400000, guid: 98663fb9a8f8a01418c1a0ff3602d349, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 5f6fdd247a8ea60448fb8488ddccdb75, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: b41c8727b0301774db4acad0e0575b34, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: ff55e0f169601c5428acc425d3cdbc90, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 7623da7634e58e94983eaed83c6e87af, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 470dc8a2f8d8a8541a41eebbafdba2c6, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: c817aa914316a844aab354dae6566d08, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 9033a485af957044fb95ad13cfe506dc, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: fabcdcd22d6de8f4f8d0343803b66d1b, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 2e717e90927167448887e2dc3f3b3e3d, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 15f8b844023f6b84aad88c2bb4325e90, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 152fbb23073ba4240958310748ae7353, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 916ca0a34086e3f4f8bcbe9619baced9, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: cbf9d7b2050867c4885fd1d455f2ae4d, type: 2}
+    ActiveCount: 0
+  - Upgrade: {fileID: 11400000, guid: 36cab082bb9e49243a68bcdad28b986e, type: 2}
     ActiveCount: 0
 --- !u!114 &3188396177570841679
 MonoBehaviour:
@@ -107,12 +136,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8b274a356254696ef34b14bb1376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NoDayEventProbability: 0
-  PendingToActivateEvents: 
+  TotalDayEvents: 0
   WorldEventReferences:
   - WorldEvent: {fileID: 11400000, guid: 769653c35708e5d4a918e397450850cc, type: 2}
     CurrentProbability: -1
     IsActive: 0
+  totalProbability: 0
+  WorldEventProbabilities: []
+  PendingToActivateEvents: 
 --- !u!114 &6863789898359221493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +163,7 @@ MonoBehaviour:
   maxActions: 3
   maxDays: 7
   DayAnimator: {fileID: 0}
+  newsFeed: {fileID: 0}
 --- !u!114 &328694245482984953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ace43e671c059c4d90cf970058779cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadScreen: 0
+  hasLoaded: 0
 --- !u!114 &1026857903459424740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,6 +209,7 @@ MonoBehaviour:
     m_Bits: 64
   onScreen: 0
   hasClickedScreen: 0
+  hasExitedScreen: 0
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   zoomCamera: {fileID: 0}
@@ -182,5 +217,21 @@ MonoBehaviour:
   zoomCameraPos: {x: 0, y: 0, z: 0}
   mainCameraRot: {x: 0, y: 0, z: 0, w: 0}
   zoomCameraRot: {x: 0, y: 0, z: 0, w: 0}
+  tempCameraPos: {x: 0, y: 0, z: 0}
+  tempCameraRot: {x: 0, y: 0, z: 0, w: 0}
+  elapsedTimePos: 0
+  elapsedTimeRot: 0
   percentagePos: 0
   percentageRot: 0
+--- !u!114 &5950584416782141670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c511bb5604485489af8d544e128eb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Lobbying
   m_EditorClassIdentifier: 
   UpgradeName: Corporate Lobbying
-  UpgradeType: 1
+  UpgradeType: 2
   InvokedEvent: 0
   Cost: 0
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

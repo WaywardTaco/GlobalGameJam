@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class StartupManager : MonoBehaviour
 {
-    private GameObject LoginGUI;
-    private GameObject windowGUI;
-    private GameObject newsGUI;
-    private GameObject stocksGUI;
-    private GameObject upgradeGUI;
+    [ReadOnly, SerializeField] private GameObject LoginGUI;
+    [ReadOnly, SerializeField] private GameObject windowGUI;
+    [ReadOnly, SerializeField] private GameObject newsGUI;
+    [ReadOnly, SerializeField] private GameObject stocksGUI;
+    [ReadOnly, SerializeField] private GameObject upgradeGUI;
+    [ReadOnly, SerializeField] private GameObject moneyUI;
     private float time = 1.5f;
     private float currentTime;
     public bool loadScreen;
-    public bool hasLoaded;
+    public bool hasLoaded = false;
     void Awake() {
         //Login Screen
         LoginGUI = GameObject.Find("LoginGUI").gameObject;
@@ -21,6 +22,7 @@ public class StartupManager : MonoBehaviour
         windowGUI = GameObject.Find("WindowGUI").gameObject;
         newsGUI = GameObject.Find("NewsfeedUI").gameObject;
         upgradeGUI = GameObject.Find("Upgrade Menu").gameObject;
+        moneyUI = GameObject.Find("MoneyCounterUI").gameObject;
 
         currentTime = time;
     }
@@ -30,6 +32,7 @@ public class StartupManager : MonoBehaviour
         windowGUI.SetActive(false);
         newsGUI.SetActive(false);
         upgradeGUI.SetActive(false);
+        moneyUI.SetActive(false);
     }
 
     void Update() {
@@ -43,6 +46,12 @@ public class StartupManager : MonoBehaviour
         if(hasLoaded) {
             LoginGUI.SetActive(false);
             windowGUI.SetActive(true);
+            moneyUI.SetActive(true);
+        }
+        else {
+            LoginGUI.SetActive(true);
+            windowGUI.SetActive(false);
+            moneyUI.SetActive(false);
         }
     }
 
