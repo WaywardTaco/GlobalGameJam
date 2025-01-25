@@ -24,7 +24,7 @@ public class UpgradeButton : MonoBehaviour
         }
     }
 
-    void OnButtonClick()
+    public void OnButtonClick()
     {
         if (shopManager != null)
         {

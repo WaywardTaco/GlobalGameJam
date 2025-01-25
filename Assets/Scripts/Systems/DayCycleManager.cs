@@ -27,8 +27,6 @@ public class DayCycleManager : MonoBehaviour
         actionsLeft = maxActions;
 
         DayAnimator = GameObject.Find("DayCycle/Animator").gameObject;
-        // testActionButton = GameObject.Find("DayCycle/TestAction").gameObject;
-        // endDayButton = GameObject.Find("DayCycle/EndDay").gameObject;
     }
 
     void Start() {
@@ -51,6 +49,8 @@ public class DayCycleManager : MonoBehaviour
             StockManager.Instance.UpdateAllStockValues();
             GameWorldEventManager.Instance.ProcessPendingEvents();
             DayAnimator.GetComponent<CycleTime>().TriggerDayChange();
+            StartupManager.Instance.ResetDay();
+            MonitorController.Instance.ResetDay();
             //Next Day
             daysLeft++;
             //Refresh Actions for next day
@@ -59,12 +59,10 @@ public class DayCycleManager : MonoBehaviour
     }
 
     public void UseAction() {
+        actionsLeft--;
         if(actionsLeft <= 0) {
             Debug.Log("No more actions left.");
             EndDay();
-        }
-        else {
-            actionsLeft--;
         }
     }
 

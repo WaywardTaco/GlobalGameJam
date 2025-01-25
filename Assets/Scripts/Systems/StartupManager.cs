@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class StartupManager : MonoBehaviour
 {
+    public static StartupManager Instance;
     [ReadOnly, SerializeField] private GameObject LoginGUI;
+    private GameObject PFP;
+    private GameObject loadingUI;
     [ReadOnly, SerializeField] private GameObject windowGUI;
     [ReadOnly, SerializeField] private GameObject newsGUI;
     [ReadOnly, SerializeField] private GameObject stocksGUI;
@@ -16,8 +19,15 @@ public class StartupManager : MonoBehaviour
     public bool loadScreen;
     public bool hasLoaded = false;
     void Awake() {
+        if(Instance == null) {
+            Instance = this;
+        }
+        else Destroy(this);
+
         //Login Screen
         LoginGUI = GameObject.Find("LoginGUI").gameObject;
+        PFP = GameObject.Find("LoginGUI/PFP").gameObject;
+        loadingUI = GameObject.Find("LoginGUI/Loading").gameObject;
 
         //Window Tabs
         windowGUI = GameObject.Find("WindowGUI").gameObject;
@@ -36,6 +46,7 @@ public class StartupManager : MonoBehaviour
         upgradeGUI.SetActive(false);
         moneyUI.SetActive(false);
         stocksUI.SetActive(false);
+        loadingUI.SetActive(false);
     }
 
     void Update() {
@@ -56,6 +67,16 @@ public class StartupManager : MonoBehaviour
             windowGUI.SetActive(false);
             moneyUI.SetActive(false);
         }
+    }
+
+    public void ResetDay() {
+        PFP.SetActive(true);
+        loadingUI.SetActive(false);
+        newsGUI.SetActive(false);
+        upgradeGUI.SetActive(false);
+        stocksUI.SetActive(false);
+        hasLoaded = false;
+        currentTime = time;
     }
 
     public void SetLoadScreen(bool value) {
