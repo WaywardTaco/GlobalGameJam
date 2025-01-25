@@ -68,7 +68,7 @@ public class StockGraphing : MonoBehaviour
     {
         GameObject newPoint = Instantiate(point);
         newPoint.SetActive(true);
-        newPoint.transform.parent = this.transform;
+        newPoint.transform.SetParent(this.transform, false);
         RectTransform rect = newPoint.GetComponent<RectTransform>();
         rect.anchoredPosition = Pos;
         rect.sizeDelta = pointSize;
@@ -82,7 +82,7 @@ public class StockGraphing : MonoBehaviour
     private void LineMaker(Vector2 PosA, Vector2 PosB)
     {
         GameObject line = new GameObject("Line", typeof(UnityEngine.UI.Image));
-        line.transform.parent = this.transform;
+        line.transform.SetParent(this.transform, false);
         
         RectTransform rect = line.GetComponent<RectTransform>();
         Vector2 direction = (PosB - PosA).normalized;
