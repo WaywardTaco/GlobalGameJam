@@ -14,26 +14,28 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     [SerializeField] private TMP_Text dateText;
-    [SerializeField] private List<StockDisplay> displayStocks;
+    [SerializeField] private List<StockDisplay> displayStocks = new();
 
     private void OnEnable() {
-        InitializeStockAccronyms();
     }
 
     private void Update() {
         SetDateDisplay();
         SetStocksValues();
+        UpdateStockAccronyms();
     }
 
     private void SetDateDisplay(){
         // dateText.text = DayCycleManager.Instance.getCurrentDay();
     }
 
-    private void InitializeStockAccronyms(){
+    private void UpdateStockAccronyms(){
         foreach(var stock in displayStocks){
             StockManager.StockTracker stockItem = StockManager.Instance.getStock(stock.stockType);
             if(stockItem != null)
                 stock.stockName.text = $"{stockItem.Stock.StockCode}" ;
+            else
+                stock.stockName.text = "UKN";
         }
     }
 
@@ -42,6 +44,8 @@ public class NewsFeedUpdater : MonoBehaviour
             StockManager.StockTracker stockItem = StockManager.Instance.getStock(stock.stockType);
             if(stockItem != null)
                 stock.stockValue.text = $"{stockItem.CurrentStockValue} BT" ;
+            else
+                stock.stockValue.text = "0 BT"; 
         }
     }
 
