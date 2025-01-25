@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: E_OBG
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
+  EventName: Brokers anywhere?
   EventType: 0
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Online Brokers Group branches out to recruiting in more locations, leading
+    to better dealings.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -27,14 +28,14 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 3
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.05
+    TrendVarianceEffect: 0.1
   - AffectedStock: 4
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
   - AffectedStock: 5
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 6
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.05
+    TrendVarianceEffect: 0.1

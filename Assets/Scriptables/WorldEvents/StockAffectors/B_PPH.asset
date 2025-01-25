@@ -13,19 +13,20 @@ MonoBehaviour:
   m_Name: B_PPH
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: BOB imposes regulations on banks
+  EventType: 44
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: The Bureau of Banking has imposed several regulations on the banking
+    sector, crippling private banks.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 2
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 3
     TrendEFfect: 0
     TrendVarianceEffect: 0

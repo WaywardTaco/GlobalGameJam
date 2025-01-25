@@ -13,25 +13,26 @@ MonoBehaviour:
   m_Name: E_PPH
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
+  EventName: PayPay anytime anywhere!
   EventType: 0
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: PayPay Holdings announced the opening of subsidiaries focusing on providing
+    a more centralized form of contactless payment.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.05
+    TrendVarianceEffect: 0.1
   - AffectedStock: 2
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
   - AffectedStock: 3
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 4
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.05
+    TrendVarianceEffect: 0.1
   - AffectedStock: 5
     TrendEFfect: 0
     TrendVarianceEffect: 0

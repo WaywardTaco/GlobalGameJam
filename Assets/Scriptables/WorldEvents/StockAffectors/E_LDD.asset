@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: E_LDD
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
+  EventName: Far and wide!
   EventType: 0
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Long Distance Digital integrates new technology tripling coverage for
+    all devices.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -36,5 +37,5 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 6
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2

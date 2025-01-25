@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: V_SFI
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Virus unleashed on tech industry
+  EventType: 53
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: An anonymous hacker group has taken credit for the recent virus that
+    ravaged the tech industry, causing thousands of systems to fail.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -33,8 +34,8 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 5
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.25
+    TrendVarianceEffect: -0.1
   - AffectedStock: 6
     TrendEFfect: 0
     TrendVarianceEffect: 0

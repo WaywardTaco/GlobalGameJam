@@ -33,7 +33,11 @@ public class StockGraphing : MonoBehaviour
     void Awake()
     {
         stockGraphContainer = this.GetComponent<RectTransform>();
+        Invoke("InitialChange", .5f);
+    }
 
+    public void InitialChange()
+    {
         ChangeStocks(1);
     }
 

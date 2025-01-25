@@ -13,16 +13,17 @@ MonoBehaviour:
   m_Name: E_LME
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
+  EventName: Leading the future!
   EventType: 0
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Leaders of Market Exchange reveals new research project of potential
+    99% accurate predictions for far into the future.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
   - AffectedStock: 2
     TrendEFfect: 0
     TrendVarianceEffect: 0
@@ -30,8 +31,8 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 4
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.05
+    TrendVarianceEffect: -0.1
   - AffectedStock: 5
     TrendEFfect: 0
     TrendVarianceEffect: 0
