@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
+  m_Name: polInv6
+  m_EditorClassIdentifier: 
+  EventImage: {fileID: 0}
+  EventName: Mkt Manipulation Mastermind Caught
+  EventType: 61
+  StartRandomProbability: 0
+  IsOneshotEvent: 0
+  EventText: A key individual believed to be the mastermind behind a large-scale
+    market manipulation scheme that has rocked the financial community........
+  lowestActivationRep: 0
+  higherActivationRep: 9

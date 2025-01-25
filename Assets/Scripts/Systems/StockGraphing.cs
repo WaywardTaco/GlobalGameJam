@@ -33,6 +33,13 @@ public class StockGraphing : MonoBehaviour
     void Awake()
     {
         stockGraphContainer = this.GetComponent<RectTransform>();
+
+        ChangeStocks(1);
+    }
+
+    public void ChangeStocks(int i)
+    {
+        ChangeGraph(StockManager.Instance.getStock((StockType)i));
     }
 
     public void ChangeGraph(StockTracker stockTrack)

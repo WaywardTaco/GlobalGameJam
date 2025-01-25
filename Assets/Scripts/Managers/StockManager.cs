@@ -9,7 +9,6 @@ using Sirenix.OdinInspector;
 public class StockManager : MonoBehaviour
 {
     [SerializeField] private int stockHistoryCount = 5;
-    [SerializeField] private StockGraphing stockGraphing;
 
     [Serializable] public class StockTracker {
         [SerializeReference] public StockScriptable Stock;
@@ -95,11 +94,6 @@ public class StockManager : MonoBehaviour
     public void UpdateAllStockValues(){
         foreach(var stock in activeStocks)
             stock.UpdateStockValue();
-    }
-
-    public void ChangeStocks(int i)
-    {
-        stockGraphing.ChangeGraph(getStock((StockType)i));
     }
 
     public StockTracker getStock(StockType stockType){
