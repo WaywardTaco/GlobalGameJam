@@ -14,6 +14,8 @@ public class InputManager : MonoBehaviour
             Instance = this;
         }
         else Destroy(this);
+
+        news = GameObject.Find("NewsfeedUI").gameObject;
     }
 
     void Update() {
