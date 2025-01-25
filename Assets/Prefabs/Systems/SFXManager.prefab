@@ -51,9 +51,15 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0.5
+  - name: MouseClick
+    clip: {fileID: 8300000, guid: aed8b501e54e3c34fba854078a8c9bfd, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Start
+    clip: {fileID: 8300000, guid: 6d31b3e1abffeeb4ab027cc64341c9d1, type: 3}
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
