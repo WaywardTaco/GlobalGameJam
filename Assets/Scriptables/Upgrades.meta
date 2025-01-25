@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scriptables/Upgrades.meta
 guid: 008d9d0b68189f94ba94a056821c54d2
 folderAsset: yes
 DefaultImporter:
+========
+guid: 2821d65ca1c89e84c84efdb01a1e7d01
+PrefabImporter:
+>>>>>>>> 6dfcb53365fb6a6b57118def1e6a02c2c4bd40ac:Assets/Prefabs/Character.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7108480437543889911}
   - component: {fileID: 3188396177570841679}
   - component: {fileID: 6863789898359221493}
+  - component: {fileID: 328694245482984953}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -63,6 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stockHistoryCount: 5
+  stockGraphing: {fileID: 0}
   activeStocks:
   - Stock: {fileID: 11400000, guid: 6cfa90515ad06c74d89f4d8bfc910a93, type: 2}
     CurrentStockValue: 0
@@ -103,9 +105,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8b274a356254696ef34b14bb1376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NoDayEventProbability: 0
   PendingToActivateEvents: 
   WorldEventReferences:
   - WorldEvent: {fileID: 11400000, guid: 769653c35708e5d4a918e397450850cc, type: 2}
+    CurrentProbability: -1
     IsActive: 0
 --- !u!114 &6863789898359221493
 MonoBehaviour:
@@ -119,7 +123,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca8da5532fe6574baf5598ca21450a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  daysLeft: 0
+  actionsLeft: 0
   currentDay: 0
-  currentActions: 0
+  currentMonth: 0
   maxActions: 3
   maxDays: 7
+  DayAnimator: {fileID: 0}
+--- !u!114 &328694245482984953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc8b5fe2813b04fa661b07fa72032b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  news: {fileID: 0}
+  newsToggle: 1

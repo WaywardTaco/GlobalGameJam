@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Upgrade Screen.unity.meta
 guid: bc2fc192b2e4b2148928ee71a53cf4dc
+========
+guid: f3764411b79b31d4393c1eaf8cea3058
+>>>>>>>> 6dfcb53365fb6a6b57118def1e6a02c2c4bd40ac:Assets/Scenes/GUI.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

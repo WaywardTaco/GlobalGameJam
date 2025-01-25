@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sprites/UI/BG_Button.meta
 guid: 32e8fa47b10765d4a9a1423bbd88118b
 folderAsset: yes
 DefaultImporter:
+========
+guid: 7feb40b5841df274d8810c71224aa814
+PrefabImporter:
+>>>>>>>> 6dfcb53365fb6a6b57118def1e6a02c2c4bd40ac:Assets/Prefabs/Environment.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
