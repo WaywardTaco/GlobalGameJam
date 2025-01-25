@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3188396177570841679}
   - component: {fileID: 6863789898359221493}
   - component: {fileID: 328694245482984953}
+  - component: {fileID: 3517809845309587875}
+  - component: {fileID: 1026857903459424740}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -144,3 +146,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   news: {fileID: 0}
   newsToggle: 1
+--- !u!114 &3517809845309587875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ace43e671c059c4d90cf970058779cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1026857903459424740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c040b8379177f42963ec6efdc4fab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  onScreen: 0
+  hasClickedScreen: 0
+  player: {fileID: 0}
+  mainCamera: {fileID: 0}
+  zoomCamera: {fileID: 0}
+  mainCameraPos: {x: 0, y: 0, z: 0}
+  zoomCameraPos: {x: 0, y: 0, z: 0}
+  mainCameraRot: {x: 0, y: 0, z: 0, w: 0}
+  zoomCameraRot: {x: 0, y: 0, z: 0, w: 0}
+  percentagePos: 0
+  percentageRot: 0
