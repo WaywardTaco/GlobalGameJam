@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
-  m_Name: polInv3
+  m_Name: polInv6
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: 'Stock Broker Involved With Mafia? '
-  EventType: 58
+  EventName: Mkt Manipulation Mastermind Caught
+  EventType: 61
   StartRandomProbability: 0
   IsOneshotEvent: 0
-  EventText: 'Authorities are exploring possible connections between a well-known
-    stock broker and a notorious criminal mafia syndicate. A shocking....
-
-'
-  lowestActivationRep: 35
-  higherActivationRep: 49
+  EventText: A key individual believed to be the mastermind behind a large-scale
+    market manipulation scheme that has rocked the financial community........
+  lowestActivationRep: 0
+  higherActivationRep: 9

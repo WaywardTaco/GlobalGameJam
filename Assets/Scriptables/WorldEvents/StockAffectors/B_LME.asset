@@ -13,16 +13,17 @@ MonoBehaviour:
   m_Name: B_LME
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Gov't crack down on online brokers
+  EventType: 43
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Recent scandals have led to a government crack down on online brokers
+    and stock exchanges.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 2
     TrendEFfect: 0
     TrendVarianceEffect: 0
@@ -30,8 +31,8 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 4
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 5
     TrendEFfect: 0
     TrendVarianceEffect: 0
