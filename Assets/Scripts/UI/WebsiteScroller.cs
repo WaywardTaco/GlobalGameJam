@@ -64,7 +64,7 @@ public class WebsiteScroller : MonoBehaviour
 
             RectTransform rect = scrollable.Scrollable.GetComponent<RectTransform>();
             if(rect != null){
-                Debug.Log(scrollable.Scrollable.name + actualOffset);
+                //Debug.Log(scrollable.Scrollable.name + actualOffset);
                 Vector2 newPosition = rect.anchoredPosition;
                 newPosition.y = actualOffset / 2;
                 rect.anchoredPosition = newPosition;
