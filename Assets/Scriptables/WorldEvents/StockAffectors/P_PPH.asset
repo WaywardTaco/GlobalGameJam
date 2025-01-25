@@ -13,28 +13,29 @@ MonoBehaviour:
   m_Name: P_PPH
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Small PPH Growth Amidst Displays
+  EventType: 2
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Small PPH grows due to another successful transparency report as savers
+    grow satisfied of their trustworthiness. Pay Pay has proven once more
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 2
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
   - AffectedStock: 3
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 4
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 5
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 6
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1

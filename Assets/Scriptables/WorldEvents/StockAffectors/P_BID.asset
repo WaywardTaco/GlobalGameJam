@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: BID's Bid Pays Off Once More
-  EventType: 0
+  EventType: 3
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: BID's international expansions pay off big once more due to another
