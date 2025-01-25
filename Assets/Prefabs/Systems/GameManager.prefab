@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3517809845309587875}
   - component: {fileID: 1026857903459424740}
   - component: {fileID: 5950584416782141670}
+  - component: {fileID: 7686259890661624035}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -272,3 +273,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeType: 0
+--- !u!114 &7686259890661624035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac669aff27ac2b48a4fb1d4aefd7205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DirectionalLight: {fileID: 0}
+  skyBox: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
+  Preset: {fileID: 11400000, guid: 1d76efb500ffb4c41b5058729dadd525, type: 2}
+  TimeOfDay: 11.7
