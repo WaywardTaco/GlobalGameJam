@@ -13,6 +13,7 @@ public class DayCycleManager : MonoBehaviour
     [SerializeField] private int maxActions; //Max actions per day
     [SerializeField] private int maxDays; //Max days (Upgradeable)
     [SerializeField] private GameObject DayAnimator;
+    [SerializeField, ReadOnly] private NewsFeedUpdater newsFeed;
     private GameObject testActionButton;
     private GameObject endDayButton;
 
@@ -33,12 +34,19 @@ public class DayCycleManager : MonoBehaviour
         EnableButtons();
     }
 
+    public void SetNewsFeed(NewsFeedUpdater newsFeedUpdater){
+        this.newsFeed = newsFeedUpdater;
+    }
+
     public void EndDay() {
-        if(daysLeft > maxDays) {
+        if(daysLeft >= maxDays) {
             //EndGame Here
             Debug.Log("Game Over.");
         }
         else {
+            GameWorldEventManager.Instance.PendAutomaticEvents();
+            newsFeed.RefreshDayInfo();
+            GameWorldEventManager.Instance.ProcessPendingEvents();
             DayAnimator.GetComponent<CycleTime>().TriggerDayChange();
             //Next Day
             daysLeft++;

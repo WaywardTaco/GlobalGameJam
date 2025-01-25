@@ -19,9 +19,9 @@ public class GameWorldEventManager : MonoBehaviour
 
     public static GameWorldEventManager Instance { get; private set;}
     
-    [SerializeField] private int NoDayEventProbability = 0;
-    [SerializeField] private List<WorldEventType> PendingToActivateEvents = new();
+    [SerializeField] private int TotalDayEvents = 0;
     [SerializeField] private List<WorldEventTracker> WorldEventReferences = new();
+    [SerializeField] private List<WorldEventType> PendingToActivateEvents = new();
     private Dictionary<WorldEventType, WorldEventTracker> EventTypeKeys = new();
 
     private void Awake() {
@@ -49,9 +49,6 @@ public class GameWorldEventManager : MonoBehaviour
         foreach(var worldEvent in WorldEventReferences){
             if(worldEvent.IsActive){
                 worldEvent.WorldEvent.ContinuousEffect();
-            } else {
-                if(worldEvent.WorldEvent.CheckAutoActivate())
-                    StartEventPending(worldEvent.WorldEvent.EventType);
             }
         }
     }
@@ -94,13 +91,26 @@ public class GameWorldEventManager : MonoBehaviour
         worldEvent.WorldEvent.OnDeactivate();
     }
 
-    public WorldEventType PendNextDayEvent(){
+    public void PendAutomaticEvents(){
+        // Pend auto condition events
+        foreach(var worldEvent in WorldEventReferences){
+            if(worldEvent.IsActive) continue;
+            if(PendingToActivateEvents.Count >= TotalDayEvents) continue;
+            if(worldEvent.WorldEvent.CheckAutoActivate())
+                StartEventPending(worldEvent.WorldEvent.EventType);
+        }
+
+        // Pend remaining events
+        PendRemainingEvents();
+    }
+
+    private void PendRemainingEvents(){
         WorldEventType chosenEvent = WorldEventType.None;
 
-        chosenEvent = chooseRandomEvent();
-
-        StartEventPending(chosenEvent);
-        return chosenEvent;        
+        while(PendingToActivateEvents.Count < TotalDayEvents){
+            chosenEvent = chooseRandomEvent();
+            StartEventPending(chosenEvent);
+        }
     }
 
     private WorldEventType chooseRandomEvent(){
@@ -113,5 +123,18 @@ public class GameWorldEventManager : MonoBehaviour
         // TODO : stuff
 
         return WorldEventType.None;
+    }
+
+    public List<WorldEventTracker> GetToActivateEvents(){
+        List<WorldEventTracker> toActivateEvents = new();
+
+        foreach(var worldEvent in PendingToActivateEvents){
+            if(toActivateEvents.Count >= TotalDayEvents){
+                break;
+            }
+            toActivateEvents.Add(EventTypeKeys[worldEvent]);
+        }
+
+        return toActivateEvents;
     }
 }
