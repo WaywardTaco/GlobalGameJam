@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &564932396 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1949539726799113966, guid: 507f3c48e7ba247439952a5e74550c22, type: 3}
-  m_PrefabInstance: {fileID: 468540920933806951}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18f330873fefe4b4195cdad7c00a45a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1066261191
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,15 +359,19 @@ PrefabInstance:
     - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: stockGraphing
       value: 
-      objectReference: {fileID: 564932396}
+      objectReference: {fileID: 2129850167348821385}
     - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: activeStocks.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: activeStocks.Array.data[0].Stock
+      value: 
+      objectReference: {fileID: 11400000, guid: 9969506d1fd075843a07063425393b07, type: 2}
     - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: activeStocks.Array.data[1].Stock
       value: 
-      objectReference: {fileID: 11400000, guid: 9969506d1fd075843a07063425393b07, type: 2}
+      objectReference: {fileID: 11400000, guid: 6cfa90515ad06c74d89f4d8bfc910a93, type: 2}
     - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: activeStocks.Array.data[2].Stock
       value: 
@@ -388,8 +381,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: f4211f010c4ef1447a2cdded286217e2, type: 2}
     - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: activeStocks.Array.data[4].Stock
+      value: 
+      objectReference: {fileID: 11400000, guid: b09d6daa72d68184787850130533d928, type: 2}
+    - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: activeStocks.Array.data[5].Stock
+      value: 
+      objectReference: {fileID: 11400000, guid: ac58a599ca29da5409ce79b615d1c52f, type: 2}
+    - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: activeStocks.Array.data[1].CurrentStockValue
       value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: activeStocks.Array.data[0].PreviousValues.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: activeStocks.Array.data[1].PreviousValues.Array.size
@@ -455,7 +460,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38ab9dddca5f2d41ae9099bd188ef4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &468540920933806951
+--- !u!114 &2129850167348821385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1949539726799113966, guid: 507f3c48e7ba247439952a5e74550c22, type: 3}
+  m_PrefabInstance: {fileID: 8069510368339271758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f330873fefe4b4195cdad7c00a45a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &8069510368339271758
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -582,5 +598,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1798382193}
   - {fileID: 1066261193}
-  - {fileID: 468540920933806951}
   - {fileID: 1799058000}
+  - {fileID: 8069510368339271758}

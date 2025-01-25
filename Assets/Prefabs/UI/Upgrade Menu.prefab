@@ -136,13 +136,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 185508963658039827}
-  targetColor: {r: 0.7688679, g: 0.66922665, b: 0, a: 1}
+  targetColor: {r: 0.76862746, g: 0.67058825, b: 0, a: 1}
   transitionDuration: 0.5
   targetName: {fileID: 8528730117390056194}
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Corporate Blackmail
-  descText: 
+  descText: "Make someone bend to your will with a simple e-mail.\n\n<indent=-50px>\u25CF<indent=00px>Increases
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Slightly
+    decreases days left</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &5848111296700145154
 CircleCollider2D:
@@ -227,11 +229,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2215921620065832182}
+  m_Father: {fileID: 3294261158798603727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -113}
+  m_AnchoredPosition: {x: 932.14844, y: -113}
   m_SizeDelta: {x: 320, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3007707221499029557
@@ -335,8 +337,9 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Charity Fund
-  descText: 
-  typeText: 
+  descText: "Give a little back.\n\n<indent=-50px>\u25CF<indent=00px>Increases suspicion</indent>\n\u25CF<indent=0px>Increases
+    stock value</indent>\n\u25CF<indent=0px>Slightly increases days left</indent>\n"
+  typeText: Legal Upgrade
 --- !u!58 &5380074031765273380
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -462,84 +465,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &503842300723705304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2215921620065832182}
-  - component: {fileID: 6964261487960105557}
-  - component: {fileID: 5392638295451126821}
-  m_Layer: 5
-  m_Name: Changing Upgrades
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2215921620065832182
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503842300723705304}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8560653675649044145}
-  - {fileID: 5727684604401329437}
-  - {fileID: 2076768045974121404}
-  m_Father: {fileID: 4769983150395024608}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1558.2677, y: -828.2387}
-  m_SizeDelta: {x: 330.9218, y: 1119.7051}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6964261487960105557
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503842300723705304}
-  m_CullTransparentMesh: 1
---- !u!114 &5392638295451126821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503842300723705304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &631170570663096617
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +481,7 @@ GameObject:
   - component: {fileID: 8797097859168747760}
   - component: {fileID: 5163496284501205393}
   m_Layer: 5
-  m_Name: Media Outreach
+  m_Name: Narrative Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,11 +499,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2215921620065832182}
+  m_Father: {fileID: 4696941242820798009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -1106}
+  m_AnchoredPosition: {x: -336.38416, y: -1106}
   m_SizeDelta: {x: 320, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5152485610318166845
@@ -682,7 +607,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Media Outreach
-  descText: 
+  descText: "Ever consider buying a social media app for $4 billion?\n\n<indent=-50px>\u25CF<indent=00px>Decreases
+    suspicion</indent>\n\u25CF<indent=0px>Decreases stock value</indent>\n"
   typeText: 
 --- !u!58 &8797097859168747760
 CircleCollider2D:
@@ -875,7 +801,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Hacker Group
-  descText: 
+  descText: "A happy little cyber-accident.\n\n<indent=-50px>\u25CF<indent=00px>Increases
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &6626066782270818354
 CircleCollider2D:
@@ -1068,7 +995,9 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Lobbying
-  descText: 
+  descText: "Give a strongly worded message (and money) to the government to bring
+    yourself some favor.\n\n<indent=-50px>\u25CF<indent=00px>Decreases suspicion</indent>\n\u25CF<indent=0px>Increases
+    the value of your stocks</indent>"
   typeText: Legal Upgrade
 --- !u!58 &7649152830123193182
 CircleCollider2D:
@@ -1261,7 +1190,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: PR Campaign
-  descText: Something Something blablabla
+  descText: "Show the world what you can do! (Or save face)\n\n<indent=-50px>\u25CF<indent=00px>Decreases
+    suspicion</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>"
   typeText: Legal Upgrade
 --- !u!58 &5226006185566478557
 CircleCollider2D:
@@ -1342,6 +1272,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2076768045974121404}
   - {fileID: 1811328231183887885}
   - {fileID: 1424584768254491339}
   - {fileID: 1624167402576227223}
@@ -1637,7 +1568,9 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Insider Trading
-  descText: 
+  descText: "A friend in a company gossiped a little too much about his work. Take
+    his yapping to an advantage.\n\n<indent=-50px>\u25CF<indent=00px></indent>\n\u25CF<indent=0px>Gives
+    you a few more days</indent>"
   typeText: Illegal Upgrade
 --- !u!58 &5221808365588675503
 CircleCollider2D:
@@ -1830,7 +1763,9 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Pyramid Scheme
-  descText: 
+  descText: "Contact old friends and give them a little sales pitch.\n\n<indent=-50px>\u25CF<indent=00px>Increases
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Slightly
+    increases days left</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &6635980684615300717
 CircleCollider2D:
@@ -1912,7 +1847,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3294261158798603727}
-  - {fileID: 2215921620065832182}
   - {fileID: 4696941242820798009}
   m_Father: {fileID: 3724161893948251011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2343,7 +2277,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Shell Companies
-  descText: 
+  descText: "Hide from the authorities by selling seashells.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\n"
   typeText: Illegal Upgrade
 --- !u!58 &7705571624311454490
 CircleCollider2D:
@@ -2536,7 +2471,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Debt Downpayment
-  descText: 
+  descText: "You need more time to cook. Pay off a portion of your debt.\n\n<indent=-50px>\u25CF<indent=00px>Increases
+    suspicion</indent>\n\u25CF<indent=0px>Slightly increases days left</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &65888335614378055
 CircleCollider2D:
@@ -2729,7 +2665,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Bitcoin Farm
-  descText: 
+  descText: "$BBLT to the moon!\n\n<indent=-50px>\u25CF<indent=00px>Decreases suspicion</indent>\n\u25CF<indent=0px>Gives
+    you a few more days</indent>"
   typeText: Legal Upgrade
 --- !u!58 &128663209414616705
 CircleCollider2D:
@@ -2814,11 +2751,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2215921620065832182}
+  m_Father: {fileID: 3294261158798603727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -596}
+  m_AnchoredPosition: {x: 932.14844, y: -596}
   m_SizeDelta: {x: 320, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &80439501702185459
@@ -2922,7 +2859,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Diversified Investments
-  descText: 
+  descText: "Don't know which one to inveset in? Invest in EVERYTHING! \n\n<indent=-50px>\u25CF<indent=00px>Increases
+    stock value</indent>\n\u25CF<indent=0px>Increases suspicion</indent>\n"
   typeText: 
 --- !u!58 &4112786078383132999
 CircleCollider2D:
@@ -3191,7 +3129,9 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: CSR Operations
-  descText: 
+  descText: "Corporate Social Responsibility might be appealing to the masses, but
+    shareholders won't like being responsible for anything shady you do.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
+    suspicion</indent>\n\u25CF<indent=0px>Decrease stock values</indent>"
   typeText: Legal Upgrade
 --- !u!58 &3029361526807337594
 CircleCollider2D:
@@ -3421,7 +3361,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Tax Loophole Exploitation
-  descText: 
+  descText: "This is technically legal... but....\n\n<indent=-50px>\u25CF<indent=00px>Increases
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>"
   typeText: Legal Upgrade
 --- !u!58 &7274199398546248290
 CircleCollider2D:
@@ -4043,7 +3984,8 @@ MonoBehaviour:
   targetDesc: {fileID: 2932767335689561540}
   targetType: {fileID: 2847110765027525025}
   nameText: Bond Security
-  descText: 
+  descText: "Make sure your investments don't go pop.\n\n<indent=-50px>\u25CF<indent=00px>Increases
+    stock value</indent>\n\u25CF<indent=0px>Decreases chance of bankruptcy event</indent>"
   typeText: Legal Upgrade
 --- !u!58 &5426042940298687412
 CircleCollider2D:
@@ -4130,6 +4072,8 @@ RectTransform:
   - {fileID: 4322639984164996676}
   - {fileID: 7112921884209661587}
   - {fileID: 2256616295285642246}
+  - {fileID: 8560653675649044145}
+  - {fileID: 5727684604401329437}
   m_Father: {fileID: 4769983150395024608}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}

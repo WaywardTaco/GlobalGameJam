@@ -14,7 +14,7 @@ public class HoverColorChange : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public TextMeshProUGUI targetDesc;
     public TextMeshProUGUI targetType;
     public string nameText;
-    [TextArea(4, 10)] public string descText;
+    [TextArea(8, 10)] public string descText;
     public string typeText;
 
     private Image targetImage;

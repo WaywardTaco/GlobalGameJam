@@ -9,8 +9,9 @@ public class BuySellStocks : MonoBehaviour
     [SerializeField] GameObject buyInfo;
     [SerializeField] GameObject sellInfo;
     [SerializeField] GameObject shares;
+    [SerializeField] GameObject value;
 
-    private StockType stockType = (StockType) 0;
+    private StockType stockType = StockType.None;
     private int buy = 0;
     private int sell = 0;
 
@@ -59,10 +60,12 @@ public class BuySellStocks : MonoBehaviour
         buyInfo.GetComponent<TMP_Text>().text = buy.ToString();
         sellInfo.GetComponent<TMP_Text>().text = sell.ToString();
 
-        string stringAmount = "Total Shares: ";
+        string stringAmount = "Shares: ";
         stringAmount += StockManager.Instance.getStock(stockType).PlayerStockCount.ToString();
-        stringAmount += " Stock Value: ";
-        stringAmount += StockManager.Instance.getStock(stockType).CurrentStockValue.ToString();
         shares.GetComponent<TMP_Text>().text = stringAmount;
+
+        stringAmount = "Value: ";
+        stringAmount += StockManager.Instance.getStock(stockType).CurrentStockValue.ToString();
+        value.GetComponent<TMP_Text>().text = stringAmount;
     }
 }
