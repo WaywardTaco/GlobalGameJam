@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: U_LME
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Leader no more?
-  EventType: 0
+  EventName: LME, Leader No More?
+  EventType: 25
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Many staff of the Leaders of Market Exchange leave the group. Moving

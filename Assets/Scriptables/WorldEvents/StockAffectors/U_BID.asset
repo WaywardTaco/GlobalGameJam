@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: U_BID
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Early retirement?
-  EventType: 0
+  EventName: Early retirement for BID?
+  EventType: 27
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Block International Dealings accidentally retire old tools when replacements

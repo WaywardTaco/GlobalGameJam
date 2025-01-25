@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: PayPay anytime anywhere!
-  EventType: 0
+  EventType: 20
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: PayPay Holdings announced the opening of subsidiaries focusing on providing

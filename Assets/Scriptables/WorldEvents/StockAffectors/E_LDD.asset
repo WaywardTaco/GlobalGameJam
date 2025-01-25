@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Far and wide!
-  EventType: 0
+  EventType: 24
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Long Distance Digital integrates new technology tripling coverage for

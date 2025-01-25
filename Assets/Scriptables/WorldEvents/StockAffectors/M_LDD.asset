@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Long Distance, for real
-  EventType: 0
+  EventType: 36
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: 'LDD''s challenge of reaching any location suggested to them gets well

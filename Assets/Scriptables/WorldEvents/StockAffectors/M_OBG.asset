@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Psychic Broker?
-  EventType: 0
+  EventType: 34
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Videos of a staff member in Online Brokers Group who can seemingly read

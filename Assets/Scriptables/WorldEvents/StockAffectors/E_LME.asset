@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Leading the future!
-  EventType: 0
+  EventType: 19
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Leaders of Market Exchange reveals new research project of potential

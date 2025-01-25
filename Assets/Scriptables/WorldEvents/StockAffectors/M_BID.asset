@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: To the moon, Block by Block
-  EventType: 0
+  EventType: 33
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: BID's new Blockchain application BlockBlock is well received.

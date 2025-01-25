@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: New Tech!
-  EventType: 0
+  EventType: 23
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Software Tech Inc expands their range of technology in research and

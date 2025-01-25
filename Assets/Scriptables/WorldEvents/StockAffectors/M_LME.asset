@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Successful April 2nd.
-  EventType: 0
+  EventType: 31
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Leaders of Market Exchange showcase see increase in public interest

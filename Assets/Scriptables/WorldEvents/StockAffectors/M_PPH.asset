@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Pay outta jail?
-  EventType: 0
+  EventType: 32
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: PayPay Stock in high demand after convicted criminal spends remaining

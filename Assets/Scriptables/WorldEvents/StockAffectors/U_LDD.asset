@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: LDD crippled!
-  EventType: 0
+  EventType: 30
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: drunk man destroys cellular tower causing outages in Long Distance Digital

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Better, stronger, faster!
-  EventType: 0
+  EventType: 21
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: New building equipment procured by Block International Dealings shows

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Tech 'cause why not
-  EventType: 0
+  EventType: 35
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Stock of Software Tech Inc's new useless product sell out immediately
