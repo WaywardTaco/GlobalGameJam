@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SocialPlatforms;
 
@@ -12,6 +14,7 @@ public class NotificationManager : MonoBehaviour
     [Serializable] public class PendingNotif {
         [SerializeField] public float notifDuration;
         [SerializeField] public string notifText;
+        public UnityEvent pendingEvent = new UnityEvent();
     }
 
 
@@ -76,10 +79,11 @@ public class NotificationManager : MonoBehaviour
         StartCoroutine(WaitToCloseNotif(notifDuration));
     }
 
-    public void PendNotif(float notifDuration, string notifText = ""){
+    public void PendNotif(float notifDuration, string notifText = "", UnityAction pendedFunction = null){
         PendingNotif notif = new();
         notif.notifDuration = notifDuration;
         notif.notifText = notifText;
+        notif.pendingEvent.AddListener(pendedFunction);
         pendingNotifs.Add(notif);
     }
 
@@ -93,6 +97,7 @@ public class NotificationManager : MonoBehaviour
             while(isOpen){
                 yield return new WaitForEndOfFrame();
             }
+            notif.pendingEvent.Invoke();
         }
         pendingNotifs.Clear();
     }
