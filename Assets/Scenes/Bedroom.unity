@@ -1961,10 +1961,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7686259890661624035, guid: cf36bfd405ae0344287ef083542de816, type: 3}
-      propertyPath: TimeOfDay
-      value: 24
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
