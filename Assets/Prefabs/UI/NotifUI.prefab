@@ -242,7 +242,7 @@ RectTransform:
   m_GameObject: {fileID: 1656085372573842937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0005943836, y: 0.0005943836, z: 0.0005943836}
+  m_LocalScale: {x: 0.000283836, y: 0.000283836, z: 0.000283836}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8477973621664996006}
@@ -278,7 +278,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &4062380476554684777
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificationCanvas: {fileID: 1656085372573842937}
   notificationText: {fileID: 7030191676125289167}
-  notificationScaleDuration: 0.5
+  notificationScaleDuration: 2
   debugNotifText: 
 --- !u!1 &3338669044389430356
 GameObject:
@@ -582,7 +582,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 115.3}
-  m_SizeDelta: {x: 1250, y: 519.3}
+  m_SizeDelta: {x: 1243.95, y: 519.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8148974586193413273
 CanvasRenderer:

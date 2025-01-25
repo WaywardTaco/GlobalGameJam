@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 65100526468526602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.000503836, y: 0.000503836, z: 0.000503836}
+  m_LocalScale: {x: 0.000523836, y: 0.000523836, z: 0.000523836}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5972225353167835491}
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 8490949832692388786}
   - component: {fileID: 4979359016978306741}
   m_Layer: 5
-  m_Name: WindowGUI
+  m_Name: MoneyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
