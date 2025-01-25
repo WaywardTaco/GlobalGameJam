@@ -12,7 +12,7 @@ public class BuySellStocks : MonoBehaviour
     [SerializeField] GameObject shares;
     [SerializeField] GameObject value;
 
-    private StockType stockType = StockType.None;
+    private StockType stockType = StockType.LME;
     private int buy = 1;
     private int sell = 1;
 
@@ -21,7 +21,7 @@ public class BuySellStocks : MonoBehaviour
     {
         buy = int.Parse(buyInfo.GetComponent<TMP_Text>().text);
         sell = int.Parse(sellInfo.GetComponent<TMP_Text>().text);
-        ChangeStocks(1);
+        Invoke("UpdateStocks", .5f);
     }
 
     public void ChangeStocks(int i)
@@ -63,15 +63,12 @@ public class BuySellStocks : MonoBehaviour
         sellInfo.GetComponent<TMP_Text>().text = sell.ToString();
         StockTracker stockTracker = StockManager.Instance.getStock(stockType);
 
-        if (stockTracker != null)
-        {
-            string stringAmount = "Shares: ";
-            stringAmount += stockTracker.PlayerStockCount.ToString();
-            shares.GetComponent<TMP_Text>().text = stringAmount;
+        string stringAmount = "Shares: ";
+        stringAmount += stockTracker.PlayerStockCount.ToString();
+        shares.GetComponent<TMP_Text>().text = stringAmount;
 
-            stringAmount = "Value: ";
-            stringAmount += stockTracker.CurrentStockValue.ToString();
-            value.GetComponent<TMP_Text>().text = stringAmount;
-        }
+        stringAmount = "Value: ";
+        stringAmount += stockTracker.CurrentStockValue.ToString();
+        value.GetComponent<TMP_Text>().text = stringAmount;
     }
 }
