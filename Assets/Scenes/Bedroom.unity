@@ -1121,6 +1121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DayCycle
       objectReference: {fileID: 0}
+    - target: {fileID: 8931603543561987944, guid: 10085ea9bc00ed54eab8972751306d9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1713,6 +1717,14 @@ PrefabInstance:
       propertyPath: activeStocks.Array.data[5].Stock
       value: 
       objectReference: {fileID: 11400000, guid: f4211f010c4ef1447a2cdded286217e2, type: 2}
+    - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: activeStocks.Array.data[0].PreviousValues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278169549655888870, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: 'activeStocks.Array.data[0].PreviousValues.Array.data[0]'
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
