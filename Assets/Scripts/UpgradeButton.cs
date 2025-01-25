@@ -28,7 +28,8 @@ public class UpgradeButton : MonoBehaviour
     {
         if (shopManager != null)
         {
-            shopManager.PurchaseUpgrade(upgradeType);
+            //shopManager.PurchaseUpgrade(upgradeType);
+            shopManager.SetUpgradeType(upgradeType);
             Debug.Log("Upgrade button clicked.");
         }
     }

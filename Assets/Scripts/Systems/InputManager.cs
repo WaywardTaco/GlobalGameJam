@@ -6,6 +6,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     public static InputManager Instance;
+    [SerializeField] private LayerMask layerMask;
     [ReadOnly, SerializeField] public GameObject news;
     [ReadOnly, SerializeField] public bool newsToggle = true;
 
@@ -20,6 +21,13 @@ public class InputManager : MonoBehaviour
 
     void Update() {
         CheckScroll();
+        CheckLeftClick();
+    }
+
+    void CheckLeftClick() {
+        if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, layerMask)) {
+            SFXManager.Instance.Play("MouseClick");
+        }
     }
 
     void CheckScroll() {

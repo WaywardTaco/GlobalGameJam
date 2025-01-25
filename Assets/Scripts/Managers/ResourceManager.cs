@@ -36,7 +36,7 @@ public class ResourceManager : MonoBehaviour
     }
 
     private void ResetMetrics(){
-        PlayerMoney = 0;
+        PlayerMoney = 999;
         CurrentReputation = 100;
     }
 }

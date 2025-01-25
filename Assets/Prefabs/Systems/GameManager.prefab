@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3517809845309587875}
   - component: {fileID: 1026857903459424740}
   - component: {fileID: 5950584416782141670}
+  - component: {fileID: 3903093620385294014}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -67,15 +68,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stockHistoryCount: 5
-  stockGraphing: {fileID: 0}
   activeStocks:
-  - Stock: {fileID: 11400000, guid: 6cfa90515ad06c74d89f4d8bfc910a93, type: 2}
+  - Stock: {fileID: 11400000, guid: 9969506d1fd075843a07063425393b07, type: 2}
     CurrentStockValue: 0
     CurrentTrendBase: 0
     PlayerStockCount: 0
     CurrentTrendVariance: 0
     PreviousValues: 
   - Stock: {fileID: 11400000, guid: 6cfa90515ad06c74d89f4d8bfc910a93, type: 2}
+    CurrentStockValue: 50
+    CurrentTrendBase: 23
+    PlayerStockCount: 3
+    CurrentTrendVariance: 8
+    PreviousValues: 01000000c800000084030000
+  - Stock: {fileID: 11400000, guid: 37f16b6952cd86442b13f18cec36a3df, type: 2}
+    CurrentStockValue: 0
+    CurrentTrendBase: 0
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0
+    PreviousValues: 
+  - Stock: {fileID: 11400000, guid: ac58a599ca29da5409ce79b615d1c52f, type: 2}
+    CurrentStockValue: 0
+    CurrentTrendBase: 0
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0
+    PreviousValues: 
+  - Stock: {fileID: 11400000, guid: b09d6daa72d68184787850130533d928, type: 2}
+    CurrentStockValue: 0
+    CurrentTrendBase: 0
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0
+    PreviousValues: 
+  - Stock: {fileID: 11400000, guid: f4211f010c4ef1447a2cdded286217e2, type: 2}
     CurrentStockValue: 0
     CurrentTrendBase: 0
     PlayerStockCount: 0
@@ -176,6 +200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fc8b5fe2813b04fa661b07fa72032b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
   news: {fileID: 0}
   newsToggle: 1
 --- !u!114 &3517809845309587875
@@ -190,6 +217,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ace43e671c059c4d90cf970058779cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoginGUI: {fileID: 0}
+  windowGUI: {fileID: 0}
+  newsGUI: {fileID: 0}
+  stocksGUI: {fileID: 0}
+  upgradeGUI: {fileID: 0}
+  moneyUI: {fileID: 0}
+  stocksUI: {fileID: 0}
+  purchaseUI: {fileID: 0}
+  sellUI: {fileID: 0}
+  upgradeUI: {fileID: 0}
   loadScreen: 0
   hasLoaded: 0
 --- !u!114 &1026857903459424740
@@ -235,3 +272,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c511bb5604485489af8d544e128eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeType: 0
+--- !u!114 &3903093620385294014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b2aac45f822f641ac2b9ff83467838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Ambience
+    clip: {fileID: 8300000, guid: 6f1af63cfa1d3d84cab294cc2ec5b1bc, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: MouseClick
+    clip: {fileID: 8300000, guid: aed8b501e54e3c34fba854078a8c9bfd, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  fadeThreshold: 0.1
+  volumeTemp: 0
