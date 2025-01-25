@@ -10,6 +10,7 @@ public class StartupManager : MonoBehaviour
     [ReadOnly, SerializeField] private GameObject stocksGUI;
     [ReadOnly, SerializeField] private GameObject upgradeGUI;
     [ReadOnly, SerializeField] private GameObject moneyUI;
+    [ReadOnly, SerializeField] private GameObject stocksUI;
     private float time = 1.5f;
     private float currentTime;
     public bool loadScreen;
@@ -23,6 +24,7 @@ public class StartupManager : MonoBehaviour
         newsGUI = GameObject.Find("NewsfeedUI").gameObject;
         upgradeGUI = GameObject.Find("Upgrade Menu").gameObject;
         moneyUI = GameObject.Find("MoneyCounterUI").gameObject;
+        stocksUI = GameObject.Find("StockPage").gameObject;
 
         currentTime = time;
     }
@@ -33,6 +35,7 @@ public class StartupManager : MonoBehaviour
         newsGUI.SetActive(false);
         upgradeGUI.SetActive(false);
         moneyUI.SetActive(false);
+        stocksUI.SetActive(false);
     }
 
     void Update() {
