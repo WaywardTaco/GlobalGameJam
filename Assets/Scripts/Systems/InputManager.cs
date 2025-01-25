@@ -15,7 +15,7 @@ public class InputManager : MonoBehaviour
         }
         else Destroy(this);
 
-        news = GameObject.Find("NewsfeedUI").gameObject;
+        //news = GameObject.Find("NewsfeedUI").gameObject;
     }
 
     void Update() {
@@ -26,7 +26,7 @@ public class InputManager : MonoBehaviour
 
         if(newsToggle) {
             //Debug.Log($"Scroll: {-Input.mouseScrollDelta.y}");
-            news.GetComponent<WebsiteScroller>().Scroll(-Input.mouseScrollDelta.y);
+            //news.GetComponent<WebsiteScroller>().Scroll(-Input.mouseScrollDelta.y);
         }
     }
 

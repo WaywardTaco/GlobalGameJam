@@ -1,6 +1,7 @@
 using Enums;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Playables;
 using UnityEngine;
@@ -8,11 +9,14 @@ using UnityEngine.Diagnostics;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.WSA;
 using static StockManager;
 
 public class StockGraphing : MonoBehaviour
 {
     [SerializeField] GameObject point;
+    [SerializeField] GameObject stockName;
+    [SerializeField] GameObject stockInfo;
     [SerializeField] Vector2 pointSize = new Vector2(22, 22);
     [SerializeField] float blueValueParam = 10;
     [SerializeField] float leftMostPoint = -200;
@@ -24,10 +28,7 @@ public class StockGraphing : MonoBehaviour
     public  List<int> values = new List<int>();
 
     private RectTransform stockGraphContainer;
-    
 
-
-    // Start is called before the first frame update
     void Awake()
     {
         stockGraphContainer = this.GetComponent<RectTransform>();
@@ -35,7 +36,15 @@ public class StockGraphing : MonoBehaviour
 
     public void ChangeGraph(StockTracker stockTrack)
     {
-        if (stockTrack != null) values = stockTrack.PreviousValues;
+        if (stockTrack != null)
+        {
+            values.Clear();
+            for (int i = 0; i < stockTrack.PreviousValues.Count; i++)
+                values.Add(stockTrack.PreviousValues[i]);
+            values.Add(stockTrack.CurrentStockValue);
+            AddInfo(stockTrack.CurrentTrendBase, stockTrack.CurrentTrendVariance);
+            stockName.GetComponent<TMP_Text>().text = stockTrack.Stock.StockName;
+        }
 
         for (int i = 0; i < points.Count; i++) Destroy(points[i]);
         for (int i = 0; i < lines.Count; i++) Destroy(lines[i]);
@@ -89,6 +98,18 @@ public class StockGraphing : MonoBehaviour
         return radians * 180 / Mathf.PI;
     }
 
+    private void AddInfo(float curBase, float curVar)
+    {
+        string info = null;
+
+        info += "Trend Base: ";
+        info += curBase;
+        info += " Variance: ";
+        info += curVar;
+
+        stockInfo.GetComponent<TMP_Text>().text = info;
+    }
+
     private void ShowGraph()
     {
         float graphHeight = stockGraphContainer.sizeDelta.y;
@@ -100,9 +121,8 @@ public class StockGraphing : MonoBehaviour
 
         for (int i = 0; i < values.Count; i++)
         {
-            float xPosition =  (i) * (graphWidth / xMax);
-            Debug.Log(graphWidth / xMax);
-            float yPosition = values[i] * (graphHeight / yMax);
+            float xPosition = pointSize.x + (i) * ((graphWidth - 2*pointSize.x) / xMax);
+            float yPosition = pointSize.y + values[i] * ((graphHeight - 2*pointSize.y) / yMax);
             GameObject newPoint = PointMaker(new Vector2(xPosition, yPosition));
 
             if (oldPoint != null)
