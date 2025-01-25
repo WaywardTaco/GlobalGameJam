@@ -13,7 +13,10 @@ namespace Enums {
     }
 
     public enum StockType {
-        None,
+        None, 
+        Sample1 = 1, 
+        Sample2 = 2, 
+        Sample3 = 3
     }
 
 }
