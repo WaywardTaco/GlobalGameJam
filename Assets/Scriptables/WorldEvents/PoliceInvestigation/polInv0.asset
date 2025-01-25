@@ -19,5 +19,5 @@ MonoBehaviour:
   IsOneshotEvent: 0
   EventText: "\"Based on the evidence we\u2019ve gathered so far, this individual
     may have engaged in unethical or even illegal activity,\u201D said by...........\r\n"
-  lowestActivationRep: 90
-  higherActivationRep: 80
+  lowestActivationRep: 80
+  higherActivationRep: 90

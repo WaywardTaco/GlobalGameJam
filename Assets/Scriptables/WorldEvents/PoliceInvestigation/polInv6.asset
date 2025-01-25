@@ -19,5 +19,5 @@ MonoBehaviour:
   IsOneshotEvent: 0
   EventText: A key individual believed to be the mastermind behind a large-scale
     market manipulation scheme that has rocked the financial community........
-  lowestActivationRep: 9
-  higherActivationRep: 0
+  lowestActivationRep: 0
+  higherActivationRep: 9
