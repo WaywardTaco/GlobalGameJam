@@ -35,12 +35,11 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     private void Update() {
-        SetDateDisplay();
-        SetStocksValues();
-        UpdateStockAccronyms();
     }
 
     public void RefreshDayInfo(){
+        SetStocksValues();
+        UpdateStockAccronyms();
         SetDateDisplay();
         SetActiveEventInfo();
     }
@@ -58,7 +57,7 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     private void SetDateDisplay(){
-        // dateText.text = DayCycleManager.Instance.getCurrentDay();
+        dateText.text = $"{DayCycleManager.Instance.currentMonth}/{DayCycleManager.Instance.currentDay}";
     }
 
     private void UpdateStockAccronyms(){
