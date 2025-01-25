@@ -13,16 +13,17 @@ MonoBehaviour:
   m_Name: A_LME
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Restrictions lifted on brokers
+  EventType: 37
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: A government resolution has been passed that lifts restrictions on online
+    brokers and stock exchanges.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
   - AffectedStock: 2
     TrendEFfect: 0
     TrendVarianceEffect: 0

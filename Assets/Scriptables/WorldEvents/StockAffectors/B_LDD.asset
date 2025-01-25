@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: B_LDD
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: City Hall to demolish unused lines
+  EventType: 48
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: "Erves City Hall to demolish \"redundant\" network infrastructure. Pundits
+    say this is a terrible idea and will plummet net coverage. \r"
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -36,5 +37,5 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 6
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.1

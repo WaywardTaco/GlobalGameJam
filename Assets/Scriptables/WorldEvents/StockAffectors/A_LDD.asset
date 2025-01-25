@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: A_LDD
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: New phone lines to be built
+  EventType: 42
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Erves City Hall to move forward with Project Hermes, constructing additional
+    network towers and telephone lines around the metro.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -36,5 +37,5 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 6
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
