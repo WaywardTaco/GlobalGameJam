@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
   m_Name: polInv0
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: dc9e2c7f97bbbdf428343e1ccfc0a245, type: 3}
   EventName: Stock Broker In Legal Hot Water
   EventType: 55
   StartRandomProbability: 0

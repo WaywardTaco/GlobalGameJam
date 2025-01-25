@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: A_SFI
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: b4deb7500fa4ddd4086f293c6a086df9, type: 3}
   EventName: City invests in silicon mine
   EventType: 41
   StartRandomProbability: 0.2

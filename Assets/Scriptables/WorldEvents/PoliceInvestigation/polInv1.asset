@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
   m_Name: polInv1
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 9058548ef21181b40814ca39c111770a, type: 3}
   EventName: 'Stock Broker Gains Infamy '
   EventType: 56
   StartRandomProbability: 0
