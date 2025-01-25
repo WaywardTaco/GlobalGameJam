@@ -5,7 +5,9 @@ namespace Enums {
     }
     
     public enum UpgradeType {
-        None, 
+        None,
+        Legal,
+        Illegal
     }
     
     public enum ResourceType {
