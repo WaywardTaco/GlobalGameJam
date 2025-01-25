@@ -2,6 +2,7 @@ using System.Collections;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TitleController : MonoBehaviour
@@ -36,11 +37,12 @@ public class TitleController : MonoBehaviour
         text.alpha -= 0.5f * Time.deltaTime;
         if(text.alpha <= 0) {
             image.alpha += 0.5f * Time.deltaTime;
+            if(image.alpha >= 1) {
+                yield return new WaitForSeconds(2f);
+                SceneManager.LoadScene("Bedroom");
+            }
         }
-        if(image.alpha <= 0) {
-            yield return new WaitForSeconds(1f);
-            //New Scene
-        }
+        
     }
 
     bool IsMouseOverGameWindow
