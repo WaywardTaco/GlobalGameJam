@@ -25,6 +25,7 @@ public class NewsFeedUpdater : MonoBehaviour
     [SerializeField] private List<NewsArticleTracker> newsArticles = new();
 
     private bool onStartUpdate = true;
+    private bool isDayOne = true;
 
     void Start() {
         InputManager.Instance.SetNews(gameObject);
@@ -65,7 +66,13 @@ public class NewsFeedUpdater : MonoBehaviour
 
     private void SetDateDisplay(){
         Debug.Log($"{DayCycleManager.Instance.currentMonth}/{DayCycleManager.Instance.currentDay}");
-        dateText.text = $"{DayCycleManager.Instance.currentMonth}/{DayCycleManager.Instance.currentDay}";
+
+        int currDay = DayCycleManager.Instance.currentDay + 1;
+        if(isDayOne){
+            currDay -= 1;
+            isDayOne = false;
+        }
+        dateText.text = $"{DayCycleManager.Instance.currentMonth}/{currDay}";
     }
 
     private void UpdateStockAccronyms(){
