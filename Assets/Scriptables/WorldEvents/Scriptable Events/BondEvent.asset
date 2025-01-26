@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7baf03147e439d84bad5467220204816, type: 3}
   m_Name: BondEvent
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 92d4d6b6dadf3154fb68612b895892ad, type: 3}
   EventName: Bond Event
   EventType: 72
   StartRandomProbability: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cbe30bc982656d458cde01b749d4ad3, type: 3}
   m_Name: ShellEvent
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: a54563ce5bf830347bb39d2ed562c80a, type: 3}
   EventName: Shell Event
   EventType: 69
   StartRandomProbability: 0

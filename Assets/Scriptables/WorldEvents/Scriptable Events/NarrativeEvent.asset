@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3f8ecf757d0c24e830957b6973aee5, type: 3}
   m_Name: NarrativeEvent
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: ea5a2c0f6ef9e494d9704ad5fd07a27a, type: 3}
   EventName: 'Narrative Event '
   EventType: 75
   StartRandomProbability: 0

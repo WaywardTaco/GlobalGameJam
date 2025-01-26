@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d59f3b5198e8b4583b124b966264c8, type: 3}
   m_Name: CharityEvent
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 2fe151b30a872bf4f9cdf5b6c8c88dc5, type: 3}
   EventName: Charity Event
   EventType: 63
   StartRandomProbability: 0

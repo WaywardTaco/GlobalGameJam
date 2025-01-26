@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06d0f7830bd69e459ae2d24019b6d12, type: 3}
   m_Name: LobbyEvent
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: eb4ba9913527854428e396407beb147d, type: 3}
   EventName: Lobby Event
   EventType: 65
   StartRandomProbability: 0

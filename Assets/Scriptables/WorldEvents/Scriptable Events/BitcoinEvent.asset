@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930aa8de53636a045954116b3d30ea4a, type: 3}
   m_Name: BitcoinEvent
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 1c5f6853a76f8c3498855b0a7adb95d7, type: 3}
   EventName: BItcoin Event
   EventType: 74
   StartRandomProbability: 0
