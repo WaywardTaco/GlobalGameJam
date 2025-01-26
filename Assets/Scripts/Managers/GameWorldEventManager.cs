@@ -31,9 +31,12 @@ public class GameWorldEventManager : MonoBehaviour
     [SerializeField] private List<WorldEventType> PendingToActivateEvents = new();
     private Dictionary<WorldEventType, WorldEventTracker> EventTypeKeys = new();
 
+    private bool onStartPend = true;
+
     private void Awake() {
         if(Instance == null){
             Instance = this;
+            onStartPend = true;
         } else {
             Destroy(this);
         }
@@ -52,11 +55,14 @@ public class GameWorldEventManager : MonoBehaviour
             if(worldEvent.CurrentProbability == -1.0f)
                 worldEvent.CurrentProbability = worldEvent.WorldEvent.StartRandomProbability; 
         }
-
-        PendAutomaticEvents();
     }
 
     private void Update() {
+        if(onStartPend){
+            PendAutomaticEvents();
+            onStartPend = false;
+        }
+
         foreach(var worldEvent in WorldEventReferences){
             if(worldEvent.IsActive){
                 worldEvent.WorldEvent.ContinuousEffect();
@@ -107,7 +113,7 @@ public class GameWorldEventManager : MonoBehaviour
     }
 
     public void PendAutomaticEvents(){
-        // Debug.Log("Pending Remaining Events");
+        Debug.Log("Pending Remaining Events");
 
         // Pend auto condition events
         foreach(var worldEvent in WorldEventReferences){

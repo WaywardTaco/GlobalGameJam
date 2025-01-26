@@ -24,6 +24,7 @@ public class NewsFeedUpdater : MonoBehaviour
     [SerializeField] private List<StockDisplay> displayStocks = new();
     [SerializeField] private List<NewsArticleTracker> newsArticles = new();
 
+    private bool onStartUpdate = true;
 
     void Start() {
         InputManager.Instance.SetNews(gameObject);
@@ -31,18 +32,16 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     private void OnEnable() {
-        SetStocksValues();
-        UpdateStockAccronyms();
-        SetDateDisplay();
-        SetActiveEventInfo();
-
     }
 
-    private void Update() {
-        // SetStocksValues();
-        // UpdateStockAccronyms();
-        // SetDateDisplay();
-        // SetActiveEventInfo();
+    private void LateUpdate() {
+        if(onStartUpdate){
+            SetStocksValues();
+            UpdateStockAccronyms();
+            SetDateDisplay();
+            SetActiveEventInfo();
+            onStartUpdate = false;
+        }
     }
 
     public void RefreshDayInfo(){
