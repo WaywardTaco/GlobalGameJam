@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cbe30bc982656d458cde01b749d4ad3, type: 3}
+  m_Name: Shell Event
+  m_EditorClassIdentifier: 
+  EventImage: {fileID: 0}
+  EventName: Shell Event
+  EventType: 69
+  StartRandomProbability: 0
+  IsOneshotEvent: 1
+  EventText: Local supermarkets also open with new mini La Bubble branches.
+  reputationChange: 0
+  trendChange: 0
+  maxDaysChange: 0

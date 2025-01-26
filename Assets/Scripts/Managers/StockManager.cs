@@ -68,7 +68,7 @@ public class StockManager : MonoBehaviour
 
     public static StockManager Instance;
 
-    [SerializeField] private List<StockTracker> activeStocks = new();
+    [SerializeField] public List<StockTracker> activeStocks = new();
     public Dictionary<StockType, StockTracker> StockTypeKeys = new();
 
     public bool TryBuyStock(StockType stockType, int count = 1){

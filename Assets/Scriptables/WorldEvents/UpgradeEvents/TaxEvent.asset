@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f55cfa9d687ea4f8ae85c802fb60af, type: 3}
+  m_Name: TaxEvent
+  m_EditorClassIdentifier: 
+  EventImage: {fileID: 0}
+  EventName: Tax Exploit Event
+  EventType: 62
+  StartRandomProbability: 0
+  IsOneshotEvent: 1
+  EventText: Criticisms of local laws regarding food imports and their exploitability
+    enrage citizens.
+  reputationChange: 0
+  trendChange: 0
+  maxDaysChange: 0

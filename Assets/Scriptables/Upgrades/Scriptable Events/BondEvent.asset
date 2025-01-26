@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7baf03147e439d84bad5467220204816, type: 3}
+  m_Name: BondEvent
+  m_EditorClassIdentifier: 
+  EventImage: {fileID: 0}
+  EventName: Default Game Event
+  EventType: 0
+  StartRandomProbability: 0
+  IsOneshotEvent: 1
+  EventText: Insert Game Event Text
+  reputationChange: 0
+  trendChange: 0
+  maxDaysChange: 0
