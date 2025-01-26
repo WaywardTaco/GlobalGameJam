@@ -3292,7 +3292,6 @@ MonoBehaviour:
   pointSize: {x: 22, y: 22}
   blueValueParam: 25
   leftMostPoint: 0
-  maxStockValue: 500
   values: 
 --- !u!222 &9036983958811153012
 CanvasRenderer:
@@ -3669,7 +3668,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &900824624197586350
 MonoBehaviour:

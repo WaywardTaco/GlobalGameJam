@@ -67,6 +67,19 @@ public class DayCycleManager : MonoBehaviour
         }
     }
 
+    public void PurchaseAction() {
+        NotificationManager.Instance.Notify(2.5f, "Successfully Purchased Selected Stocks!");
+    }
+
+    public void SellAction() {
+        NotificationManager.Instance.Notify(2.5f, "Successfully Sold Selected Stocks!");
+    }
+
+    public void UpgradeAction() {
+        NotificationManager.Instance.Notify(2.5f, "Successfully Purchased Selected Upgrades!");
+    }
+
+
     void Update() {
         if(actionsLeft <= 0) {
         }
@@ -82,6 +95,10 @@ public class DayCycleManager : MonoBehaviour
 
     public int getDays() {
         return maxDays;
+    }
+
+    public int getDaysLeft() {
+        return maxDays - (daysLeft - 1);
     }
 
     public void SetMaxDays(int value)
