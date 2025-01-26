@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: M_LDD
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: fc8f9904eb74e7548b1da3b280b78d2d, type: 3}
   EventName: Long Distance, for real
   EventType: 36
   StartRandomProbability: 0.2

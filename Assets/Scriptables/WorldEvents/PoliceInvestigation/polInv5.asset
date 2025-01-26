@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
   m_Name: polInv5
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: c72d307fc7815fe4e94e9e90a53790e1, type: 3}
   EventName: 'Infamous Stock Broker On Last Leg '
   EventType: 60
   StartRandomProbability: 0

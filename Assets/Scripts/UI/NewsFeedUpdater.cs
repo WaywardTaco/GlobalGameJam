@@ -31,10 +31,18 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     private void OnEnable() {
+        SetStocksValues();
+        UpdateStockAccronyms();
+        SetDateDisplay();
+        SetActiveEventInfo();
 
     }
 
     private void Update() {
+        // SetStocksValues();
+        // UpdateStockAccronyms();
+        // SetDateDisplay();
+        // SetActiveEventInfo();
     }
 
     public void RefreshDayInfo(){
@@ -51,7 +59,7 @@ public class NewsFeedUpdater : MonoBehaviour
         int activeEventsCount = activeEvents.Count;
         for(int i = 0; i < newsArticleCount && i < activeEventsCount; i++){
             newsArticles[i].DisplayImage.sprite = activeEvents[i].WorldEvent.EventImage;
-            newsArticles[i].ArticleTitle.text = activeEvents[i].WorldEvent.EventText;
+            newsArticles[i].ArticleTitle.text = activeEvents[i].WorldEvent.EventName;
             newsArticles[i].ArticleText.text = activeEvents[i].WorldEvent.EventText;
         }
     }

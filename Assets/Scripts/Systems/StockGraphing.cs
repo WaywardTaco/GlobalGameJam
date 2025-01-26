@@ -13,8 +13,6 @@ public class StockGraphing : MonoBehaviour
     [SerializeField] Vector2 pointSize = new Vector2(22, 22);
     [SerializeField] float blueValueParam = 10;
     [SerializeField] float leftMostPoint = -200;
-    [SerializeField] float maxStockValue = 100;
-    [SerializeField] float maxDaysShown = 5;
 
     private List<GameObject> points = new List<GameObject>();
     private List<GameObject> lines  = new List<GameObject>();
@@ -120,14 +118,18 @@ public class StockGraphing : MonoBehaviour
     {
         float graphHeight = stockGraphContainer.sizeDelta.y;
         float graphWidth = stockGraphContainer.sizeDelta.x;
-        float yMax = maxStockValue;
-        float xMax = maxDaysShown - 1;
+        float yMax = 0;
+
+        for (int i = 0; i < values.Count; i++)
+        {
+            if (values[i] > yMax) yMax = values[i];
+        }
 
         GameObject oldPoint = null;
 
         for (int i = 0; i < values.Count; i++)
         {
-            float xPosition = pointSize.x + (i) * ((graphWidth - 2*pointSize.x) / xMax);
+            float xPosition = pointSize.x + (i) * ((graphWidth - 2*pointSize.x) / values.Count);
             float yPosition = pointSize.y + values[i] * ((graphHeight - 2*pointSize.y) / yMax);
             GameObject newPoint = PointMaker(new Vector2(xPosition, yPosition));
 

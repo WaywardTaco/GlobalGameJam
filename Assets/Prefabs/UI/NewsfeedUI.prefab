@@ -3229,23 +3229,41 @@ MonoBehaviour:
   displayStocks:
   - stockName: {fileID: 6484414966767767916}
     stockValue: {fileID: 144441891956229154}
-    stockType: 0
+    stockType: 1
   - stockName: {fileID: 435146008953981607}
     stockValue: {fileID: 7854408472871005862}
-    stockType: 0
+    stockType: 2
   - stockName: {fileID: 5667008551270159395}
     stockValue: {fileID: 4668055629822027133}
-    stockType: 0
+    stockType: 3
   - stockName: {fileID: 8212120815617197277}
     stockValue: {fileID: 4898087543695522740}
-    stockType: 0
+    stockType: 4
   - stockName: {fileID: 442730652254941014}
     stockValue: {fileID: 8782509409495203629}
-    stockType: 0
+    stockType: 5
   - stockName: {fileID: 8740269434591722070}
     stockValue: {fileID: 2697976889026191048}
-    stockType: 0
-  newsArticles: []
+    stockType: 6
+  newsArticles:
+  - DisplayImage: {fileID: 4362398924616921564}
+    ArticleTitle: {fileID: 8389706402989479393}
+    ArticleText: {fileID: 866592872511338980}
+  - DisplayImage: {fileID: 7807087248238228158}
+    ArticleTitle: {fileID: 1884761222290918705}
+    ArticleText: {fileID: 4813458223101771643}
+  - DisplayImage: {fileID: 7217100059623707560}
+    ArticleTitle: {fileID: 297220769149422232}
+    ArticleText: {fileID: 4878094065414138900}
+  - DisplayImage: {fileID: 8028302100914701111}
+    ArticleTitle: {fileID: 930448486432808841}
+    ArticleText: {fileID: 7825594868875087826}
+  - DisplayImage: {fileID: 5782637405119533722}
+    ArticleTitle: {fileID: 8351476214965655528}
+    ArticleText: {fileID: 3909481534540330067}
+  - DisplayImage: {fileID: 4295106740460264030}
+    ArticleTitle: {fileID: 3380871722058248166}
+    ArticleText: {fileID: 9060388209993484450}
 --- !u!1 &5002598739447925026
 GameObject:
   m_ObjectHideFlags: 0

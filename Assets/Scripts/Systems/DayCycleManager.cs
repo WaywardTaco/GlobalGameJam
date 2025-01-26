@@ -44,6 +44,10 @@ public class DayCycleManager : MonoBehaviour
             Debug.Log("Game Over.");
         }
         else {
+            //Next Day
+            daysLeft++;
+            //Refresh Actions for next day
+            actionsLeft = maxActions;
             GameWorldEventManager.Instance.PendAutomaticEvents();
             newsFeed.RefreshDayInfo();
             StockManager.Instance.UpdateAllStockValues();
@@ -52,10 +56,6 @@ public class DayCycleManager : MonoBehaviour
             StartupManager.Instance.ResetDay();
             MonitorController.Instance.ResetDay();
             NotificationManager.Instance.PopNotifs();
-            //Next Day
-            daysLeft++;
-            //Refresh Actions for next day
-            actionsLeft = maxActions;
         }
     }
     

@@ -52,6 +52,8 @@ public class GameWorldEventManager : MonoBehaviour
             if(worldEvent.CurrentProbability == -1.0f)
                 worldEvent.CurrentProbability = worldEvent.WorldEvent.StartRandomProbability; 
         }
+
+        PendAutomaticEvents();
     }
 
     private void Update() {
@@ -105,6 +107,8 @@ public class GameWorldEventManager : MonoBehaviour
     }
 
     public void PendAutomaticEvents(){
+        // Debug.Log("Pending Remaining Events");
+
         // Pend auto condition events
         foreach(var worldEvent in WorldEventReferences){
             if(worldEvent.IsActive) continue;
@@ -115,14 +119,18 @@ public class GameWorldEventManager : MonoBehaviour
 
         // Pend remaining events
         PendRemainingEvents();
+
+        // Debug.Log($"Pending Events: {PendingToActivateEvents.Count}");
     }
 
     private void PendRemainingEvents(){
+        // Debug.Log($"Seeking Remaining Events: {TotalDayEvents}");
         WorldEventType chosenEvent = WorldEventType.None;
 
         while(PendingToActivateEvents.Count < TotalDayEvents){
             chosenEvent = chooseRandomEvent();
             StartEventPending(chosenEvent);
+            // Debug.Log($"Pending Events: {PendingToActivateEvents.Count}");
         }
     }
 

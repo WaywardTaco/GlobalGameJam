@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8b274a356254696ef34b14bb1376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalDayEvents: 0
+  TotalDayEvents: 6
   WorldEventReferences:
   - WorldEvent: {fileID: 11400000, guid: 9fac265cd750dea4d8c284daa5b8c7ca, type: 2}
     CurrentProbability: -1
@@ -469,4 +469,4 @@ MonoBehaviour:
   DirectionalLight: {fileID: 0}
   skyBox: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
   Preset: {fileID: 11400000, guid: 1d76efb500ffb4c41b5058729dadd525, type: 2}
-  TimeOfDay: 24
+  TimeOfDay: 4.87
