@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: The national government makes moves to force LDD's closure due to suspected
     international interference during the last elections. Legal Teams have
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0.1

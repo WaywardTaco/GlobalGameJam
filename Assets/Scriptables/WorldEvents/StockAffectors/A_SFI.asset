@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: City Hall invests millions into newly found silicon mine on the city
     outskirts. Experts say this could skyrocket chip production.
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0

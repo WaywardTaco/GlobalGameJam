@@ -20,7 +20,7 @@ MonoBehaviour:
   EventText: The 80-something CEO of OBG in a press conference last week went on
     a less than stellar tirade which used outdate language and showed their outdated
     mindset
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0.1

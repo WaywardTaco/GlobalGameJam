@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: CSR Event
-  EventType: 61
+  EventType: 55
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: "La Bubble, through Lucky Pearl Inc., launches an initiative\u2014using

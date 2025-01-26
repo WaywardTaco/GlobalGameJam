@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: PayPay Holdings suspends multiple services after higher costs and inconvenience
     compared to other options result in less users.
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Shell Event
-  EventType: 69
+  EventType: 63
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: Local supermarkets also open with new mini La Bubble branches.

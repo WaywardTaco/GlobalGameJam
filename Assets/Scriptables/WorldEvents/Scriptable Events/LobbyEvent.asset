@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Lobby Event
-  EventType: 65
+  EventType: 59
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: La Bubble CEO Peter Okaa, urges Erves government to back down on cassava

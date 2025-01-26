@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: BlackmailEvent
-  EventType: 68
+  EventType: 62
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: An investigation of Swell Tea's board has been launched due to anonymous
