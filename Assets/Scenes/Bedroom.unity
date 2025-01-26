@@ -1168,7 +1168,9 @@ PrefabInstance:
       value: DayCycle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4945193567941316542, guid: 10085ea9bc00ed54eab8972751306d9d, type: 3}
+    - {fileID: 4055175292093956442, guid: 10085ea9bc00ed54eab8972751306d9d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10085ea9bc00ed54eab8972751306d9d, type: 3}

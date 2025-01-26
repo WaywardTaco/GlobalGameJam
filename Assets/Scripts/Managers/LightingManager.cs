@@ -31,7 +31,10 @@ public class LightingManager : MonoBehaviour
             TimeOfDay += 5f * Time.deltaTime;
             TimeOfDay %= 24f;
             UpdateLighting(TimeOfDay/24f);
-            if(targetTime <= TimeOfDay) updateTime = false;
+            if(targetTime <= TimeOfDay) {
+                updateTime = false;
+                targetTime = 0;
+            }
         }
     }
 
@@ -52,6 +55,10 @@ public class LightingManager : MonoBehaviour
             skyBox.SetColor("_Tint", Preset.DirectionalColor.Evaluate(timePercent));
             skyBox.SetFloat("_Rotation", (timePercent * 300f) - 90f);
         }
+    }
+
+    public void SetTime(int value) {
+        TimeOfDay = value;
     }
 
     private void OnValidate() {

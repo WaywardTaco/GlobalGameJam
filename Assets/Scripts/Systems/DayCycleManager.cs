@@ -2,7 +2,6 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEngine.SceneManagement;
 using System.Collections;
-using Microsoft.Unity.VisualStudio.Editor;
 
 public class DayCycleManager : MonoBehaviour
 {
@@ -29,6 +28,7 @@ public class DayCycleManager : MonoBehaviour
         else Destroy(this);
         daysLeft = 1;
         actionsLeft = maxActions;
+        maxDays = 7;
 
         DayAnimator = GameObject.Find("DayCycle/Animator").gameObject;
         FadeOut = GameObject.Find("FadeOut").GetComponent<CanvasGroup>();
@@ -44,6 +44,7 @@ public class DayCycleManager : MonoBehaviour
             Debug.Log("Game Over.");
         }
         else {
+            
             //Next Day
             daysLeft++;
             //Refresh Actions for next day

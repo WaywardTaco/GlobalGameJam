@@ -82,7 +82,7 @@ public class CycleTime : MonoBehaviour
         black.LeanMoveLocalY(0, 1.5f).setEaseOutQuart().delay = 0.1f;
 
         yield return new WaitForSeconds(1f);
-        LightingManager.Instance.UpdateLighting(0);
+        LightingManager.Instance.SetTime(1);
         SFXManager.Instance.Play("Cricket");
 
         //Show text
@@ -146,7 +146,7 @@ public class CycleTime : MonoBehaviour
         black.LeanMoveLocalY(0, 1.5f).setEaseOutExpo().delay = 0.1f;
 
         yield return new WaitForSeconds(1);
-        LightingManager.Instance.UpdateLighting(0);
+        LightingManager.Instance.SetTime(1);
         SFXManager.Instance.Play("Cricket");
 
         //Show text
