@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Bond Security
   UpgradeType: 4
-  InvokedEvent: 72
+  InvokedEvent: 66
   Cost: 5
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

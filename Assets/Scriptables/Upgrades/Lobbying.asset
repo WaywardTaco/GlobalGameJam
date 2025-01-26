@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Corporate Lobbying
   UpgradeType: 2
-  InvokedEvent: 65
+  InvokedEvent: 59
   Cost: 12
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

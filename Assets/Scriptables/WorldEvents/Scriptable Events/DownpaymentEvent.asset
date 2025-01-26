@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Downpayment Event
-  EventType: 70
+  EventType: 64
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: Bank of Erves' officials listens to client pleas and extend bill deadlines.

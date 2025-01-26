@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Bond Event
-  EventType: 72
+  EventType: 66
   StartRandomProbability: 0
   IsOneshotEvent: 1
   EventText: 'Lucky Pearls, the tapioca supplier has reached sky high profits this

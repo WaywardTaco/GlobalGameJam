@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Narrative Control
   UpgradeType: 9
-  InvokedEvent: 75
+  InvokedEvent: 69
   Cost: 14
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

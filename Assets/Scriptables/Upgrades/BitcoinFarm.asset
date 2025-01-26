@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Bitcoin Farm
   UpgradeType: 3
-  InvokedEvent: 74
+  InvokedEvent: 68
   Cost: 4
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

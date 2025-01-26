@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: BItcoin Event
-  EventType: 74
+  EventType: 68
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: The new cryptocurrency $BBLT rockets in prices after viral Erves cafe
