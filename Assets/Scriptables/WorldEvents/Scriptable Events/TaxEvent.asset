@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TaxEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 97b2ef7aa53cb5d429fefc2c50e30b20, type: 3}
-  EventName: Tax Event
+  EventName: Protests at City Hall!
   EventType: 56
   StartRandomProbability: 0
   IsOneshotEvent: 0

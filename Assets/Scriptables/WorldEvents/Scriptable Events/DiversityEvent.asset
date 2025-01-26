@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DiversityEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 4cf8d1ec4cdf9c1478ac0a43d3f0b9f3, type: 3}
-  EventName: Diversity Event
+  EventName: Lucky Pearls Goes Global!
   EventType: 58
   StartRandomProbability: 0
   IsOneshotEvent: 0
