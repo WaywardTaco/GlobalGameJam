@@ -346,6 +346,51 @@ MonoBehaviour:
   - WorldEvent: {fileID: 11400000, guid: 1aa4df020ae0c4c45a67120433e084d1, type: 2}
     CurrentProbability: -1
     IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 43affc0994462034ca2e68f562a52375, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: b8c5c98e57921f647a93e63e415b8983, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 5667c1554b4513349b52a71b309313a5, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 5e11b3bb5b4a5f3429abeafd1103754b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: ec0efc8b89d0e3f40aa96540c85b32a8, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: e6a72767a7f7a9d43825bd6c150cdc4d, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 9df0c55939902ee4496bf2a32f873b8a, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 24c4066badd5cfd47a74f84b089d0a24, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 53cd86c4bc72b144ebb8ff834306b12e, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: fad19f4d8dfd6134b92d741004388e51, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 8396ecf10629142478576acf6c96dec9, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: e3318aa78aa1f2244852a620aa90d12b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 85c8219dc8d1c0c4280efc9439be6e88, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 60ceca90bd074a74587ca91a6c56930b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 04f8921734023704ab784ec01665ba9d, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
   totalProbability: 0
   WorldEventProbabilities: []
   PendingToActivateEvents: 
@@ -368,6 +413,7 @@ MonoBehaviour:
   maxActions: 3
   maxDays: 7
   DayAnimator: {fileID: 0}
+  FadeOut: {fileID: 0}
   newsFeed: {fileID: 0}
 --- !u!114 &328694245482984953
 MonoBehaviour:

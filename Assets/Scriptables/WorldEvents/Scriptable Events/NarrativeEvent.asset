@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: ea5a2c0f6ef9e494d9704ad5fd07a27a, type: 3}
   EventName: 'Narrative Event '
-  EventType: 75
+  EventType: 69
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: Our building has gotten a new branch, giving journalists a way to refresh.

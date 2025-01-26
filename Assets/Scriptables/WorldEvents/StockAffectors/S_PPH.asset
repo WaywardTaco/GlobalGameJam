@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: Due to mass withdrawals of cash, PPH finds itself struggling to maintain
     its market dominance amidst claims of its corruption and exclusionary tactics
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

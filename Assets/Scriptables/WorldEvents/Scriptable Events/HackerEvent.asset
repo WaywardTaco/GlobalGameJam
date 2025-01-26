@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 211abe535f4f24e458db922d20ea1cc7, type: 3}
   EventName: Hacker Event
-  EventType: 71
+  EventType: 65
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: Anonymous cyberattacks plague GrandTime Foods' records and releases

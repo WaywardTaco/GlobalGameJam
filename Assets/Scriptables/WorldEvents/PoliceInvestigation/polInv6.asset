@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 86781432a3e1dbf42bdb14b1b96929a5, type: 3}
   EventName: Mkt Manipulation Mastermind Caught
-  EventType: 61
+  EventType: 76
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: A key individual believed to be the mastermind behind a large-scale

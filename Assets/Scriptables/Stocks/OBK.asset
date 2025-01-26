@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OBK
   m_EditorClassIdentifier: 
   StockName: Online Brokers Group
-  StockCode: OBK
+  StockCode: OBG
   StockType: 4
   StartingStockValue: 0
   StockText: Insert Stock Text

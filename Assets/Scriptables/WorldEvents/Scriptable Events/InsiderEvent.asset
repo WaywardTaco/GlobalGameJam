@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 92f93b7c39889d04cb9b35107ffd13fc, type: 3}
   EventName: Insider Event
-  EventType: 66
+  EventType: 60
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: 'Moonshine LLC is in trouble after landslide cuts off trade, leaving

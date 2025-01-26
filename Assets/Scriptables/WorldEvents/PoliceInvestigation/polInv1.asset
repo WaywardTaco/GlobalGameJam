@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 9058548ef21181b40814ca39c111770a, type: 3}
   EventName: 'Stock Broker Gains Infamy '
-  EventType: 56
+  EventType: 71
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: 'A once-respected stock broker has found himself at the center of a

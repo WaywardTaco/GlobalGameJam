@@ -1,6 +1,8 @@
 using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using Microsoft.Unity.VisualStudio.Editor;
 
 public class DayCycleManager : MonoBehaviour
 {
@@ -13,10 +15,12 @@ public class DayCycleManager : MonoBehaviour
     [ReadOnly, SerializeField] public int currentMonth;
     [SerializeField] private int maxActions; //Max actions per day
     [SerializeField] private int maxDays; //Max days (Upgradeable)
-    [SerializeField] private GameObject DayAnimator;
+    [ReadOnly, SerializeField] private GameObject DayAnimator;
+    [ReadOnly, SerializeField] private CanvasGroup FadeOut;
     [SerializeField, ReadOnly] private NewsFeedUpdater newsFeed;
     private GameObject testActionButton;
     private GameObject endDayButton;
+    private bool returnTitle;
 
     void Awake() {
         if(Instance == null) {
@@ -27,12 +31,8 @@ public class DayCycleManager : MonoBehaviour
         actionsLeft = maxActions;
 
         DayAnimator = GameObject.Find("DayCycle/Animator").gameObject;
+        FadeOut = GameObject.Find("FadeOut").GetComponent<CanvasGroup>();
     }
-
-    void Start() {
-
-    }
-
     public void SetNewsFeed(NewsFeedUpdater newsFeedUpdater){
         this.newsFeed = newsFeedUpdater;
     }
@@ -79,9 +79,22 @@ public class DayCycleManager : MonoBehaviour
         NotificationManager.Instance.Notify(2.5f, "Successfully Purchased Selected Upgrades!");
     }
 
+    public void FadeToTitleScreen() {
+        returnTitle = true;
+    }
+
+    IEnumerator Fade() {
+        FadeOut.alpha += 0.5f * Time.deltaTime;
+        if(FadeOut.alpha >= 1) {
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene("TitleMenu");
+        }
+    }
+
 
     void Update() {
-        if(actionsLeft <= 0) {
+        if(returnTitle) {
+            StartCoroutine(Fade());
         }
     }
 
@@ -98,7 +111,7 @@ public class DayCycleManager : MonoBehaviour
     }
 
     public int getDaysLeft() {
-        return maxDays - (daysLeft - 1);
+        return (maxDays - daysLeft) + 1;
     }
 
     public void SetMaxDays(int value)

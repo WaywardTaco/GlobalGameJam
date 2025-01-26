@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 59a75b6c09e9cf442a5c305cbef2a4b6, type: 3}
   EventName: 'Stock Broker Involved With Mafia? '
-  EventType: 58
+  EventType: 73
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: 'Authorities are exploring possible connections between a well-known

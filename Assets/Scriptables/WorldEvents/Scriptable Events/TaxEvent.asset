@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 97b2ef7aa53cb5d429fefc2c50e30b20, type: 3}
   EventName: Tax Event
-  EventType: 62
+  EventType: 56
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: Criticisms of local laws regarding food imports and their exploitability

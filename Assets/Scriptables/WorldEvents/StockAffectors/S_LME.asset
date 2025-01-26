@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: 'LME CEO shared their concerns regarding the recent slow in the market,
     citing that slower markets reduce capital flow nationally, hindering '
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.2

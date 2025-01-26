@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: OBG's stock drop as their latest leading talent is plundered by rival
     brokerages, truly a shameful loss once more for the group amidst a so-so year
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

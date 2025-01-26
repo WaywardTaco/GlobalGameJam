@@ -122,7 +122,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4796413618554225746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8340616582245642086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7134195417938999356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &3775922080454521672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +361,7 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Bond Security
   descText: "Make sure your investments don't go pop.\n\n<indent=-50px>\u25CF<indent=00px>Increases
-    stock value</indent>\n\u25CF<indent=0px>Decreases chance of bankruptcy event</indent>"
+    stock value</indent>\n\u25CF<indent=0px>Increases suspiciont</indent>"
   typeText: Legal Upgrade
 --- !u!58 &5314230073254098601
 CircleCollider2D:
@@ -453,9 +477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sample Text
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
@@ -585,6 +607,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.75852334, b: 0.509434, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &717180219523950240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8839878571787347699}
+  - component: {fileID: 2801644135257640549}
+  - component: {fileID: 6582038586611250142}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8839878571787347699
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717180219523950240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.2848, y: 3.2848, z: 3.2848}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1940720893581749682}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1924.9, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2801644135257640549
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717180219523950240}
+  m_CullTransparentMesh: 1
+--- !u!114 &6582038586611250142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717180219523950240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -592,7 +689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 143149b96b6c55249831cca5679be428, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -724,7 +821,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4260555655733831671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &4472358641992711703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,7 +1182,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7847318626340079285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8034611356444783646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,7 +1216,7 @@ MonoBehaviour:
   nameText: Corporate Blackmail
   descText: "Make someone bend to your will with a simple e-mail.\n\n<indent=-50px>\u25CF<indent=00px>Increases
     suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Slightly
-    decreases days left</indent>\n"
+    increases days left</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &7191031482023606851
 CircleCollider2D:
@@ -1170,8 +1291,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887160524426571803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.7645}
+  m_LocalScale: {x: 1.0574, y: 1.0574, z: 1.0574}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4897814964700013673}
@@ -1180,7 +1301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 339, y: -30}
+  m_AnchoredPosition: {x: 339, y: -124}
   m_SizeDelta: {x: 4133.7305, y: 1889.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1939739540797638008
@@ -1305,7 +1426,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4193998433897882963}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &5978555573060604463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1499,7 +1632,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2117582578728313629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &486667131836597795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,7 +1665,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Shell Companies
   descText: "Hide from the authorities by selling seashells.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
-    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\n"
+    suspicion</indent>\n\u25CF<indent=0px>Decreases stock value</indent>\n\u25CF<indent=0px>Gives
+    you a few more days</indent>\n\n"
   typeText: Illegal Upgrade
 --- !u!58 &698747130887181088
 CircleCollider2D:
@@ -1740,9 +1886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sample Text
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
@@ -1769,8 +1913,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150.3
-  m_fontSizeBase: 150.3
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1935,7 +2079,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1374686918236461319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &4569234504285244441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,7 +2285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1890836917808831764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &3300692181899840157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2150,7 +2318,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: PR Campaign
   descText: "Show the world what you can do! (Or save face)\n\n<indent=-50px>\u25CF<indent=00px>Decreases
-    suspicion</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>"
+    suspicion</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>\n\u25CF<indent=0px>Decreases
+    stock value</indent>\n"
   typeText: Legal Upgrade
 --- !u!58 &7543255971410087208
 CircleCollider2D:
@@ -2232,6 +2401,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7664096603667217659}
+  - {fileID: 8839878571787347699}
+  - {fileID: 4682169304866169402}
+  - {fileID: 4330027033258243881}
   m_Father: {fileID: 4195728686549517965}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2267,8 +2439,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2399,7 +2571,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1293597981854589335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6554007714585597914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,8 +2604,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Insider Trading
   descText: "A friend in a company gossiped a little too much about his work. Take
-    his yapping to an advantage.\n\n<indent=-50px>\u25CF<indent=00px></indent>\n\u25CF<indent=0px>Gives
-    you a few more days</indent>"
+    his yapping to an advantage.\n\n<indent=-50px>\u25CF<indent=00px>Increases suspicion</indent>\n\u25CF<indent=0px>Increases
+    stock value</indent>"
   typeText: Illegal Upgrade
 --- !u!58 &7918183622403215414
 CircleCollider2D:
@@ -2594,7 +2778,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 474236171283131048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2103324176610395797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2615,8 +2811,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Pyramid Scheme
   descText: "Contact old friends and give them a little sales pitch.\n\n<indent=-50px>\u25CF<indent=00px>Increases
-    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Slightly
-    increases days left</indent>\n"
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Gives
+    you a few more days</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &3992527963197920698
 CircleCollider2D:
@@ -2789,7 +2985,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2479398653266786419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8447770028924740385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2809,8 +3017,8 @@ MonoBehaviour:
   targetDesc: {fileID: 8199368320679213941}
   targetType: {fileID: 2577347286042134612}
   nameText: Charity Fund
-  descText: "Give a little back.\n\n<indent=-50px>\u25CF<indent=00px>Increases suspicion</indent>\n\u25CF<indent=0px>Increases
-    stock value</indent>\n\u25CF<indent=0px>Slightly increases days left</indent>\n"
+  descText: "Give a little back.\n\n<indent=-50px>\u25CF<indent=00px>Decreases suspicion</indent>\n\u25CF<indent=0px>Loses
+    stock value</indent>"
   typeText: Legal Upgrade
 --- !u!58 &4340080920683595462
 CircleCollider2D:
@@ -2926,9 +3134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sample Text
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 985bd25c948435947983b472769a84ee, type: 2}
   m_sharedMaterial: {fileID: 786988542355810040, guid: 985bd25c948435947983b472769a84ee, type: 2}
@@ -3121,7 +3327,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2949686085727158811}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8440604456496101229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3142,7 +3360,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Tax Loophole Exploitation
   descText: "This is technically legal... but....\n\n<indent=-50px>\u25CF<indent=00px>Increases
-    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>"
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Cuts
+    a few days off</indent>\n"
   typeText: Legal Upgrade
 --- !u!58 &75126525006608785
 CircleCollider2D:
@@ -3275,6 +3494,81 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6054283856290878334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4682169304866169402}
+  - component: {fileID: 1092609923981302295}
+  - component: {fileID: 5715194012142616974}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4682169304866169402
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054283856290878334}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.2848, y: 3.2848, z: 3.2848}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1940720893581749682}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1402, y: -0.09887695}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1092609923981302295
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054283856290878334}
+  m_CullTransparentMesh: 1
+--- !u!114 &5715194012142616974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054283856290878334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 29e934388d86cd6479844df83436cf55, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6629896377979455474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3341,8 +3635,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3658,7 +3952,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8348477134412684348}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &7003149139505749359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3678,8 +3984,8 @@ MonoBehaviour:
   targetDesc: {fileID: 8199368320679213941}
   targetType: {fileID: 2577347286042134612}
   nameText: CSR Operations
-  descText: "Corporate Social Responsibility might be appealing to the masses, but
-    shareholders won't like being responsible for anything shady you do.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
+  descText: "These might be appealing to the masses, but shareholders won't like
+    being responsible for anything shady you do.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
     suspicion</indent>\n\u25CF<indent=0px>Decrease stock values</indent>"
   typeText: Legal Upgrade
 --- !u!58 &8898817782111767150
@@ -3853,7 +4159,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7243304684542050246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6696309396283516606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3873,8 +4191,8 @@ MonoBehaviour:
   targetDesc: {fileID: 8199368320679213941}
   targetType: {fileID: 2577347286042134612}
   nameText: Diversified Investments
-  descText: "Don't know which one to inveset in? Invest in EVERYTHING! \n\n<indent=-50px>\u25CF<indent=00px>Increases
-    stock value</indent>\n\u25CF<indent=0px>Increases suspicion</indent>\n"
+  descText: "Don't know which one to inveset in? Invest in EVERYTHING! \n\n<indent=-50px>\u25CF<indent=00px>Decreases
+    stock value</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>\n"
   typeText: 
 --- !u!58 &5782344621994039322
 CircleCollider2D:
@@ -3925,6 +4243,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeType: 8
+--- !u!1 &8860631922455865050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4330027033258243881}
+  - component: {fileID: 8199799035987161106}
+  - component: {fileID: 7480020434380240475}
+  m_Layer: 5
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4330027033258243881
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860631922455865050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.2848, y: 3.2848, z: 3.2848}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1940720893581749682}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1667, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8199799035987161106
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860631922455865050}
+  m_CullTransparentMesh: 1
+--- !u!114 &7480020434380240475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8860631922455865050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7c3b17569a5089444aa2f023ce18de1f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &9214259965638016982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,7 +4440,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092334936938855276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6357216956202166547
 MonoBehaviour:
   m_ObjectHideFlags: 0
