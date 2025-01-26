@@ -59,6 +59,8 @@ public class GameWorldEventManager : MonoBehaviour
 
     private void Update() {
         if(onStartPend){
+            NotificationManager.Instance.PendNotif(2, "Hello");
+
             PendAutomaticEvents();
             onStartPend = false;
         }
