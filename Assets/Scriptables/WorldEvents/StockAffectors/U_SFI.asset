@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: U_SFI
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: d3b75de25bc46684d8056c990d4610be, type: 3}
   EventName: Grandpa's Tech Inc?
   EventType: 29
   StartRandomProbability: 0.2

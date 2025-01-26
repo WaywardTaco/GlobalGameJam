@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: U_PPH
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: a889985fa26ccab46adc56eb0c5f9c68, type: 3}
   EventName: PayPay-ing too much for less?
   EventType: 26
   StartRandomProbability: 0.2
