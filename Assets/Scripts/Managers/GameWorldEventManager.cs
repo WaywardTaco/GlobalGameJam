@@ -31,7 +31,7 @@ public class GameWorldEventManager : MonoBehaviour
     [SerializeField] private List<WorldEventType> PendingToActivateEvents = new();
     private Dictionary<WorldEventType, WorldEventTracker> EventTypeKeys = new();
 
-    private bool onStartPend = true;
+    public bool onStartPend = true;
 
     private void Awake() {
         if(Instance == null){
