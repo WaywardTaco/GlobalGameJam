@@ -29,6 +29,6 @@ public class GameOverScript : MonoBehaviour
 
     public void OnNextClicked()
     {
-        SceneManager.LoadScene("Bedroom");
+        SceneManager.LoadScene("TitleMenu");
     }
 }
