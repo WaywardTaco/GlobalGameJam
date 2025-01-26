@@ -1,6 +1,8 @@
 using System.Collections;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class MonitorController : MonoBehaviour 
@@ -30,6 +32,10 @@ public class MonitorController : MonoBehaviour
     [ReadOnly, SerializeField] private float percentagePos;
     [ReadOnly, SerializeField] private float percentageRot;
 
+    [ReadOnly, SerializeField] private GameObject playerCursor;
+    [ReadOnly, SerializeField] private GameObject tooltipMonitor;
+    [ReadOnly, SerializeField] private GameObject tooltipCursor;
+
     void Awake() {
         if(Instance == null) {
             Instance = this;
@@ -39,6 +45,10 @@ public class MonitorController : MonoBehaviour
         player = GameObject.Find("Character").gameObject;
         mainCamera = GameObject.Find("Character/PlayerCamera").gameObject;
         zoomCamera = GameObject.Find("ZoomCamera").gameObject;
+
+        playerCursor = GameObject.Find("Cursor").gameObject;
+        tooltipMonitor = playerCursor.transform.Find("Tooltip(Monitor)").gameObject;
+        tooltipCursor = GameObject.Find("Screen/Tooltip(Cursor)").gameObject;
     }
 
     void Start() {
@@ -51,11 +61,23 @@ public class MonitorController : MonoBehaviour
         player.SetActive(true);
         mainCamera.SetActive(true);
         zoomCamera.SetActive(false);
+
+        playerCursor.SetActive(true);
+        tooltipMonitor.SetActive(false);
+        tooltipCursor.SetActive(true);
     }
 
     void Update() {
+        tooltipCursor.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y + 20);
+
         if(!onScreen && IsMouseOverGameWindow) {
+            if(Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2, 0)), Mathf.Infinity, layerMask)) {
+                tooltipMonitor.SetActive(true);
+            }
+            else tooltipMonitor.SetActive(false);
+
             if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2, 0)), Mathf.Infinity, layerMask)) {
+                playerCursor.SetActive(false);
                 Debug.Log("Screen Detected!");
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -102,6 +124,14 @@ public class MonitorController : MonoBehaviour
         }
     }
 
+    public void EnableTooltip(string value) {
+        tooltipCursor.GetComponent<TextMeshProUGUI>().text = value;
+    }
+
+    public void DisableTooltip() {
+        tooltipCursor.GetComponent<TextMeshProUGUI>().text = "";
+    }
+
     public void ResetDay() {
         hasExitedScreen = true;
     }
@@ -138,6 +168,7 @@ public class MonitorController : MonoBehaviour
             percentageRot = 0;
             elapsedTimePos = 0;
             elapsedTimeRot = 0;
+            playerCursor.SetActive(true);
         }
         yield return null;
     }

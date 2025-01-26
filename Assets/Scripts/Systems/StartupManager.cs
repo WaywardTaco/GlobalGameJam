@@ -19,6 +19,7 @@ public class StartupManager : MonoBehaviour
     [ReadOnly, SerializeField] private GameObject sellUI;
     [ReadOnly, SerializeField] private GameObject upgradeUI;
     
+    
     private float time = 1.5f;
     private float currentTime;
     public bool loadScreen;
@@ -45,6 +46,8 @@ public class StartupManager : MonoBehaviour
         sellUI = GameObject.Find("SellUI").gameObject;
         upgradeUI = GameObject.Find("UpgradeUI").gameObject;
 
+        
+
         currentTime = time;
     }
 
@@ -60,6 +63,8 @@ public class StartupManager : MonoBehaviour
         purchaseUI.SetActive(false);
         sellUI.SetActive(false);
         upgradeUI.SetActive(false);
+
+        
 
         SFXManager.Instance.Play("Ambience");
     }
