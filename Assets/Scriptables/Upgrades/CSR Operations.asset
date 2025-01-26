@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: CSR Operations
   UpgradeType: 5
-  InvokedEvent: 61
+  InvokedEvent: 55
   Cost: 5
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
