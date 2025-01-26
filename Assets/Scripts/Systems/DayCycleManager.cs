@@ -83,6 +83,11 @@ public class DayCycleManager : MonoBehaviour
         return maxDays;
     }
 
+    public void SetMaxDays(int value)
+    {
+        maxDays = value;
+    }
+
     public void SetDay(int value) {
         currentDay = value;
     }
