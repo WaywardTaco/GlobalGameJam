@@ -67,7 +67,7 @@ public class BuySellStocks : MonoBehaviour
         stringAmount += stockTracker.PlayerStockCount.ToString();
         shares.GetComponent<TMP_Text>().text = stringAmount;
 
-        stringAmount = "Mkt Rate: ";
+        stringAmount = "Mkt Val: ";
         stringAmount += stockTracker.CurrentStockValue.ToString();
         value.GetComponent<TMP_Text>().text = stringAmount;
     }
