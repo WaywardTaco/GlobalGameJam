@@ -52,6 +52,8 @@ public class GameWorldEventManager : MonoBehaviour
             if(worldEvent.CurrentProbability == -1.0f)
                 worldEvent.CurrentProbability = worldEvent.WorldEvent.StartRandomProbability; 
         }
+
+        PendAutomaticEvents();
     }
 
     private void Update() {

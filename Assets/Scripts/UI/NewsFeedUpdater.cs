@@ -31,6 +31,10 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     private void OnEnable() {
+        SetStocksValues();
+        UpdateStockAccronyms();
+        SetDateDisplay();
+        SetActiveEventInfo();
 
     }
 
