@@ -64,6 +64,7 @@ public class NewsFeedUpdater : MonoBehaviour
     }
 
     private void SetDateDisplay(){
+        Debug.Log($"{DayCycleManager.Instance.currentMonth}/{DayCycleManager.Instance.currentDay}");
         dateText.text = $"{DayCycleManager.Instance.currentMonth}/{DayCycleManager.Instance.currentDay}";
     }
 

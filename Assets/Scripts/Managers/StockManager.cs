@@ -51,11 +51,18 @@ public class StockManager : MonoBehaviour
 
             if(Math.Abs(CurrentTrendVariance) > 0.5)
                 CurrentTrendVariance = 0.5f;
+            if(Math.Abs(CurrentTrendVariance) < 0.01)
+                CurrentTrendVariance = 0.01f;
+            
 
             float randomVariance = ((UnityEngine.Random.Range(0, 200) - 100) / 100) * CurrentTrendVariance;
 
             if(CurrentTrendBase > 1.0f) CurrentTrendBase = 1.0f;
             if(CurrentTrendBase < -1.0f) CurrentTrendBase = -1.0f;
+            if(Math.Abs(CurrentTrendBase) < 0.01){
+                if(CurrentTrendBase < 0) CurrentTrendBase = -0.01f;
+                if(CurrentTrendBase >= 0) CurrentTrendBase = 0.01f;
+            }
 
             float trendEffect = 0.0f;
             trendEffect =
