@@ -9,6 +9,7 @@ using Sirenix.OdinInspector;
 public class ResourceManager : MonoBehaviour
 {
     public static ResourceManager Instance;
+    [SerializeField] private int startPlayerMoney;
 
     [HorizontalGroup("Row")]
     [VerticalGroup("Row/Left"), LabelWidth(120)]
@@ -36,7 +37,7 @@ public class ResourceManager : MonoBehaviour
     }
 
     private void ResetMetrics(){
-        PlayerMoney = 0;
+        PlayerMoney = startPlayerMoney;
         CurrentReputation = 100;
     }
 }

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3517809845309587875}
   - component: {fileID: 1026857903459424740}
   - component: {fileID: 5950584416782141670}
+  - component: {fileID: 7686259890661624035}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a31c22108ac34b43b39894d3670fd65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPlayerMoney: 17
   PlayerMoney: 0
   CurrentReputation: 100
 --- !u!114 &8278169549655888870
@@ -67,20 +69,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stockHistoryCount: 5
-  stockGraphing: {fileID: 0}
   activeStocks:
-  - Stock: {fileID: 11400000, guid: 6cfa90515ad06c74d89f4d8bfc910a93, type: 2}
-    CurrentStockValue: 0
-    CurrentTrendBase: 0
+  - Stock: {fileID: 11400000, guid: 9969506d1fd075843a07063425393b07, type: 2}
+    CurrentStockValue: 121
+    CurrentTrendBase: -0.3
     PlayerStockCount: 0
-    CurrentTrendVariance: 0
-    PreviousValues: 
+    CurrentTrendVariance: 0.05
+    PreviousValues: d40000006e000000970000008f00000085000000
   - Stock: {fileID: 11400000, guid: 6cfa90515ad06c74d89f4d8bfc910a93, type: 2}
-    CurrentStockValue: 0
-    CurrentTrendBase: 0
+    CurrentStockValue: 3
+    CurrentTrendBase: 0.2
     PlayerStockCount: 0
-    CurrentTrendVariance: 0
-    PreviousValues: 
+    CurrentTrendVariance: 0.15
+    PreviousValues: 0500000004000000010000000200000003000000
+  - Stock: {fileID: 11400000, guid: 37f16b6952cd86442b13f18cec36a3df, type: 2}
+    CurrentStockValue: 11
+    CurrentTrendBase: -0.1
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0.12
+    PreviousValues: 1500000019000000120000000c0000000d000000
+  - Stock: {fileID: 11400000, guid: ac58a599ca29da5409ce79b615d1c52f, type: 2}
+    CurrentStockValue: 34
+    CurrentTrendBase: 0.1
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0.02
+    PreviousValues: 1500000017000000190000001b0000001e000000
+  - Stock: {fileID: 11400000, guid: b09d6daa72d68184787850130533d928, type: 2}
+    CurrentStockValue: 64
+    CurrentTrendBase: 0.05
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0.3
+    PreviousValues: 3d0000003e0000003f0000004000000040000000
+  - Stock: {fileID: 11400000, guid: f4211f010c4ef1447a2cdded286217e2, type: 2}
+    CurrentStockValue: 7
+    CurrentTrendBase: 0.34
+    PlayerStockCount: 0
+    CurrentTrendVariance: 0.32
+    PreviousValues: 0100000009000000020000000800000003000000
 --- !u!114 &7108480437543889911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +163,187 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TotalDayEvents: 0
   WorldEventReferences:
-  - WorldEvent: {fileID: 11400000, guid: 769653c35708e5d4a918e397450850cc, type: 2}
+  - WorldEvent: {fileID: 11400000, guid: 9fac265cd750dea4d8c284daa5b8c7ca, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: e5ef56d287c99304fa5b9e8df8f40cdb, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 94285b67557134d41b7ce6b0179e1c5c, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: ebfa6132bf720184982f128427ff4a06, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 928a8a8fdb94fb54bbe20de63d402f4e, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 6467cf166260cd64eba38899815ece84, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 72e254ca5fd5d2543911dbcee58bc8a2, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 071d95bb6dff14f4a8f3e115e7efa728, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 0749d08289b038b40aa748b8e88f1618, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 062a0220a138543478d37d4bcdfa3719, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 06a0f6292127337408349507334f5b01, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: c001d6f725bd20c4b851e9cda5509e6f, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: ebd91643f38aa1243a85532338ca139f, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 3c9b477399a80054296ae079ae0c3b0a, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 6273d7ca0f916d54bac6635b1e37295d, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: b7e2126819fd9c048b6c98d04d1112b7, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: af4e17f9beeccb84b9eae0a5f5c22b58, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 18fee4aab48908943bbe4fc7f617ae41, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 77136ecfd60fd334585cbd95a2265a6f, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: bfe63eeae5d7066448a9c50bff229c55, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: da72e0c92b57b43478a63c93384c032d, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: b1b2617192b541249b4ba6b95b4b72fa, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 4c7e94187b6e28f4ca58e5d874d709c1, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 2c61bf7b75859b44cb2a8f1394b91696, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: cbbcb40717822104bb01b3ba60186be9, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 45cf0fb1d8ce523479e85b4d9f2a1f15, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: f61aa1d34a981d84b9a04b37f6a840a7, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: f77430863494daf45ab683e7e8efea84, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: d4e7822e60a33b248a4675eb6c8e027b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: fa662ec50cca52f48a44ec2c1d253904, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: c5ac7817c89dd354bafb4350e0c2d75f, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: bf95b6750e7e3f7418fac01be071a8d4, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: dce7b3bb23172314c88bc382748d6617, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 0074c2a4858b2c44eb27ed0402991f18, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 46f7019bbbf4a6e47bfc83113b12315d, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 12f928eca9b2d1644aa520dbdaf89267, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: ca0e2e85eaeb50942b0f8c8c4761eee0, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 6bfb477d38285244f97b7f452a23aba8, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: d52246b69cf6d3540a81d3934874b71e, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 4610833bbfa05b646b93f453a973fb78, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 249a9010aa1ddd845be01bcadb6bbce7, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: e4f02856369a41e4cbdef7c6af5fac3b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: eb4ddd5ddf494514b8c45ee37bd9b218, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 757a367940e02b849a8820b5c611c3bc, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: ce28ee13e625973489c897c5bc1c3668, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 388100d6b72518c4580a60d58fd349e5, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 48d5ced8f20a44f46a055783f93c71ed, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 8e43c62c9b36a534cbbdfc72219be2ac, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: a9c385542cbc9db43a1daa2c81247427, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 4f07b553e00b1e34c98d7cdf70f51f50, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 88c8a362b1f49da43bdcc61c9d69c56b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 05bc3f06b24331c4cb1d4c3af41f957b, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 83f80fd528b2888459f6c1347fcc1aae, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: b46672b67fe32074aa1717e1a0e463bb, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 35b1149551aa7a046ad807866735eb19, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 92070c7c7c6c1ea48b477646be87d61e, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 6d96be3f05c43d74ba3a95ae27fdf1aa, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 85a3425b94e89e1419f5b76adcdf66d5, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 99a85cb969812784ba40ff38b0de62f8, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: e03f9884252caee49bd100cff0d8cf20, type: 2}
+    CurrentProbability: -1
+    IsActive: 0
+  - WorldEvent: {fileID: 11400000, guid: 1aa4df020ae0c4c45a67120433e084d1, type: 2}
     CurrentProbability: -1
     IsActive: 0
   totalProbability: 0
@@ -176,6 +381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fc8b5fe2813b04fa661b07fa72032b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
   news: {fileID: 0}
   newsToggle: 1
 --- !u!114 &3517809845309587875
@@ -190,6 +398,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ace43e671c059c4d90cf970058779cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoginGUI: {fileID: 0}
+  windowGUI: {fileID: 0}
+  newsGUI: {fileID: 0}
+  stocksGUI: {fileID: 0}
+  upgradeGUI: {fileID: 0}
+  moneyUI: {fileID: 0}
+  stocksUI: {fileID: 0}
+  purchaseUI: {fileID: 0}
+  sellUI: {fileID: 0}
+  upgradeUI: {fileID: 0}
   loadScreen: 0
   hasLoaded: 0
 --- !u!114 &1026857903459424740
@@ -235,3 +453,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7c511bb5604485489af8d544e128eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeType: 0
+--- !u!114 &7686259890661624035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2305349085178835861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac669aff27ac2b48a4fb1d4aefd7205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DirectionalLight: {fileID: 0}
+  skyBox: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
+  Preset: {fileID: 11400000, guid: 1d76efb500ffb4c41b5058729dadd525, type: 2}
+  TimeOfDay: 24

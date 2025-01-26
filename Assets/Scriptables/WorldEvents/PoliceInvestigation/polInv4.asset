@@ -19,5 +19,5 @@ MonoBehaviour:
   IsOneshotEvent: 0
   EventText: "Authorities Gain Ground in Investigation of Suspicious Trading Activities.
     \u201CWe\u2019re seeing some promising developments in this case,\u201D......\r\n"
-  lowestActivationRep: 34
-  higherActivationRep: 25
+  lowestActivationRep: 25
+  higherActivationRep: 34

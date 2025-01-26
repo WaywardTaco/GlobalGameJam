@@ -28,7 +28,6 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private List<UpgradeTracker> UpgradeReferences = new();
     public Dictionary<UpgradeType, UpgradeTracker> UpgradeTypeKeys = new();
 
-
     public bool TryBuyUpgrade(UpgradeType upgradeType, int count = 1){
         if(upgradeType == UpgradeType.None) return false;
         if(count < 1) return false;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
   m_Name: polInv3
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 59a75b6c09e9cf442a5c305cbef2a4b6, type: 3}
   EventName: 'Stock Broker Involved With Mafia? '
   EventType: 58
   StartRandomProbability: 0
@@ -21,5 +21,5 @@ MonoBehaviour:
     stock broker and a notorious criminal mafia syndicate. A shocking....
 
 '
-  lowestActivationRep: 49
-  higherActivationRep: 35
+  lowestActivationRep: 35
+  higherActivationRep: 49

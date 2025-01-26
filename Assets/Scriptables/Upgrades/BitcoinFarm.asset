@@ -15,7 +15,7 @@ MonoBehaviour:
   UpgradeName: Bitcoin Farm
   UpgradeType: 3
   InvokedEvent: 0
-  Cost: 0
+  Cost: 10
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
   MaxPurchases: 1

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: U_BID
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Early retirement for BID?
+  EventType: 27
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Block International Dealings accidentally retire old tools when replacements
+    delay arrival.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -27,8 +28,8 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 3
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.2
   - AffectedStock: 4
     TrendEFfect: 0
     TrendVarianceEffect: 0

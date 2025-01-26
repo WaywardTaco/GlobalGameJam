@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e50c4fcaee5fc49b92c834a90fce61, type: 3}
   m_Name: polInv2
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: ee6b70721053c464bba0efbea5ad0adf, type: 3}
   EventName: 'Police Investigates Market Fraud '
   EventType: 57
   StartRandomProbability: 0
@@ -21,5 +21,5 @@ MonoBehaviour:
     into alleged market fraud. Multiple reports surfaced of....
 
 '
-  lowestActivationRep: 64
-  higherActivationRep: 50
+  lowestActivationRep: 50
+  higherActivationRep: 64

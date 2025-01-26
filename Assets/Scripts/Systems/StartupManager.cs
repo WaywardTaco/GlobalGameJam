@@ -15,6 +15,10 @@ public class StartupManager : MonoBehaviour
     [ReadOnly, SerializeField] private GameObject upgradeGUI;
     [ReadOnly, SerializeField] private GameObject moneyUI;
     [ReadOnly, SerializeField] private GameObject stocksUI;
+    [ReadOnly, SerializeField] private GameObject purchaseUI;
+    [ReadOnly, SerializeField] private GameObject sellUI;
+    [ReadOnly, SerializeField] private GameObject upgradeUI;
+    
     private float time = 1.5f;
     private float currentTime;
     public bool loadScreen;
@@ -37,6 +41,9 @@ public class StartupManager : MonoBehaviour
         moneyUI = GameObject.Find("MoneyCounterUI").gameObject;
         stocksUI = GameObject.Find("StockPage").gameObject;
         notifsUI = GameObject.Find("NotifUI").gameObject;
+        purchaseUI = GameObject.Find("PurchaseUI").gameObject;
+        sellUI = GameObject.Find("SellUI").gameObject;
+        upgradeUI = GameObject.Find("UpgradeUI").gameObject;
 
         currentTime = time;
     }
@@ -49,7 +56,12 @@ public class StartupManager : MonoBehaviour
         moneyUI.SetActive(false);
         stocksUI.SetActive(false);
         loadingUI.SetActive(false);
-        notifsUI.SetActive(false);
+        //notifsUI.SetActive(false);
+        purchaseUI.SetActive(false);
+        sellUI.SetActive(false);
+        upgradeUI.SetActive(false);
+
+        SFXManager.Instance.Play("Ambience");
     }
 
     void Update() {
@@ -78,7 +90,10 @@ public class StartupManager : MonoBehaviour
         newsGUI.SetActive(false);
         upgradeGUI.SetActive(false);
         stocksUI.SetActive(false);
-        notifsUI.SetActive(false);
+        //notifsUI.SetActive(false);
+        purchaseUI.SetActive(false);
+        sellUI.SetActive(false);
+        upgradeUI.SetActive(false);
         hasLoaded = false;
         currentTime = time;
     }

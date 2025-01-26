@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: M_BID
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: To the moon, Block by Block
+  EventType: 33
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: BID's new Blockchain application BlockBlock is well received.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -27,8 +27,8 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 3
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: 0.2
   - AffectedStock: 4
     TrendEFfect: 0
     TrendVarianceEffect: 0

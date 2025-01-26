@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: M_OBG
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Psychic Broker?
+  EventType: 34
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Videos of a staff member in Online Brokers Group who can seemingly read
+    minds and accurately predict the future go viral.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1

@@ -9,7 +9,6 @@ using Sirenix.OdinInspector;
 public class StockManager : MonoBehaviour
 {
     [SerializeField] private int stockHistoryCount = 5;
-    [SerializeField] private StockGraphing stockGraphing;
 
     [Serializable] public class StockTracker {
         [SerializeReference] public StockScriptable Stock;
@@ -41,16 +40,27 @@ public class StockManager : MonoBehaviour
             }
 
             CurrentStockValue = (int)((1.0f + RandomizeTrendEffect()) * CurrentStockValue);
+            if(CurrentStockValue < 0) 
+                CurrentStockValue = 0;
             return CurrentStockValue;
         }
 
         private float RandomizeTrendEffect(){
+
+            if(Math.Abs(CurrentTrendVariance) > 0.5)
+                CurrentTrendVariance = 0.5f;
+
             float randomVariance = ((UnityEngine.Random.Range(0, 200) - 100) / 100) * CurrentTrendVariance;
 
-            float trendEffect = 0.0f;
+            if(CurrentTrendBase > 1.0f) CurrentTrendBase = 1.0f;
+            if(CurrentTrendBase < -1.0f) CurrentTrendBase = -1.0f;
 
+            float trendEffect = 0.0f;
             trendEffect =
-                CurrentTrendBase + randomVariance;
+                CurrentTrendBase + Math.Abs(randomVariance);
+
+            if(trendEffect > 1.5f) trendEffect = 1.5f;
+            if(trendEffect < -1.5f) trendEffect = -1.5f;
 
             return trendEffect;
         }
@@ -95,11 +105,6 @@ public class StockManager : MonoBehaviour
     public void UpdateAllStockValues(){
         foreach(var stock in activeStocks)
             stock.UpdateStockValue();
-    }
-
-    public void ChangeStocks(int i)
-    {
-        stockGraphing.ChangeGraph(getStock((StockType)i));
     }
 
     public StockTracker getStock(StockType stockType){

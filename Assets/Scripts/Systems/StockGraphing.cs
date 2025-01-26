@@ -1,15 +1,7 @@
 using Enums;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Playables;
 using UnityEngine;
-using UnityEngine.Diagnostics;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
-using UnityEngine.WSA;
 using static StockManager;
 
 public class StockGraphing : MonoBehaviour
@@ -33,6 +25,17 @@ public class StockGraphing : MonoBehaviour
     void Awake()
     {
         stockGraphContainer = this.GetComponent<RectTransform>();
+        Invoke("InitialChange", .5f);
+    }
+
+    public void InitialChange()
+    {
+        ChangeStocks(1);
+    }
+
+    public void ChangeStocks(int i)
+    {
+        ChangeGraph(StockManager.Instance.getStock((StockType)i));
     }
 
     public void ChangeGraph(StockTracker stockTrack)
@@ -57,7 +60,7 @@ public class StockGraphing : MonoBehaviour
     {
         GameObject newPoint = Instantiate(point);
         newPoint.SetActive(true);
-        newPoint.transform.parent = this.transform;
+        newPoint.transform.SetParent(this.transform, false);
         RectTransform rect = newPoint.GetComponent<RectTransform>();
         rect.anchoredPosition = Pos;
         rect.sizeDelta = pointSize;
@@ -71,7 +74,7 @@ public class StockGraphing : MonoBehaviour
     private void LineMaker(Vector2 PosA, Vector2 PosB)
     {
         GameObject line = new GameObject("Line", typeof(UnityEngine.UI.Image));
-        line.transform.parent = this.transform;
+        line.transform.SetParent(this.transform, false);
         
         RectTransform rect = line.GetComponent<RectTransform>();
         Vector2 direction = (PosB - PosA).normalized;

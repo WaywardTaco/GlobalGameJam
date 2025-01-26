@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static StockManager;
 
 public class BuySellStocks : MonoBehaviour
 {
@@ -11,15 +12,16 @@ public class BuySellStocks : MonoBehaviour
     [SerializeField] GameObject shares;
     [SerializeField] GameObject value;
 
-    private StockType stockType = StockType.None;
-    private int buy = 0;
-    private int sell = 0;
+    private StockType stockType = StockType.LME;
+    private int buy = 1;
+    private int sell = 1;
 
     // Start is called before the first frame update
     void Awake()
     {
         buy = int.Parse(buyInfo.GetComponent<TMP_Text>().text);
         sell = int.Parse(sellInfo.GetComponent<TMP_Text>().text);
+        Invoke("UpdateStocks", .5f);
     }
 
     public void ChangeStocks(int i)
@@ -59,13 +61,14 @@ public class BuySellStocks : MonoBehaviour
     {
         buyInfo.GetComponent<TMP_Text>().text = buy.ToString();
         sellInfo.GetComponent<TMP_Text>().text = sell.ToString();
+        StockTracker stockTracker = StockManager.Instance.getStock(stockType);
 
         string stringAmount = "Shares: ";
-        stringAmount += StockManager.Instance.getStock(stockType).PlayerStockCount.ToString();
+        stringAmount += stockTracker.PlayerStockCount.ToString();
         shares.GetComponent<TMP_Text>().text = stringAmount;
 
         stringAmount = "Value: ";
-        stringAmount += StockManager.Instance.getStock(stockType).CurrentStockValue.ToString();
+        stringAmount += stockTracker.CurrentStockValue.ToString();
         value.GetComponent<TMP_Text>().text = stringAmount;
     }
 }

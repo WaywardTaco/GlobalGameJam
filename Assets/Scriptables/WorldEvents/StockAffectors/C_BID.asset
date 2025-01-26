@@ -13,28 +13,29 @@ MonoBehaviour:
   m_Name: C_BID
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Amidst Death, BID is Chastised
+  EventType: 9
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Another death from a BID employee rouses a number of politicians to
+    speak out against the company and its less than safe working environment
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 2
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 3
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: -0.1
+    TrendVarianceEffect: -0.2
   - AffectedStock: 4
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 5
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: -0.1
   - AffectedStock: 6
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.1
+    TrendVarianceEffect: -0.1

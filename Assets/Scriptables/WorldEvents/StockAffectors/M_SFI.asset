@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: M_SFI
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Tech 'cause why not
+  EventType: 35
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Stock of Software Tech Inc's new useless product sell out immediately
+    for the third time.
   ReputationEffect: 0
   StockEffects:
   - AffectedStock: 1
@@ -33,8 +34,8 @@ MonoBehaviour:
     TrendEFfect: 0
     TrendVarianceEffect: 0
   - AffectedStock: 5
-    TrendEFfect: 0
-    TrendVarianceEffect: 0
+    TrendEFfect: 0.05
+    TrendVarianceEffect: 0.1
   - AffectedStock: 6
     TrendEFfect: 0
     TrendVarianceEffect: 0
