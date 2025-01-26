@@ -59,6 +59,8 @@ public class GameWorldEventManager : MonoBehaviour
 
     private void Update() {
         if(onStartPend){
+            NotificationManager.Instance.PendNotif(2, "Hello");
+
             PendAutomaticEvents();
             onStartPend = false;
         }
@@ -144,13 +146,14 @@ public class GameWorldEventManager : MonoBehaviour
         RefreshEventProbabilities();
 
         WorldEventType chosenEvent = WorldEventType.None;
-        float thresholdValue = (UnityEngine.Random.Range(0, 101) / 100) * totalProbability;
+        float thresholdValue = ((float)UnityEngine.Random.Range(0, 101) / 100.0f) * totalProbability;
         
         foreach(var eventProbabilityMaps in WorldEventProbabilities){
             if(thresholdValue < eventProbabilityMaps.lowerBound) break;
             chosenEvent = eventProbabilityMaps.worldEvent;
         }
 
+        Debug.Log(chosenEvent + " " + thresholdValue + "/" + totalProbability);
         return chosenEvent;
     }
 

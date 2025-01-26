@@ -122,7 +122,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4796413618554225746}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8340616582245642086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +328,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7134195417938999356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &3775922080454521672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +361,7 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Bond Security
   descText: "Make sure your investments don't go pop.\n\n<indent=-50px>\u25CF<indent=00px>Increases
-    stock value</indent>\n\u25CF<indent=0px>Decreases chance of bankruptcy event</indent>"
+    stock value</indent>\n\u25CF<indent=0px>Increases suspiciont</indent>"
   typeText: Legal Upgrade
 --- !u!58 &5314230073254098601
 CircleCollider2D:
@@ -724,7 +748,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4260555655733831671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &4472358641992711703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,7 +1109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7847318626340079285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8034611356444783646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,7 +1143,7 @@ MonoBehaviour:
   nameText: Corporate Blackmail
   descText: "Make someone bend to your will with a simple e-mail.\n\n<indent=-50px>\u25CF<indent=00px>Increases
     suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Slightly
-    decreases days left</indent>\n"
+    increases days left</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &7191031482023606851
 CircleCollider2D:
@@ -1305,7 +1353,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4193998433897882963}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &5978555573060604463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1499,7 +1559,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2117582578728313629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &486667131836597795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,7 +1592,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Shell Companies
   descText: "Hide from the authorities by selling seashells.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
-    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\n"
+    suspicion</indent>\n\u25CF<indent=0px>Decreases stock value</indent>\n\u25CF<indent=0px>Gives
+    you a few more days</indent>\n\n"
   typeText: Illegal Upgrade
 --- !u!58 &698747130887181088
 CircleCollider2D:
@@ -1769,8 +1842,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150.3
-  m_fontSizeBase: 150.3
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1935,7 +2008,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1374686918236461319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &4569234504285244441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,7 +2214,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1890836917808831764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &3300692181899840157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2150,7 +2247,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: PR Campaign
   descText: "Show the world what you can do! (Or save face)\n\n<indent=-50px>\u25CF<indent=00px>Decreases
-    suspicion</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>"
+    suspicion</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>\n\u25CF<indent=0px>Decreases
+    stock value</indent>\n"
   typeText: Legal Upgrade
 --- !u!58 &7543255971410087208
 CircleCollider2D:
@@ -2399,7 +2497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1293597981854589335}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6554007714585597914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,8 +2530,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Insider Trading
   descText: "A friend in a company gossiped a little too much about his work. Take
-    his yapping to an advantage.\n\n<indent=-50px>\u25CF<indent=00px></indent>\n\u25CF<indent=0px>Gives
-    you a few more days</indent>"
+    his yapping to an advantage.\n\n<indent=-50px>\u25CF<indent=00px>Increases suspicion</indent>\n\u25CF<indent=0px>Increases
+    stock value</indent>"
   typeText: Illegal Upgrade
 --- !u!58 &7918183622403215414
 CircleCollider2D:
@@ -2594,7 +2704,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 474236171283131048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2103324176610395797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2615,8 +2737,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Pyramid Scheme
   descText: "Contact old friends and give them a little sales pitch.\n\n<indent=-50px>\u25CF<indent=00px>Increases
-    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Slightly
-    increases days left</indent>\n"
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Gives
+    you a few more days</indent>\n"
   typeText: Illegal Upgrade
 --- !u!58 &3992527963197920698
 CircleCollider2D:
@@ -2789,7 +2911,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2479398653266786419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8447770028924740385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2809,8 +2943,8 @@ MonoBehaviour:
   targetDesc: {fileID: 8199368320679213941}
   targetType: {fileID: 2577347286042134612}
   nameText: Charity Fund
-  descText: "Give a little back.\n\n<indent=-50px>\u25CF<indent=00px>Increases suspicion</indent>\n\u25CF<indent=0px>Increases
-    stock value</indent>\n\u25CF<indent=0px>Slightly increases days left</indent>\n"
+  descText: "Give a little back.\n\n<indent=-50px>\u25CF<indent=00px>Decreases suspicion</indent>\n\u25CF<indent=0px>Loses
+    stock value</indent>"
   typeText: Legal Upgrade
 --- !u!58 &4340080920683595462
 CircleCollider2D:
@@ -3121,7 +3255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2949686085727158811}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8440604456496101229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3142,7 +3288,8 @@ MonoBehaviour:
   targetType: {fileID: 2577347286042134612}
   nameText: Tax Loophole Exploitation
   descText: "This is technically legal... but....\n\n<indent=-50px>\u25CF<indent=00px>Increases
-    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>"
+    suspicion</indent>\n\u25CF<indent=0px>Increases stock value</indent>\n\u25CF<indent=0px>Cuts
+    a few days off</indent>\n"
   typeText: Legal Upgrade
 --- !u!58 &75126525006608785
 CircleCollider2D:
@@ -3518,7 +3665,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3045287715835548732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3658,7 +3805,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8348477134412684348}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &7003149139505749359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3678,8 +3837,8 @@ MonoBehaviour:
   targetDesc: {fileID: 8199368320679213941}
   targetType: {fileID: 2577347286042134612}
   nameText: CSR Operations
-  descText: "Corporate Social Responsibility might be appealing to the masses, but
-    shareholders won't like being responsible for anything shady you do.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
+  descText: "These might be appealing to the masses, but shareholders won't like
+    being responsible for anything shady you do.\n\n<indent=-50px>\u25CF<indent=00px>Decreases
     suspicion</indent>\n\u25CF<indent=0px>Decrease stock values</indent>"
   typeText: Legal Upgrade
 --- !u!58 &8898817782111767150
@@ -3853,7 +4012,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7243304684542050246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6696309396283516606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3873,8 +4044,8 @@ MonoBehaviour:
   targetDesc: {fileID: 8199368320679213941}
   targetType: {fileID: 2577347286042134612}
   nameText: Diversified Investments
-  descText: "Don't know which one to inveset in? Invest in EVERYTHING! \n\n<indent=-50px>\u25CF<indent=00px>Increases
-    stock value</indent>\n\u25CF<indent=0px>Increases suspicion</indent>\n"
+  descText: "Don't know which one to inveset in? Invest in EVERYTHING! \n\n<indent=-50px>\u25CF<indent=00px>Decreases
+    stock value</indent>\n\u25CF<indent=0px>Gives you a few more days</indent>\n"
   typeText: 
 --- !u!58 &5782344621994039322
 CircleCollider2D:
@@ -4047,7 +4218,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092334936938855276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &6357216956202166547
 MonoBehaviour:
   m_ObjectHideFlags: 0

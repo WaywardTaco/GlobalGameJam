@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificationCanvas: {fileID: 1656085372573842937}
   notificationText: {fileID: 7030191676125289167}
-  notificationScaleDuration: 2
+  notificationScaleDuration: 0.5
   debugNotifText: 
 --- !u!1 &3338669044389430356
 GameObject:

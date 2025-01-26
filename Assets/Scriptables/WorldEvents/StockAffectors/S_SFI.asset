@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: S_SFI
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 5433ef2eb03b1424995050622be3e755, type: 3}
   EventName: Silicon Rationing Harm SFI
   EventType: 17
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: Due to the government's latest ration on resources, amongst which include
     silicon. Software Tech Inc. is forced to slow down their development
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

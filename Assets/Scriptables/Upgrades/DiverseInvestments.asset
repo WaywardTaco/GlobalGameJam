@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Diverse Investments
   UpgradeType: 8
-  InvokedEvent: 64
+  InvokedEvent: 58
   Cost: 7
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

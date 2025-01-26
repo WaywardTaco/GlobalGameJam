@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Pyramid Scheme
   UpgradeType: 11
-  InvokedEvent: 67
+  InvokedEvent: 61
   Cost: 3
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

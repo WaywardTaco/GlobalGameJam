@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: S_LDD
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 9bf9ae998d9cdf747933f363617ffd93, type: 3}
   EventName: Pirated Import Hurts LDD
   EventType: 18
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: LDD's latest materials import was once again plundered by pirates. This
     setback holds back the company's pushes to continue their intercontinental
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

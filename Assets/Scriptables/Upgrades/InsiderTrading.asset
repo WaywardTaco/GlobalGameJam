@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Insider Network
   UpgradeType: 10
-  InvokedEvent: 66
+  InvokedEvent: 60
   Cost: 8
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []

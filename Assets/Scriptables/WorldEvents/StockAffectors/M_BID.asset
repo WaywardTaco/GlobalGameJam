@@ -18,7 +18,7 @@ MonoBehaviour:
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
   EventText: BID's new Blockchain application BlockBlock is well received.
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0
