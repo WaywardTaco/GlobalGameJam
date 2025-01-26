@@ -104,11 +104,11 @@ public class StockGraphing : MonoBehaviour
     {
         string info = null;
 
-        info = "Trend Base: ";
+        info = "Trend: ";
         info += curBase;
         Base.GetComponent<TMP_Text>().text = info;
 
-        info = "Variance: ";
+        info = "Var: ";
         info += curVar;
 
         Variance.GetComponent<TMP_Text>().text = info;
