@@ -9,17 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec3f8ecf757d0c24e830957b6973aee5, type: 3}
-  m_Name: NarrativeEvent
+  m_Script: {fileID: 11500000, guid: 64d59f3b5198e8b4583b124b966264c8, type: 3}
+  m_Name: CharityEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Narrative Event
-  EventType: 75
+  EventName: Default Game Event
+  EventType: 0
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: 'Our building has gotten a new branch, giving journalists a way to refresh.
-
-'
+  EventText: Insert Game Event Text
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: PREvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: PR Event
+  EventType: 73
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: La Bubble aims to give back to the plant that gives them their popularity
+    by planting 1.31 hectares of cassava.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

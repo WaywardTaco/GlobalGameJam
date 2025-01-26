@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: BlackmailEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Blackmail Event
+  EventType: 68
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: An investigation of Swell Tea's board has been launched due to anonymous
+    tips.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

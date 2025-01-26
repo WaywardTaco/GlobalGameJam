@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Bond Event
-  EventType: 0
+  EventType: 72
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: 'Lucky Pearls, the tapioca supplier has reached sky high profits this
+    month alone. Will the viral Erves cafe, La Bubble, be next?
+
+'
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

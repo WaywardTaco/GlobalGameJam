@@ -17,7 +17,7 @@ MonoBehaviour:
   EventType: 69
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Local supermarkets also open with new mini La Bubble branches.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

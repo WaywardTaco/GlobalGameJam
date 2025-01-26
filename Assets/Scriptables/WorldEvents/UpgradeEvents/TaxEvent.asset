@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: TaxEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Tax Exploit Event
+  EventType: 62
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Criticisms of local laws regarding food imports and their exploitability
+    enrage citizens.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

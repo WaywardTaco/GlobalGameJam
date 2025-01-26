@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HackerEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
+  EventName: Hacker Event
   EventType: 71
   StartRandomProbability: 0
   IsOneshotEvent: 1

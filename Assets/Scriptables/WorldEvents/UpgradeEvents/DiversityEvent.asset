@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: DiversityEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Diversity Event
+  EventType: 64
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: "Lucky Pearls Inc. expands into other food sectors, from sustainable
+    agriculture to tech, solidifying La Bubble\u2019s dominance in the market."
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

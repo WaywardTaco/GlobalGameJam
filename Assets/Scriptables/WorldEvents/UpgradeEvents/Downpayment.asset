@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Downpayment
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
+  EventName: DownpaymentEvent
   EventType: 70
   StartRandomProbability: 0
   IsOneshotEvent: 1

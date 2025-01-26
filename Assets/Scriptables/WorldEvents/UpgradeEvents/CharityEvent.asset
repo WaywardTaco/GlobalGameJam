@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: CharityEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Charity Event
+  EventType: 63
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: Boba Tea Charity for Latin-American Children has been founded to combat
+    the growing number of children suffering from malnutrition.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

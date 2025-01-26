@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: PyramidEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Pyramid Event
+  EventType: 67
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: 'The police have received multiple calls on salesmen knocking on their
+    doors, please be advised to lock your doors.
+
+'
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

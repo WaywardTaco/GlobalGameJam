@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: BitcoinEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: ' Bitcoin Event'
+  EventType: 74
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: The new cryptocurrency $BBLT rockets in prices after viral Erves cafe
+    launches program to purchase products using their crypto coin.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: LobbyEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Lobby Event
+  EventType: 65
   StartRandomProbability: 0
   IsOneshotEvent: 1
-  EventText: Insert Game Event Text
+  EventText: La Bubble CEO Peter Okaa, urges Erves government to back down on cassava
+    tarriffs.
   reputationChange: 0
   trendChange: 0
   maxDaysChange: 0
