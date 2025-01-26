@@ -47,7 +47,7 @@ MonoBehaviour:
   sounds:
   - name: Ambience
     clip: {fileID: 8300000, guid: 6f1af63cfa1d3d84cab294cc2ec5b1bc, type: 3}
-    volume: 0.5
+    volume: 0.7
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -59,19 +59,19 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Start
     clip: {fileID: 8300000, guid: 6d31b3e1abffeeb4ab027cc64341c9d1, type: 3}
-    volume: 0.3
+    volume: 0.4
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Cricket
     clip: {fileID: 8300000, guid: 38707b2d088d3bc4cafd3fd3597cec7a, type: 3}
-    volume: 0.3
+    volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Clock
     clip: {fileID: 8300000, guid: 5a97b19d62df78a4f81dab64b0a12312, type: 3}
-    volume: 0.3
+    volume: 0.35
     pitch: 1
     loop: 1
     source: {fileID: 0}

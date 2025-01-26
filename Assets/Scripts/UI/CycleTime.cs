@@ -2,15 +2,18 @@ using System.Collections;
 using System.Threading;
 using Sirenix.OdinInspector;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CycleTime : MonoBehaviour
 {
     public Transform black;
+    public Transform daysLeftMain;
     public Transform Main;
     public Transform Day;
     public Transform Month;
+    public TextMeshProUGUI daysLeft;
     public TextMeshProUGUI month;
     public TextMeshProUGUI day;
     public TextMeshProUGUI monthAlt;
@@ -24,12 +27,16 @@ public class CycleTime : MonoBehaviour
 
     void Awake() {
         black = GameObject.Find("NightBG").GetComponent<Transform>();
+        daysLeftMain = GameObject.Find("DaysLeftCounter").GetComponent<Transform>();
+        daysLeft = daysLeftMain.transform.Find("DaysLeft").GetComponent<TextMeshProUGUI>();
         Main = GameObject.Find("Main").GetComponent<Transform>();
         Day = GameObject.Find("Day").GetComponent<Transform>();
         Month = GameObject.Find("Month").GetComponent<Transform>();
+        daysLeftMain.GetComponent<CanvasGroup>().alpha = 0f;
         Main.GetComponent<CanvasGroup>().alpha = 0f;
         Day.GetComponent<CanvasGroup>().alpha = 0f;
         Month.GetComponent<CanvasGroup>().alpha = 0f;
+        daysLeft.text = "";
         month.text = "1";
         day.text = " 26";
         tempDayValue = 26;
@@ -76,10 +83,19 @@ public class CycleTime : MonoBehaviour
         SFXManager.Instance.Play("Cricket");
 
         //Show text
-        Main.GetComponent<CanvasGroup>().alpha = 0;
-        Main.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+        daysLeft.text = $"{DayCycleManager.Instance.getDaysLeft()} Days Left";
+
         Main.localPosition = new Vector2(-150, 0);
+        daysLeftMain.localPosition = new Vector2(-120, 100);
+
+        Main.GetComponent<CanvasGroup>().alpha = 0;
+        daysLeftMain.GetComponent<CanvasGroup>().alpha = 0;
+
+        Main.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+        daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+
         Main.LeanMoveLocalX(0, 1f).setEaseOutExpo();
+        daysLeftMain.LeanMoveLocalX(0, 1f).setEaseOutExpo();
 
         yield return new WaitForSeconds(1.5f);
 
@@ -96,7 +112,10 @@ public class CycleTime : MonoBehaviour
 
         //Transition Back
         Main.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
+        daysLeftMain.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
+
         Main.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
+        daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
         
         black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
         MonitorController.Instance.UnlockCursor();
@@ -122,10 +141,19 @@ public class CycleTime : MonoBehaviour
         SFXManager.Instance.Play("Cricket");
 
         //Show text
-        Main.GetComponent<CanvasGroup>().alpha = 0;
-        Main.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+        daysLeft.text = $"{DayCycleManager.Instance.getDaysLeft()} Days Left";
+
         Main.localPosition = new Vector2(-150, 0);
+        daysLeftMain.localPosition = new Vector2(-120, 100);
+
+        Main.GetComponent<CanvasGroup>().alpha = 0;
+        daysLeftMain.GetComponent<CanvasGroup>().alpha = 0;
+
+        Main.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+        daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(1, 0.5f);
+
         Main.LeanMoveLocalX(0, 1f).setEaseOutExpo();
+        daysLeftMain.LeanMoveLocalX(0, 1f).setEaseOutExpo();
 
         yield return new WaitForSeconds(1.5f);
 
@@ -146,7 +174,10 @@ public class CycleTime : MonoBehaviour
 
         //Transition Back
         Main.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
+        daysLeftMain.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
+
         Main.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
+        daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
 
         black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
         MonitorController.Instance.UnlockCursor();
