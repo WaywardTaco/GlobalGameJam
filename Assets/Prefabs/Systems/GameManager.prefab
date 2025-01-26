@@ -385,9 +385,6 @@ MonoBehaviour:
   - WorldEvent: {fileID: 11400000, guid: 85c8219dc8d1c0c4280efc9439be6e88, type: 2}
     CurrentProbability: -1
     IsActive: 0
-  - WorldEvent: {fileID: 0}
-    CurrentProbability: -1
-    IsActive: 0
   - WorldEvent: {fileID: 11400000, guid: 60ceca90bd074a74587ca91a6c56930b, type: 2}
     CurrentProbability: -1
     IsActive: 0
@@ -416,6 +413,7 @@ MonoBehaviour:
   maxActions: 3
   maxDays: 7
   DayAnimator: {fileID: 0}
+  FadeOut: {fileID: 0}
   newsFeed: {fileID: 0}
 --- !u!114 &328694245482984953
 MonoBehaviour:
