@@ -41,6 +41,7 @@ public class UpgradeManager : MonoBehaviour
         if(!upgrade.TryAdjustUpgradeCount(count)) return false;
 
         ResourceManager.Instance.AdjustPlayerMoney(-buyTotalCost);
+        ActivateUpgrade(upgradeType);
         return true;
     }
 

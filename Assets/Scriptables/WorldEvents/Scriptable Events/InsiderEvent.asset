@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InsiderEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 92f93b7c39889d04cb9b35107ffd13fc, type: 3}
-  EventName: Insider Event
+  EventName: Moonshine LLC in Trouble!
   EventType: 60
   StartRandomProbability: 0
   IsOneshotEvent: 0

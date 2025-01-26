@@ -39,8 +39,8 @@ public class NewsFeedUpdater : MonoBehaviour
         if(onStartUpdate){
             SetStocksValues();
             UpdateStockAccronyms();
-            SetDateDisplay();
             SetActiveEventInfo();
+            SetDateDisplay();
             NotificationManager.Instance.PopNotifs();
             onStartUpdate = false;
         }
@@ -49,8 +49,8 @@ public class NewsFeedUpdater : MonoBehaviour
     public void RefreshDayInfo(){
         SetStocksValues();
         UpdateStockAccronyms();
-        SetDateDisplay();
         SetActiveEventInfo();
+        SetDateDisplay();
     }
 
     private void SetActiveEventInfo(){
@@ -72,6 +72,7 @@ public class NewsFeedUpdater : MonoBehaviour
         if(isDayOne){
             currDay -= 1;
             isDayOne = false;
+            GameWorldEventManager.Instance.ProcessPendingEvents();
         }
         dateText.text = $"{DayCycleManager.Instance.currentMonth}/{currDay}";
     }

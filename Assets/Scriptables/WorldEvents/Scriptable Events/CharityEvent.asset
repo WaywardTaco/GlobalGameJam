@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CharityEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 2fe151b30a872bf4f9cdf5b6c8c88dc5, type: 3}
-  EventName: Charity Event
+  EventName: The Boba Tea Charity is launched!
   EventType: 57
   StartRandomProbability: 0
   IsOneshotEvent: 0

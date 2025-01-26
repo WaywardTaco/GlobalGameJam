@@ -48,6 +48,7 @@ public class DayCycleManager : MonoBehaviour
             daysLeft++;
             //Refresh Actions for next day
             actionsLeft = maxActions;
+            GameWorldEventManager.Instance.onStartPend = false;
             GameWorldEventManager.Instance.PendAutomaticEvents();
             StockManager.Instance.UpdateAllStockValues();
             newsFeed.RefreshDayInfo();

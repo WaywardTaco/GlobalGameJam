@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LobbyEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: eb4ba9913527854428e396407beb147d, type: 3}
-  EventName: Lobby Event
+  EventName: Cassava Tariffs Act on Hold!
   EventType: 59
   StartRandomProbability: 0
   IsOneshotEvent: 0

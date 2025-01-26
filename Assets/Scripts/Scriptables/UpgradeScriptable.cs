@@ -18,6 +18,7 @@ public class UpgradeScriptable : ScriptableObject
     public virtual void OnActivate(int count)
     {
         GameWorldEventManager.Instance.StartEventPending(InvokedEvent);
+
     }
     public virtual void OnDeactivate(int count) { }
     public virtual void ContinuousEffect(int count) { }

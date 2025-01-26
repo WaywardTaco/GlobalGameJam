@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DownpaymentEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 67347df94e5a56d4fa5ea74177ed11df, type: 3}
-  EventName: Downpayment Event
+  EventName: Bill Deadlines Extended!
   EventType: 64
   StartRandomProbability: 0
   IsOneshotEvent: 0
