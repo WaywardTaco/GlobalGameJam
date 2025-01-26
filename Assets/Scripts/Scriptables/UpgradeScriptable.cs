@@ -17,6 +17,7 @@ public class UpgradeScriptable : ScriptableObject
 
     public virtual void OnActivate(int count)
     {
+        Debug.Log("Attempt to pend " + InvokedEvent);
         GameWorldEventManager.Instance.StartEventPending(InvokedEvent);
     }
     public virtual void OnDeactivate(int count) { }
