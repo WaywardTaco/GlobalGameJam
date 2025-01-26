@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PyramidEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: 05beeda4fee44ff45934eae56af2e540, type: 3}
-  EventName: Pyramid Event
+  EventName: Reports of Aggressive Salesmen Arise
   EventType: 61
   StartRandomProbability: 0
   IsOneshotEvent: 0

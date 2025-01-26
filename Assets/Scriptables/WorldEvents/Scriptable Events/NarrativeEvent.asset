@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NarrativeEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: ea5a2c0f6ef9e494d9704ad5fd07a27a, type: 3}
-  EventName: 'Narrative Event '
+  EventName: Erves Tribune gets La Bubble branch
   EventType: 69
   StartRandomProbability: 0
   IsOneshotEvent: 0
