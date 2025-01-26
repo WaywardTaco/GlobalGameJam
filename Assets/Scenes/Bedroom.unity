@@ -2073,6 +2073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NotifUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7030191676125289167, guid: bccc06d6aaf2370438587656e19e0628, type: 3}
+      propertyPath: m_lineSpacing
+      value: -47
+      objectReference: {fileID: 0}
     - target: {fileID: 8936668983805035355, guid: bccc06d6aaf2370438587656e19e0628, type: 3}
       propertyPath: m_Camera
       value: 
