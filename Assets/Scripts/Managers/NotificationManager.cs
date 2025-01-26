@@ -98,9 +98,9 @@ public class NotificationManager : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
             
-            if(notif.pendingEvent != null) {
-                notif.pendingEvent.Invoke();
-            }
+            // if(notif.pendingEvent != null) {
+            //     notif.pendingEvent.Invoke();
+            // }
         }
         pendingNotifs.Clear();
     }

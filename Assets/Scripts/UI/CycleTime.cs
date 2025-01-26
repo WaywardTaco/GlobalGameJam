@@ -73,6 +73,7 @@ public class CycleTime : MonoBehaviour
 
     IEnumerator StartDayAnimation(int day) {
         MonitorController.Instance.DisableMonitorTooltip();
+        MonitorController.Instance.inTransition = true;
         MonitorController.Instance.lockCursor();
         dayAlt.text = $" {day}";
 
@@ -121,6 +122,7 @@ public class CycleTime : MonoBehaviour
         daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
         
         black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
+        MonitorController.Instance.inTransition = false;
         MonitorController.Instance.EnableMonitorTooltip();
         MonitorController.Instance.UnlockCursor();
         hasPlayedDay = true;
@@ -133,6 +135,8 @@ public class CycleTime : MonoBehaviour
     }
 
     IEnumerator StartCycleAnimation(int day, int month) {
+        MonitorController.Instance.DisableMonitorTooltip();
+        MonitorController.Instance.inTransition = true;
         MonitorController.Instance.lockCursor();
         dayAlt.text = $" {day}";
         monthAlt.text = $"{month}";
@@ -186,6 +190,8 @@ public class CycleTime : MonoBehaviour
         daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
 
         black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
+        MonitorController.Instance.EnableMonitorTooltip();
+        MonitorController.Instance.inTransition = false;
         MonitorController.Instance.UnlockCursor();
         hasPlayedDay = true;
         DayCycleManager.Instance.SetDay(day);

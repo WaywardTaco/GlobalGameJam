@@ -394,6 +394,7 @@ MonoBehaviour:
   totalProbability: 0
   WorldEventProbabilities: []
   PendingToActivateEvents: 
+  onStartPend: 1
 --- !u!114 &6863789898359221493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,6 +491,7 @@ MonoBehaviour:
   playerCursor: {fileID: 0}
   tooltipMonitor: {fileID: 0}
   tooltipCursor: {fileID: 0}
+  inTransition: 0
 --- !u!114 &5950584416782141670
 MonoBehaviour:
   m_ObjectHideFlags: 0

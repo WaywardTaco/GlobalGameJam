@@ -35,6 +35,7 @@ public class MonitorController : MonoBehaviour
     [ReadOnly, SerializeField] private GameObject playerCursor;
     [ReadOnly, SerializeField] private GameObject tooltipMonitor;
     [ReadOnly, SerializeField] private GameObject tooltipCursor;
+    public bool inTransition;
 
     void Awake() {
         if(Instance == null) {
@@ -71,10 +72,13 @@ public class MonitorController : MonoBehaviour
         tooltipCursor.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y + 20);
 
         if(!onScreen && IsMouseOverGameWindow) {
-            if(Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2, 0)), Mathf.Infinity, layerMask)) {
-                tooltipMonitor.SetActive(true);
+            if(!inTransition) {
+                if(Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2, 0)), Mathf.Infinity, layerMask)) {
+                    tooltipMonitor.SetActive(true);
+                }
+                else tooltipMonitor.SetActive(false);
             }
-            else tooltipMonitor.SetActive(false);
+            // else tooltipMonitor.SetActive(false);
 
             if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width/2, Screen.height/2, 0)), Mathf.Infinity, layerMask)) {
                 playerCursor.SetActive(false);

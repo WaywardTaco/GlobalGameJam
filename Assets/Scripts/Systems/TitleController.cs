@@ -16,6 +16,7 @@ public class TitleController : MonoBehaviour
         image = GameObject.Find("Canvas/Image").GetComponent<CanvasGroup>();
         start = GameObject.Find("Canvas/Start").GetComponent<Blink>();
         text = GameObject.Find("Canvas/Start").GetComponent<TextMeshProUGUI>();
+
     }
 
     void Start() {
