@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
   EventName: Diversity Event
-  EventType: 64
+  EventType: 58
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: Lucky Pearls Inc. expands into other food sectors, from sustainable
