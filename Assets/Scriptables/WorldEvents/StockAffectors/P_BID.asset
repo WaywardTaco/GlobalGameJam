@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: BID's international expansions pay off big once more due to another
     successful mega-structure. The company's success has stemmed from repeated
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

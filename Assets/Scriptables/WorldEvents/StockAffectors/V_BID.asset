@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: An anonymous hacker group has taken credit for the recent virus that
     attacked a construction company's servers, crippling operations.
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0

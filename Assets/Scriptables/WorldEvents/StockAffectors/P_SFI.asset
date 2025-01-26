@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: SFI's products bought en masse after another successful product launch.
     Their hardware department has worked hard to bring another breaktrhough
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

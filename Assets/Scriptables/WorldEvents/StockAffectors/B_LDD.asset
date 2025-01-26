@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: "Erves City Hall to demolish \"redundant\" network infrastructure. Pundits
     say this is a terrible idea and will plummet net coverage. \r"
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: LDD's latest materials import was once again plundered by pirates. This
     setback holds back the company's pushes to continue their intercontinental
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

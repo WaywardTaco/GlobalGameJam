@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: Long Distance Digital charms customers once more with their innovative
     network provider model which allows customers to reach faster network speeds
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

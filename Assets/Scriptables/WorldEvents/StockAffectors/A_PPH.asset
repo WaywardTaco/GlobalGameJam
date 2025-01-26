@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: In light of recent events, Erves City Hall has passed a bill easing
     regulations on the banking sector. Banks expected to see rapid growth.
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: 0

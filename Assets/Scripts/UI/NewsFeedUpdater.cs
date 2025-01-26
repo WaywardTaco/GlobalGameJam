@@ -41,6 +41,7 @@ public class NewsFeedUpdater : MonoBehaviour
             UpdateStockAccronyms();
             SetDateDisplay();
             SetActiveEventInfo();
+            NotificationManager.Instance.PopNotifs();
             onStartUpdate = false;
         }
     }

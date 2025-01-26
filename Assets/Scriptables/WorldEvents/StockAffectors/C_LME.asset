@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: Due to unethical work conditions the media berated Leaders of Market
     Exchange (LME), causing their stock to drop a notable point amidst backlash.
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

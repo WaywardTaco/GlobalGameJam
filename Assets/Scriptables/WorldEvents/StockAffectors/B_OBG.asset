@@ -21,7 +21,7 @@ MonoBehaviour:
     and stock exchanges.
 
 '
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

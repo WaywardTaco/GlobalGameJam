@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: ee6b70721053c464bba0efbea5ad0adf, type: 3}
   EventName: 'Police Investigates Market Fraud '
-  EventType: 57
+  EventType: 72
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: 'Authorities uncover suspicious activity, prompting a full-scale investigation

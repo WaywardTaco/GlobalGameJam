@@ -19,7 +19,7 @@ MonoBehaviour:
   IsOneshotEvent: 1
   EventText: Small PPH grows due to another successful transparency report as savers
     grow satisfied of their trustworthiness. Pay Pay has proven once more
-  ReputationEffect: 0
+  ReputationEffect: -1
   StockEffects:
   - AffectedStock: 1
     TrendEFfect: -0.1

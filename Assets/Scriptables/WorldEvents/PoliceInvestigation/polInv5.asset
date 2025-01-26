@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EventImage: {fileID: 21300000, guid: c72d307fc7815fe4e94e9e90a53790e1, type: 3}
   EventName: 'Infamous Stock Broker On Last Leg '
-  EventType: 60
+  EventType: 75
   StartRandomProbability: 0
   IsOneshotEvent: 0
   EventText: 'An infamous stock broker, whose controversial trading practices and
