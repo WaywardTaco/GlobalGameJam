@@ -87,6 +87,8 @@ GameObject:
   - component: {fileID: 5340915660850956088}
   - component: {fileID: 409702458878016065}
   - component: {fileID: 780697067373969405}
+  - component: {fileID: 7537704205509697649}
+  - component: {fileID: 5051709274226534886}
   m_Layer: 5
   m_Name: Upgrades
   m_TagString: Untagged
@@ -232,6 +234,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7537704205509697649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148974279798996899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fec36dc5eb97c4a8f49bb38d451ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5051709274226534886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148974279798996899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e44bc8e65ea4c438f7037811565881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipDisplay: Open Upgrades Menu
 --- !u!1 &1613225847172317424
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +583,8 @@ GameObject:
   - component: {fileID: 5027053620596244469}
   - component: {fileID: 7337218095924038991}
   - component: {fileID: 4571392974973832444}
+  - component: {fileID: 443153838145011955}
+  - component: {fileID: 6926036371584367937}
   m_Layer: 5
   m_Name: Stocks
   m_TagString: Untagged
@@ -701,6 +730,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &443153838145011955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545478096604733424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fec36dc5eb97c4a8f49bb38d451ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6926036371584367937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545478096604733424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e44bc8e65ea4c438f7037811565881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipDisplay: Go To Stocks.com
 --- !u!1 &4603048902252594832
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +903,8 @@ GameObject:
   - component: {fileID: 9196351614434150955}
   - component: {fileID: 6012391055006446090}
   - component: {fileID: 4841954672295345921}
+  - component: {fileID: 8081305188972841778}
+  - component: {fileID: 6471498168068696247}
   m_Layer: 5
   m_Name: SleepButton
   m_TagString: Untagged
@@ -969,6 +1025,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8081305188972841778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060342215628197074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fec36dc5eb97c4a8f49bb38d451ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6471498168068696247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060342215628197074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e44bc8e65ea4c438f7037811565881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipDisplay: Sleep
 --- !u!1 &5113535209679078450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1409,8 @@ GameObject:
   - component: {fileID: 4426366193349311566}
   - component: {fileID: 7020261975382110635}
   - component: {fileID: 688460838906116687}
+  - component: {fileID: 4076579243086675267}
+  - component: {fileID: 1181604538155698995}
   m_Layer: 5
   m_Name: News
   m_TagString: Untagged
@@ -1473,6 +1556,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4076579243086675267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6167937728538731943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fec36dc5eb97c4a8f49bb38d451ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1181604538155698995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6167937728538731943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e44bc8e65ea4c438f7037811565881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipDisplay: Check News
 --- !u!1 &6551812194044930783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1593,8 @@ GameObject:
   - component: {fileID: 3090056994155940327}
   - component: {fileID: 8679001381746151276}
   - component: {fileID: 5075951775920169319}
+  - component: {fileID: 2608499447819794690}
+  - component: {fileID: 5367737098857338715}
   m_Layer: 5
   m_Name: PowerButton
   m_TagString: Untagged
@@ -1606,6 +1716,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2608499447819794690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551812194044930783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fec36dc5eb97c4a8f49bb38d451ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5367737098857338715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551812194044930783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e44bc8e65ea4c438f7037811565881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipDisplay: Exit
 --- !u!1 &8366426315073539134
 GameObject:
   m_ObjectHideFlags: 0
