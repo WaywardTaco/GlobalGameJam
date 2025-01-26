@@ -42,6 +42,8 @@ public class StockManager : MonoBehaviour
             CurrentStockValue = (int)((1.0f + RandomizeTrendEffect()) * CurrentStockValue);
             if(CurrentStockValue < 0) 
                 CurrentStockValue = 0;
+            if(CurrentStockValue > 500)
+                CurrentStockValue = 500; 
             return CurrentStockValue;
         }
 
