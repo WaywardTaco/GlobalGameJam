@@ -66,6 +66,16 @@ public class DayCycleManager : MonoBehaviour
             Debug.Log("No more actions left.");
             EndDay();
         }
+        else {
+            switch(actionsLeft) {
+                case 1: //Night
+                    LightingManager.Instance.ChangeLighting(23);
+                    break;
+                case 2: //Midday
+                    LightingManager.Instance.ChangeLighting(12);
+                    break;
+            }
+        }
     }
 
     public void PurchaseAction() {

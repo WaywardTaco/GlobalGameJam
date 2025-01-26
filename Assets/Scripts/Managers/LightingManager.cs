@@ -4,18 +4,43 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class LightingManager : MonoBehaviour
 {
+    public static LightingManager Instance;
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private Material skyBox;
     [SerializeField] private LightingPreset Preset;
 
     [SerializeField, PropertyRange(0, 24)] private float TimeOfDay;
+    private bool updateTime;
+    [ReadOnly, SerializeField] private float targetTime;
+
+    void Awake() {
+        if(Instance == null) {
+            Instance = this;
+        }
+        else Destroy(this);
+    }
+
+    void Start() {
+        UpdateLighting(6/24f);
+    }
 
     private void Update() {
         if(Preset == null) return;
         UpdateLighting(TimeOfDay/24f);
+        if(updateTime) {
+            TimeOfDay += 5f * Time.deltaTime;
+            TimeOfDay %= 24f;
+            UpdateLighting(TimeOfDay/24f);
+            if(targetTime <= TimeOfDay) updateTime = false;
+        }
     }
 
-    private void UpdateLighting(float timePercent) {
+    public void ChangeLighting(float value) {
+        updateTime = true;
+        targetTime = value;
+    }
+
+    public void UpdateLighting(float timePercent) {
         RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
         RenderSettings.fogColor = Preset.FogColor.Evaluate(timePercent);
         if(DirectionalLight != null) {

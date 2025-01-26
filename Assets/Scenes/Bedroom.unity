@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.5686275, g: 0.38431376, b: 0.23137257, a: 1}
+  m_FogColor: {r: 0.9450981, g: 0.64705884, b: 0.4039216, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.05
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.75294125, g: 0.654902, b: 0.62352943, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 0.67058825, b: 0.4156863, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1674,7 +1674,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.28627452, g: 0.28627452, b: 0.28627452, a: 1}
+  m_Color: {r: 0.38823533, g: 0.38823533, b: 0.38823533, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1733,7 +1733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713256086}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0219141, y: 0.9641909, z: 0.25047916, w: 0.08435583}
+  m_LocalRotation: {x: -0.0113761155, y: 0.98767215, z: 0.13002951, w: 0.08641018}
   m_LocalPosition: {x: 4.030262, y: 6.3149605, z: -7.0940857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1791,6 +1791,10 @@ PrefabInstance:
     - target: {fileID: 2305349085178835861, guid: cf36bfd405ae0344287ef083542de816, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7686259890661624035, guid: cf36bfd405ae0344287ef083542de816, type: 3}
+      propertyPath: TimeOfDay
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2072,10 +2076,6 @@ PrefabInstance:
     - target: {fileID: 1656085372573842937, guid: bccc06d6aaf2370438587656e19e0628, type: 3}
       propertyPath: m_Name
       value: NotifUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 7030191676125289167, guid: bccc06d6aaf2370438587656e19e0628, type: 3}
-      propertyPath: m_lineSpacing
-      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 8936668983805035355, guid: bccc06d6aaf2370438587656e19e0628, type: 3}
       propertyPath: m_Camera

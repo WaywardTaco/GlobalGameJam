@@ -97,7 +97,10 @@ public class NotificationManager : MonoBehaviour
             while(isOpen){
                 yield return new WaitForEndOfFrame();
             }
-            notif.pendingEvent.Invoke();
+            
+            if(notif.pendingEvent != null) {
+                notif.pendingEvent.Invoke();
+            }
         }
         pendingNotifs.Clear();
     }

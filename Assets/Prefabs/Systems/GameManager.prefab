@@ -487,6 +487,9 @@ MonoBehaviour:
   elapsedTimeRot: 0
   percentagePos: 0
   percentageRot: 0
+  playerCursor: {fileID: 0}
+  tooltipMonitor: {fileID: 0}
+  tooltipCursor: {fileID: 0}
 --- !u!114 &5950584416782141670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,4 +518,5 @@ MonoBehaviour:
   DirectionalLight: {fileID: 0}
   skyBox: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
   Preset: {fileID: 11400000, guid: 1d76efb500ffb4c41b5058729dadd525, type: 2}
-  TimeOfDay: 4.87
+  TimeOfDay: 6
+  targetTime: 0

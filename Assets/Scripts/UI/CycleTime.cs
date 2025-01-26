@@ -72,6 +72,7 @@ public class CycleTime : MonoBehaviour
     }
 
     IEnumerator StartDayAnimation(int day) {
+        MonitorController.Instance.DisableMonitorTooltip();
         MonitorController.Instance.lockCursor();
         dayAlt.text = $" {day}";
 
@@ -80,6 +81,7 @@ public class CycleTime : MonoBehaviour
         black.LeanMoveLocalY(0, 1.5f).setEaseOutQuart().delay = 0.1f;
 
         yield return new WaitForSeconds(1f);
+        LightingManager.Instance.UpdateLighting(0);
         SFXManager.Instance.Play("Cricket");
 
         //Show text
@@ -111,6 +113,7 @@ public class CycleTime : MonoBehaviour
         SFXManager.Instance.FadeIn("Clock");
 
         //Transition Back
+        LightingManager.Instance.ChangeLighting(6);
         Main.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
         daysLeftMain.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
 
@@ -118,6 +121,7 @@ public class CycleTime : MonoBehaviour
         daysLeftMain.GetComponent<CanvasGroup>().LeanAlpha(0, 0.5f);
         
         black.LeanMoveLocalY(Screen.height, 1.5f).setEaseInExpo().delay = 0.1f;
+        MonitorController.Instance.EnableMonitorTooltip();
         MonitorController.Instance.UnlockCursor();
         hasPlayedDay = true;
         DayCycleManager.Instance.SetDay(day);
@@ -138,6 +142,7 @@ public class CycleTime : MonoBehaviour
         black.LeanMoveLocalY(0, 1.5f).setEaseOutExpo().delay = 0.1f;
 
         yield return new WaitForSeconds(1);
+        LightingManager.Instance.UpdateLighting(0);
         SFXManager.Instance.Play("Cricket");
 
         //Show text
@@ -173,6 +178,7 @@ public class CycleTime : MonoBehaviour
         SFXManager.Instance.FadeIn("Clock");
 
         //Transition Back
+        LightingManager.Instance.ChangeLighting(6);
         Main.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
         daysLeftMain.LeanMoveLocalX(-150, 1f).setEaseInExpo().setOnComplete(FadeOutClock);
 

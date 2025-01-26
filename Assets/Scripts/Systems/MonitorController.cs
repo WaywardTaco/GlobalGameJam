@@ -124,6 +124,14 @@ public class MonitorController : MonoBehaviour
         }
     }
 
+    public void EnableMonitorTooltip() {
+        tooltipMonitor.SetActive(true);
+    }
+
+    public void DisableMonitorTooltip() {
+        tooltipMonitor.SetActive(false);
+    }
+
     public void EnableTooltip(string value) {
         tooltipCursor.GetComponent<TextMeshProUGUI>().text = value;
     }
