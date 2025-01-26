@@ -59,7 +59,7 @@ public class GameWorldEventManager : MonoBehaviour
 
     private void Update() {
         if(onStartPend){
-            NotificationManager.Instance.PendNotif(2, "Hello");
+            NotificationManager.Instance.PendNotif(7, "You've got 7 days to pay us back Pig... Remember, the mafia always collects.");
 
             PendAutomaticEvents();
             onStartPend = false;
