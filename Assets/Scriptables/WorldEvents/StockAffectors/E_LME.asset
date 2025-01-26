@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508c1765801cde74f8c3cb3d8a745f0a, type: 3}
   m_Name: E_LME
   m_EditorClassIdentifier: 
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: 6600bddbe798ed1449346b42fd3661b2, type: 3}
   EventName: Leading the future!
   EventType: 19
   StartRandomProbability: 0.2

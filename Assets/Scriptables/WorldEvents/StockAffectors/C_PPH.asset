@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: C_PPH
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: ' PPH Falls as Financers Back Out'
+  EventName: PPH Falls as Financers Back Out
   EventType: 8
   StartRandomProbability: 0.2
   IsOneshotEvent: 1
