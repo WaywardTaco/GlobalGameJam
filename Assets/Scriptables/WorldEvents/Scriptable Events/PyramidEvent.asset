@@ -16,11 +16,11 @@ MonoBehaviour:
   EventName: Pyramid Event
   EventType: 67
   StartRandomProbability: 0
-  IsOneshotEvent: 1
+  IsOneshotEvent: 0
   EventText: 'The police have received multiple calls on salesmen knocking on their
     doors, please be advised to lock your doors.
 
 '
-  reputationChange: 0
-  trendChange: 0
-  maxDaysChange: 0
+  reputationChange: 25
+  trendChange: 0.4
+  maxDaysChange: 1

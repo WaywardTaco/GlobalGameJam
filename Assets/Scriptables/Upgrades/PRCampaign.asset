@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: PR Campaign
   UpgradeType: 1
-  InvokedEvent: 0
-  Cost: 0
+  InvokedEvent: 73
+  Cost: 14
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
+  MaxPurchases: 1

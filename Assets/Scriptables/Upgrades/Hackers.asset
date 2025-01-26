@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Hacker Group
   UpgradeType: 15
-  InvokedEvent: 0
-  Cost: 0
+  InvokedEvent: 71
+  Cost: 8
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
   MaxPurchases: 1

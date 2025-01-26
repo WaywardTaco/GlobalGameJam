@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7b290511391be84eab0e0d7908da206, type: 3}
-  m_Name: InsiderEvent
+  m_Script: {fileID: 11500000, guid: a3a48d3d82cac8b4b8569219d96c7010, type: 3}
+  m_Name: PREvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Insider Event
-  EventType: 66
+  EventName: PR Event
+  EventType: 73
   StartRandomProbability: 0
-  IsOneshotEvent: 1
-  EventText: Moonshine LLC is in trouble after landslide cuts off trade routes, leaving
-    shareholders wary.
-  reputationChange: 0
-  trendChange: 0
-  maxDaysChange: 0
+  IsOneshotEvent: 0
+  EventText: La Bubble aims to give back to the plant that gives them their popularity
+    by planting 1.31 hectares of cassava.
+  reputationChange: 15
+  trendChange: 0.2
+  maxDaysChange: 2

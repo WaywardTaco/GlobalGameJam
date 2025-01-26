@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: NarrativeEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Narrative Event
+  EventName: 'Narrative Event '
   EventType: 75
   StartRandomProbability: 0
-  IsOneshotEvent: 1
-  EventText: 'Our building has gotten a new branch, giving journalists a way to refresh.
-
-'
-  reputationChange: 0
-  trendChange: 0
+  IsOneshotEvent: 0
+  EventText: Our building has gotten a new branch, giving journalists a way to refresh.
+  reputationChange: 50
+  trendChange: 0.25
   maxDaysChange: 0

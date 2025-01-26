@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06f55cfa9d687ea4f8ae85c802fb60af, type: 3}
-  m_Name: TaxEvent
+  m_Script: {fileID: 11500000, guid: c6d7ffa37c3ee1b4b81dfecc08acd4f2, type: 3}
+  m_Name: DiversityEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Tax Exploit Event
-  EventType: 62
+  EventName: Diversity Event
+  EventType: 64
   StartRandomProbability: 0
-  IsOneshotEvent: 1
-  EventText: Criticisms of local laws regarding food imports and their exploitability
-    enrage citizens.
+  IsOneshotEvent: 0
+  EventText: Lucky Pearls Inc. expands into other food sectors, from sustainable
+    agriculture to tech, solidifying their dominance in the market.
   reputationChange: 0
-  trendChange: 0
-  maxDaysChange: 0
+  trendChange: 0.1
+  maxDaysChange: 1

@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: CSREvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: CSREvent
+  EventName: CSR Event
   EventType: 61
   StartRandomProbability: 0
-  IsOneshotEvent: 1
-  EventText: "La Bubble, through Tapioca Enterprises Inc., launches a \"Green Tea\"
-    initiative\u2014using 100% biodegradable cups and partnering with fair-trade
-    cassava farms."
-  reputationChange: 0
-  trendChange: 0
+  IsOneshotEvent: 0
+  EventText: "La Bubble, through Lucky Pearl Inc., launches an initiative\u2014using
+    100% biodegradable cups and partnering with fair-trade cassava farms."
+  reputationChange: 20
+  trendChange: 0.1
   maxDaysChange: 0

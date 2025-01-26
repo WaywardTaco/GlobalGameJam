@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Corporate Blackmail
   UpgradeType: 12
-  InvokedEvent: 0
-  Cost: 0
+  InvokedEvent: 68
+  Cost: 10
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
   MaxPurchases: 1

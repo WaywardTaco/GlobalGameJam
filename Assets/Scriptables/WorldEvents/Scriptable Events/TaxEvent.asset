@@ -9,15 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cbe30bc982656d458cde01b749d4ad3, type: 3}
-  m_Name: ShellEvent
+  m_Script: {fileID: 11500000, guid: 06f55cfa9d687ea4f8ae85c802fb60af, type: 3}
+  m_Name: TaxEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: Default Game Event
-  EventType: 0
+  EventName: Tax Event
+  EventType: 62
   StartRandomProbability: 0
-  IsOneshotEvent: 1
-  EventText: Insert Game Event Text
-  reputationChange: 0
-  trendChange: 0
-  maxDaysChange: 0
+  IsOneshotEvent: 0
+  EventText: Criticisms of local laws regarding food imports and their exploitability
+    enrage citizens.
+  reputationChange: 10
+  trendChange: 0.2
+  maxDaysChange: 1

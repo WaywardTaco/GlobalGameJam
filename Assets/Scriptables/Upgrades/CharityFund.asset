@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UpgradeName: Charity Fund
   UpgradeType: 7
-  InvokedEvent: 0
-  Cost: 0
+  InvokedEvent: 63
+  Cost: 2
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
   MaxPurchases: 1

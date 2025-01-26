@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb0569f74605564881dc0788d32e1c5, type: 3}
   m_Name: MediaOutreach
   m_EditorClassIdentifier: 
-  UpgradeName: Media Outreach
+  UpgradeName: Narrative Control
   UpgradeType: 9
-  InvokedEvent: 0
-  Cost: 0
+  InvokedEvent: 75
+  Cost: 14
   IsOneshotUpgrade: 1
   UpgradeBulletedText: []
   MaxPurchases: 1

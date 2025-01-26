@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 907815941c1f07748a7488d50ec6e92a, type: 3}
-  m_Name: Downpayment
+  m_Name: DownpaymentEvent
   m_EditorClassIdentifier: 
   EventImage: {fileID: 0}
-  EventName: DownpaymentEvent
+  EventName: Downpayment Event
   EventType: 70
   StartRandomProbability: 0
-  IsOneshotEvent: 1
-  EventText: 'Bank of Erves'' officials listens to client pleas and extend bill deadlines.
-
-'
-  reputationChange: 0
+  IsOneshotEvent: 0
+  EventText: Bank of Erves' officials listens to client pleas and extend bill deadlines.
+  reputationChange: 15
   trendChange: 0
-  maxDaysChange: 0
+  maxDaysChange: 3
